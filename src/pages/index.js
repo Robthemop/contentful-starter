@@ -61,10 +61,6 @@ export const pageQuery = graphql`
       edges {
         node {
           name
-          shortBio {
-            shortBio
-          }
-          title
           heroImage: image {
             sizes(
               maxWidth: 3000
