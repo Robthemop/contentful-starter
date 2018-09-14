@@ -15,7 +15,9 @@ class RootIndex extends React.Component {
         <Helmet title={siteTitle} />
         <Hero data={author.node} />
         <div className="wrapper">
-          <h2 className="section-headline">Recent articles</h2>
+
+        <h1 className="section-headline"></h1>
+
           <ul className="article-list">
             {posts.map(({ node }) => {
               return (
@@ -43,7 +45,7 @@ export const pageQuery = graphql`
           publishDate(formatString: "MMMM Do, YYYY")
           tags
           heroImage {
-            sizes(maxWidth: 350, maxHeight: 196, resizingBehavior: SCALE) {
+            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: PAD) {
              ...GatsbyContentfulSizes_tracedSVG
             }
           }
@@ -65,9 +67,9 @@ export const pageQuery = graphql`
           title
           heroImage: image {
             sizes(
-              maxWidth: 1920
-              maxHeight: 1080
-              resizingBehavior: FILL
+              maxWidth: 3000
+              maxHeight: 2000
+              resizingBehavior: PAD
               background: "rgb:000000"
             ) {
               ...GatsbyContentfulSizes_tracedSVG
