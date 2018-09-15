@@ -16,10 +16,10 @@ class BlogIndex extends React.Component {
         <div className={styles.hero}>
         <ul style={{ listStyleType: "none" }}>
         <li>
-        <a href="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow?view_as=user">Hier gibt es bald einen Video-Blog</a>
+        <a href="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow?view_as=user">Hier gibt es bald einen Video-Blog.</a>
         </li>
         <li>
-        <a href="https://www.instagram.com/boulderbabos/">Bis dahin findest du alle Videos auf Instagram</a>
+        <a href="https://www.instagram.com/boulderbabos/">Bis dahin findest du alle Videos auf Instagram.</a>
         </li>
         </ul>
         </div>
