@@ -16,15 +16,15 @@ class BlogIndex extends React.Component {
         <div>
         <h1>Impressum</h1>
 
-<h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
+<h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
 <p>Robin He&szlig;<br />
 Villemomblerstra&szlig;e 40<br />
 53123 Bonn</p>
 
-<h2>Kontakt</h2>
+<h3>Kontakt</h3>
 <p>E-Mail: 1robinhess@gmail.com</p>
 
-<h2>Verantwortlich f&uuml;r den Inhalt nach &sect; 55 Abs. 2 RStV</h2>
+<h3>Verantwortlich f&uuml;r den Inhalt nach &sect; 55 Abs. 2 RStV</h3>
 <p>Robin He&szlig;<br />
 Villemomblerstra&szlig;e 40<br />
 53123 Bonn</p>
@@ -61,7 +61,7 @@ umgehend entfernen.</p>
  Verwertung au&szlig;erhalb der Grenzen des Urheberrechtes bed&uuml;rfen der schriftlichen Zustimmung des
  jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur f&uuml;r den privaten, nicht
  kommerziellen Gebrauch gestattet.</p>
- 
+
  <p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden,
  werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten
  Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis.
