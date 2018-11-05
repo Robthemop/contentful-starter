@@ -19,7 +19,7 @@ class BlogIndex extends React.Component {
         <a href="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow?view_as=user">Hier gibt es bald einen Video-Blog.</a>
         </li>
         <li>
-        <a href="https://www.instagram.com/boulderbabos/">Bis dahin findest du alle Videos auf Instagram.</a>
+        <a href="https://www.instagram.com/boulderbabos/">Bis dahin findest du alles auf Instagram.</a>
         </li>
         </ul>
         </div>
