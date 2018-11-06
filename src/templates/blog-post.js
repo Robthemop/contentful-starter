@@ -44,7 +44,7 @@ export const pageQuery = graphql`
       title
       publishDate(formatString: "MMMM Do, YYYY")
       heroImage {
-        sizes(maxWidth: 400, maxHeight: 400) {
+        sizes(maxWidth: 800, maxHeight: 400, resizingBehavior: PAD) {
           ...GatsbyContentfulSizes_tracedSVG
         }
       }
