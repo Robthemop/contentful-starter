@@ -13,7 +13,7 @@ class BlogIndex extends React.Component {
     return (
       <div style={{background: '#FFF'}}>
         <Helmet title={siteTitle} />
-        <div style={{textAlign: 'justify', font-size: 2em, .h1,h2,h3{ font-size: 2em }}}>
+        <div style={{textAlign: 'justify', font-size: 12px}}>
         <h1>Impressum</h1>
 
 <h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
