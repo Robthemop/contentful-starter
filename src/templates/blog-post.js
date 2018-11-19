@@ -20,7 +20,7 @@ class BlogPostTemplate extends React.Component {
           <h1 className="section-headline">{post.title}</h1>
           <p
             style={{
-              display: 'block',
+              display: 'inline-block',
             }}
           >
             {post.publishDate}
