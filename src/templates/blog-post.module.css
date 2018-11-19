@@ -2,10 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 12.5em;
   background: #fff;
-  margin: -1em -2.5em 1em;
+  margin: auto;
   font-size: 2em
 
 }
