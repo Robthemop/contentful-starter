@@ -11,13 +11,13 @@ body {
   font-size: 1em;
   line-height: 1.65;
   color: #373F49;
-  background: #FFF;
+  background: #fff;
   margin: 0;
 }
 
 img {
   display: inline-block;
-  width: 50%;
+  width: 100%;
   margin: 0;
   border-radius: 8px;
 }
