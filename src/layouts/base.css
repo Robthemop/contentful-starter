@@ -12,13 +12,12 @@ body {
   line-height: 1.65;
   color: #373F49;
   background: #FFF;
-  margin: auto;
-  display: block;
+  margin: 0;
 
 }
 
 img {
-  display: block;
+  display: inline-block;
   width: 75%;
   margin: auto;
   border-radius: 8px;
