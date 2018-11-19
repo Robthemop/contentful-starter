@@ -21,6 +21,7 @@ class BlogPostTemplate extends React.Component {
           <p
             style={{
               display: 'block',
+              margin: auto,
             }}
           >
             {post.publishDate}
