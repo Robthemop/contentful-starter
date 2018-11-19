@@ -16,7 +16,7 @@ body {
 }
 
 img {
-  display: block;
+  display: inline-block;
   width: 75%;
   margin: auto;
   border-radius: 8px;
