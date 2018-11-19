@@ -13,11 +13,10 @@ body {
   color: #373F49;
   background: #FFF;
   margin: 0;
-
 }
 
 img {
-  display: inline-block;
+  display: block;
   width: 75%;
   margin: auto;
   border-radius: 8px;
