@@ -18,18 +18,12 @@ class BlogPostTemplate extends React.Component {
         </div>
         <div className="wrapper">
           <h1 className="section-headline">{post.title}</h1>
-          <p
-            style={{
-              display: 'inline-block',
-            }}
-          >
             <h1>
             {post.category.title}
             </h1>
             <p>
             {post.publishDate}
             </p>
-          </p>
           <div className={heroStyles.p}
             dangerouslySetInnerHTML={{
               __html: post.body.childMarkdownRemark.html,
