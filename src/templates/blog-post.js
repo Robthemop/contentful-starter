@@ -45,7 +45,7 @@ export const pageQuery = graphql`
       title
       publishDate(formatString: "MMMM Do, YYYY")
       category{
-        title
+        title: category
       }
       heroImage {
         sizes(maxWidth: 1180, background: "rgb:000000") {
