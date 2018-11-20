@@ -11,7 +11,7 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <div style={{ background: '#FFF' }}>
+      <div style={{ background: '#fff' }}>
         <Helmet title={`${post.title} | ${siteTitle}`} />
         <div className={heroStyles.hero}>
           <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes} />
