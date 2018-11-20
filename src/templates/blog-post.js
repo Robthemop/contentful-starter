@@ -28,7 +28,7 @@ class BlogPostTemplate extends React.Component {
           </p>
           <div
           style={{
-            width: 0,8
+            width: 50%
           }}
             dangerouslySetInnerHTML={{
               __html: post.body.childMarkdownRemark.html,
