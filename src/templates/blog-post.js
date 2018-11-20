@@ -27,9 +27,6 @@ class BlogPostTemplate extends React.Component {
             {post.publishDate}
           </p>
           <div
-          style={{
-            width: 50%
-          }}
             dangerouslySetInnerHTML={{
               __html: post.body.childMarkdownRemark.html,
             }}
