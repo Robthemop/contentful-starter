@@ -34,8 +34,8 @@ a {
 }
 
 .wrapper {
-  width: calc(100% - 10vmin);
-  margin: 20;
+  width: calc(100% - 20vmin);
+  margin: 0 auto;
   padding: 5vmin 0;
 }
 
