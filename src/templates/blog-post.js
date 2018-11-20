@@ -23,6 +23,7 @@ class BlogPostTemplate extends React.Component {
               display: 'inline-block',
             }}
           >
+            {post.category}
             {post.publishDate}
           </p>
           <div
@@ -43,6 +44,7 @@ export const pageQuery = graphql`
     contentfulBlogPost(slug: { eq: $slug }) {
       title
       publishDate(formatString: "MMMM Do, YYYY")
+      category
       heroImage {
         sizes(maxWidth: 1180, background: "rgb:000000") {
           ...GatsbyContentfulSizes_tracedSVG
