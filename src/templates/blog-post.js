@@ -23,7 +23,9 @@ class BlogPostTemplate extends React.Component {
               display: 'inline-block',
             }}
           >
+            <p className="category">
             {post.category.title}
+            </p>
             <p>
             {post.publishDate}
             </p>
