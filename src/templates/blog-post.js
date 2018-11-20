@@ -23,7 +23,7 @@ class BlogPostTemplate extends React.Component {
               display: 'inline-block',
             }}
           >
-            <h1 className="section-headLine">
+            <h1>
             {post.category.title}
             </h1>
             <p>
