@@ -44,7 +44,7 @@ export const pageQuery = graphql`
     contentfulBlogPost(slug: { eq: $slug }) {
       title
       publishDate(formatString: "MMMM Do, YYYY")
-      category{categorytitle}
+      category{id: "categorytitle"}
       heroImage {
         sizes(maxWidth: 1180, background: "rgb:000000") {
           ...GatsbyContentfulSizes_tracedSVG
