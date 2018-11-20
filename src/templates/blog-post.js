@@ -23,7 +23,7 @@ class BlogPostTemplate extends React.Component {
               display: 'inline-block',
             }}
           >
-            {post.category}
+            {post.category.title}
             {post.publishDate}
           </p>
           <div
