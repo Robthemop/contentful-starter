@@ -28,7 +28,7 @@ class Contact extends React.Component {
     <div style={{marginTop: 10}}><input name="email" placeholder="name@name.com" type="email" /></div>
     <div style={{marginTop: 10}}><textarea name="message" /></div>
     <div style={{marginTop: 10}}><input
-            name="isGoing"
+            name="stimmt zu"
             type="checkbox"
              />
              <label>
