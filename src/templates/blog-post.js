@@ -11,26 +11,26 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
-      <div style={{ background: '#fff' }}>
+    <div style={{ background: '#fff' }}>
         <Helmet title={`${post.title} | ${siteTitle}`} />
         <div className={heroStyles.hero}>
           <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes} />
         </div>
         <div className="wrapper">
           <h1 className="section-headline">{post.title}</h1>
-            <h1>
-            {post.category.title}
-            </h1>
-            <p>
-            {post.publishDate}
-            </p>
+          <h1>
+              {post.category.title}
+          </h1>
+          <p>
+              {post.publishDate}
+          </p>
           <div className={heroStyles.p}
             dangerouslySetInnerHTML={{
               __html: post.body.childMarkdownRemark.html,
             }}
           />
         </div>
-      </div>
+    </div>
     )
   }
 }

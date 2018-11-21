@@ -5,13 +5,13 @@ import Helmet from 'react-helmet'
 import styles from './blog.module.css'
 import ArticlePreview from '../components/article-preview'
 
-class BlogIndex extends React.Component {
+class Impressum extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
 
     return (
-      <div style={{background: '#fff'}}>
+        <div style={{background: '#fff'}}>
         <Helmet title={siteTitle} />
         <div style={{textAlign: 'justify'}}>
         <h1>Impressum</h1>
@@ -97,4 +97,4 @@ die Google Inc.: <a href="https://support.google.com/analytics/answer/6004245?hl
   }
 }
 
-export default BlogIndex
+export default Impressum
