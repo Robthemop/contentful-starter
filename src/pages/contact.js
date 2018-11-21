@@ -21,12 +21,15 @@ class Contact extends React.Component {
     data-netlify="true"
     data-netlify-honeypot="bot-field"
   >
-    <input name="name" placeholder="Your Name" type="text" />
-    <input name="email" placeholder="name@name.com" type="email" />
-    <textarea name="message" />
-    <button>Send</button>
+
+    <div><input name="name" placeholder="Your Name" type="text" /></div>
+    <div style={{marginTop: 10}}><input name="email" placeholder="name@name.com" type="email" /></div>
+    <div style={{marginTop: 10}}><textarea name="message" /></div>
+    <div style={{marginTop: 10}}><button>Send</button></div>
   </form>
+  <div style={{marginTop: 25}}>
   <Link to="/">Bring mich zum Blog</Link>
+  </div>
         </div>
       )
   }
