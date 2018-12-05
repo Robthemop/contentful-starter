@@ -11,12 +11,12 @@ class RootIndex extends React.Component {
     const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
     return (
-      <div style={{ background: '#fff' }}>
+      <div style={{ background: '#FFF' }}>
         <Helmet title={siteTitle} />
         <Hero data={author.node} />
         <div className="wrapper">
 
-        <h1 className="section-headline">hot stuff</h1> 
+        <h1 className="section-headline">hot stuff</h1>
 
           <ul className="article-list">
             {posts.map(({ node }) => {
