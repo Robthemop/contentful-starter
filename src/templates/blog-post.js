@@ -46,9 +46,10 @@ export const pageQuery = graphql`
         title
       }
       heroImage {
-        sizes(maxWidth: 1180, background: "rgb:000000") {
+        sizes(maxWidth: 1180, background: "rgb:255255") {
           ...GatsbyContentfulSizes_tracedSVG
         }
+
       }
       body {
         childMarkdownRemark {

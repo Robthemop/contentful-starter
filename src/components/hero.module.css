@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background: #000;
+  background: #fff;
   color: #FFF;
   text-align: center;
 }
@@ -16,7 +16,7 @@
 
 .heroDetails {
   position: absolute;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgb(255, 255, 255, 0.2);
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 0);
@@ -46,6 +46,6 @@
   font-weight: bold;
 }
 
-.p{ 
+.p{
   width: 80%
 }
