@@ -36,6 +36,10 @@ class Contact extends React.Component {
              Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an 1robinhess@gmail.com widerrufen.
 <            /label></div>
     <div style={{marginTop: 10}}><button>Send</button></div>
+    <div data-netlify-recaptcha="true"></div>
+  <p>
+    <button type=”submit”>Send</button>
+  </p>
   </form>
   <div style={{marginTop: 25}}>
   <Link to="/">Bring mich zum Blog</Link>
