@@ -35,11 +35,12 @@ class Contact extends React.Component {
              Ich habe die Datenschutzerklärung zur Kenntnis genommen. Ich stimme zu, dass meine Angaben und Daten zur Beantwortung meiner Anfrage elektronisch erhoben und gespeichert werden.
              Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an 1robinhess@gmail.com widerrufen.
 <            /label></div>
-    <div style={{marginTop: 10}}><button>Send</button></div>
+    <div style={{marginTop: 10}}></div>
     <div data-netlify-recaptcha="true"></div>
   <p>
-    <button type=”submit”>Send</button>
+    <button type="submit">Send</button>
   </p>
+
   </form>
   <div style={{marginTop: 25}}>
   <Link to="/">Bring mich zum Blog</Link>
