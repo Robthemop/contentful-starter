@@ -63,8 +63,8 @@ export const pageQuery = graphql`
           name
           heroImage: image {
             sizes(
-              maxWidth: 1180
-              maxHeight: 480
+              maxWidth: 3728
+              maxHeight: 2376
               resizingBehavior: PAD
               background: "rgb:FFFFFF"
             ) {
