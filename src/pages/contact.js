@@ -16,7 +16,7 @@ class Contact extends React.Component {
   <div>
   <h1>Kontakt</h1>
   <p>Hast du Fragen?</p>
-  <p>Du kannst mir hier eine sofort Nachicht schicken</p>
+  <p>Du kannst mir hier eine sofort-Nachicht schicken</p>
   <form
     name="contact-form"
     method="post"
