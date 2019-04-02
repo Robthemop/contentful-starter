@@ -3,6 +3,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
+import Navigation from '../components/navigation'
 
 class RootIndex extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class RootIndex extends React.Component {
       <div style={{ background: '#fff' }}>
         <Helmet title={siteTitle} />
         <Hero data={author.node} />
+        <Navigation />
         <div className="wrapper">
 
         <h1 className="section-headline">hot stuff</h1>
