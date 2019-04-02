@@ -2,6 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import Img from 'gatsby-image'
+import Navigation from '../components/navigation'
+
 
 import heroStyles from '../components/hero.module.css'
 
@@ -12,6 +14,7 @@ class BlogPostTemplate extends React.Component {
 
     return (
     <div style={{ background: '#FFF' }}>
+    <Navigation />
         <Helmet title={`${post.title} | ${post.category.title}`} />
         <div className={heroStyles.hero}>
           <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes} />
