@@ -32,6 +32,7 @@ class BlogPostTemplate extends React.Component {
               __html: post.body.childMarkdownRemark.html,
             }}
           />
+
         </div>
     </div>
     )

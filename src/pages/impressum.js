@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import styles from './blog.module.css'
 import ArticlePreview from '../components/article-preview'
+import Navigation from '../components/navigation'
 
 class Impressum extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class Impressum extends React.Component {
 
     return (
         <div style={{background: '#FFF'}}>
+        <Navigation />
         <Helmet title={siteTitle} />
         <div style={{textAlign: 'justify'}}>
         <h1>Impressum</h1>
@@ -91,6 +93,24 @@ die Google Inc.: <a href="https://support.google.com/analytics/answer/6004245?hl
 </a></p>
 
 <p>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
+
+<a href="https://www.bergfreunde-partner.de/banner/dynamisch/dyn.php"
+ title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
+ rel="nofollow" target="_blank">
+ <img
+ id="imgBF"
+ src="https://www.bergfreunde-partner.de/banner/bergfreunde.jpg"
+ height="250px"
+ width="250px"
+ alt="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
+ border="0"/>
+ </a>
+ <img
+ id="imgBF"
+ src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=168&cpid=1&prid=1&subid=&view=1"
+ height="250px"
+ width="250px"
+ border="0"/>
         </div>
         </div>
       )
