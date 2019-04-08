@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import styles from './blog.module.css'
 import Navigation from '../components/navigation'
+import Hero from '../components/hero'
 
 class Contact extends React.Component {
 
@@ -11,9 +12,11 @@ class Contact extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
+    const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
     return (
       <div style={{background: '#FFF'}}>
+      <Hero data={author.node} />
       <Navigation />
       <Helmet title={siteTitle} />
       <div style={{textAlign: 'justify'}}>
@@ -81,3 +84,25 @@ class Contact extends React.Component {
 }
 
 export default Contact
+
+export const pageQuery = graphql`
+  query ContactQuery {
+    allContentfulPerson(filter: { id: { eq: "c15jwOBqpxqSAOy2eOO4S0m" } }) {
+      edges {
+        node {
+          name
+          heroImage: image {
+            sizes(
+              maxWidth: 3728
+              maxHeight: 2376
+              resizingBehavior: PAD
+              background: "rgb:FFFFFF"
+            ) {
+              ...GatsbyContentfulSizes_tracedSVG
+            }
+          }
+        }
+      }
+    }
+  }
+`
