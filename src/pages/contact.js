@@ -87,7 +87,7 @@ export default Contact
 
 export const pageQuery = graphql`
   query ContactQuery {
-    allContentfulPerson(filter: { id: { eq: "c15jwOBqpxqSAOy2eOO4S0m" } }) {
+    allContentfulPerson(filter: { id: { eq: "c6JKKjih2XjAeggsVNbWGrb" } }) {
       edges {
         node {
           name

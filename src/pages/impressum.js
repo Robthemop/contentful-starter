@@ -126,7 +126,7 @@ export default Impressum
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allContentfulPerson(filter: { id: { eq: "c15jwOBqpxqSAOy2eOO4S0m" } }) {
+    allContentfulPerson(filter: { id: { eq: "c1Ikutnfblr0k1lCG0xglFm" } }) {
       edges {
         node {
           name
