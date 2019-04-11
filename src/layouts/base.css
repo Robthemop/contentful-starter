@@ -23,10 +23,8 @@ img {
 }
 
 #imgBF {
-  width: 25%;
-  height: 25%;
-  position: relative;
-  left: 75%;
+  width: 75%;
+  height: 75%;
 }
 
 
@@ -47,6 +45,7 @@ a {
   margin: 0 auto;
   padding: 5vmin 0;
 }
+
 
 /**
  * article grid

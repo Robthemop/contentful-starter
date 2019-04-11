@@ -20,6 +20,7 @@ class Contact extends React.Component {
       <Navigation />
       <Helmet title={siteTitle} />
       <div style={{textAlign: 'justify'}}>
+      <div className="wrapper">
       <h1>Sende mir eine E-Mail:</h1>
 
       <form
@@ -59,24 +60,21 @@ class Contact extends React.Component {
   <Link to="/">Bring mich zum Blog</Link>
   </div>
 
-  <a href="https://www.bergfreunde-partner.de/banner/dynamisch/dyn.php"
-   title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
-   rel="nofollow" target="_blank">
-   <img
-   id="imgBF"
-   src="https://www.bergfreunde-partner.de/banner/bergfreunde.jpg"
-   height="250px"
-   width="250px"
-   alt="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
-   border="0"/>
-   </a>
-   <img
-   id="imgBF"
-   src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=168&cpid=1&prid=1&subid=&view=1"
-   height="250px"
-   width="250px"
-   border="0"/>
-
+  <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
+  title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
+  rel="nofollow" target="_blank"><img src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_468x60.jpg"
+  alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
+  border="0"
+  id="imgBF"
+  />
+  </a>
+  <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=23&cpid=1&prid=1&subid=&view=1"
+  height="1"
+  width="1"
+  border="0"
+  id="imgBF"
+  />
+      </div>
       </div>
       </div>
       )
