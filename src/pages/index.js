@@ -30,19 +30,13 @@ class RootIndex extends React.Component {
               )
             })}
           </ul>
-
           <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
           title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
-          rel="nofollow"
-          target="_blank"
-          >
-
-          <img src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_468x60.jpg"
+          rel="nofollow" target="_blank"><img src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_468x60.jpg"
           alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
           border="0"
           id="imgBF"
           />
-
           </a>
           <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=23&cpid=1&prid=1&subid=&view=1"
           height="1"
@@ -50,7 +44,6 @@ class RootIndex extends React.Component {
           border="0"
           id="imgBF"
           />
-          
         </div>
       </div>
     )
