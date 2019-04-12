@@ -5,12 +5,15 @@ import styles from './navigation.module.css'
 export default () => (
   <nav role="navigation">
     <ul className={styles.navigation}>
+
       <li className={styles.navigationItem}>
-        <Link to="/">Home</Link>
+        <Link to="/">Blog</Link>
       </li>
+
       <li className={styles.navigationItem}>
         <Link to="/contact/">Kontakt</Link>
       </li>
+
       <li className={styles.navigationItem}>
         <Link to="/impressum/">Impressum</Link>
       </li>
