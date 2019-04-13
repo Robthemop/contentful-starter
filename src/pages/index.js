@@ -6,48 +6,49 @@ import ArticlePreview from '../components/article-preview'
 import Navigation from '../components/navigation'
 
 class RootIndex extends React.Component {
-  render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allContentfulBlogPost.edges')
-    const [author] = get(this, 'props.data.allContentfulPerson.edges')
+    render() {
+        const siteTitle = get(this, 'props.data.site.siteMetadata.title')
+        const posts = get(this, 'props.data.allContentfulBlogPost.edges')
+        const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
-    return(
-      <div style={{ background: '#FFF' }}>
+        return (
+            <div style={{background: '#FFF'}}>
 
-        <Helmet title={siteTitle} />
-        <Hero data={author.node} />
-        <Navigation />
-        <div className="wrapper">
+                <Helmet title={siteTitle}/>
+                <Hero data={author.node}/>
+                <Navigation/>
+                <div className="wrapper">
 
-          <h1 className="section-headline"><b>Der</b> Blog für Boulderer</h1>
+                    <h1 className="section-headline"><b>Der</b> Blog für Boulderer</h1>
 
-          <ul className="article-list">
-            {posts.map(({ node }) => {
-              return (
-                <li key={node.slug}>
-                  <ArticlePreview article={node} />
-                </li>
-              )
-            })}
-          </ul>
-          <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
-          title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
-          rel="nofollow" target="_blank"><img src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_468x60.jpg"
-          alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
-          border="0"
-          id="imgBF"
-          />
-          </a>
-          <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=23&cpid=1&prid=1&subid=&view=1"
-          height="1"
-          width="1"
-          border="0"
-          id="imgBF"
-          />
-        </div>
-      </div>
-    )
-  }
+                    <ul className="article-list">
+                        {posts.map(({node}) => {
+                            return (
+                                <li key={node.slug}>
+                                    <ArticlePreview article={node}/>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                    <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
+                       title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
+                       rel="nofollow" target="_blank"><img
+                        src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_468x60.jpg"
+                        alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
+                        border="0"
+                        id="imgBF"
+                    />
+                    </a>
+                    <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=23&cpid=1&prid=1&subid=&view=1"
+                         height="1"
+                         width="1"
+                         border="0"
+                         id="imgBF"
+                    />
+                </div>
+            </div>
+        )
+    }
 }
 
 export default RootIndex
