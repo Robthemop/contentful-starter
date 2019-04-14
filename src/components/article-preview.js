@@ -6,11 +6,18 @@ import styles from './article-preview.module.css'
 
 export default ({article}) => (
     <div className={styles.preview}>
-        <Img alt="" sizes={article.heroImage.sizes}/>
+        <Img alt="" sizes={article.heroImage.sizes}
+             >
+        </Img>
         <h3 className={styles.previewTitle}>
             <Link to={`/blog/${article.slug}`}>{article.title}</Link>
         </h3>
-        <small>{article.publishDate}</small>
+        <small>
+            <Link to={`/blog/${article.slug}`}>
+            {article.publishDate}
+            </Link>
+        </small>
+
         <p
             dangerouslySetInnerHTML={{
                 __html: article.description.childMarkdownRemark.html,
