@@ -36,7 +36,7 @@ export default () => (
                 color: ${color};
             }
                 `}>
-                <Link to="/vlog/"
+                <Link to="/Vlog/"
                       activeStyle={{color: "#7AB6FF"}}
                 >
                     <b>Vlog</b>
