@@ -7,7 +7,7 @@ import Navigation from '../components/navigation'
 import Link from "gatsby-link";
 import article from '../components/article-preview'
 
-class VlogPage extends React.Component {
+class Vlog extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
@@ -55,7 +55,7 @@ class VlogPage extends React.Component {
   }
 }
 
-export default VlogPage
+export default Vlog
 
 export const pageQuery = graphql`
   query VlogQuery {
