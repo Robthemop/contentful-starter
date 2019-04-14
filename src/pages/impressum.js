@@ -22,7 +22,7 @@ class Impressum extends React.Component {
                 <Helmet title={siteTitle}/>
                 <div style={{textAlign: 'justify'}}>
                     <div className="wrapper">
-                        <h1>Impressum</h1>
+                        <h3>Impressum</h3>
 
                         <h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
                         <p>Robin He&szlig;<br/>

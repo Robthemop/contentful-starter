@@ -21,7 +21,7 @@ class Contact extends React.Component {
                 <Helmet title={siteTitle}/>
                 <div style={{textAlign: 'justify'}}>
                     <div className="wrapper">
-                        <h1>Sende mir eine E-Mail:</h1>
+                        <h3>Sende mir eine E-Mail:</h3>
 
                         <form
                             name="contact-form"

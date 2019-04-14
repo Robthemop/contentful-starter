@@ -21,7 +21,10 @@ class RootIndex extends React.Component {
         <Navigation />
         <div className="wrapper">
 
-          <h1 className="section-headline">Der Blog für Boulderer</h1>
+            {/*
+              <h1 className="section-headline">Der Blog für Boulderer</h1>
+              */}
+
 
           <ul className="article-list">
             {posts.map(({ node }) => {
