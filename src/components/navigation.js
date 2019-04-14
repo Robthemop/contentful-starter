@@ -36,6 +36,21 @@ export default () => (
                 color: ${color};
             }
                 `}>
+                <Link to="/vlog/"
+                      activeStyle={{color: "#7AB6FF"}}
+                >
+                    <b>Vlog</b>
+                </Link>
+            </li>
+
+            <li className={css`
+                display: inline-flex;
+                align-items: center;
+                margin: 0 1em;
+                &:hover {
+                color: ${color};
+            }
+                `}>
                 <Link to="/contact/"
                       activeStyle={{color: "#7AB6FF"}}
                 >
