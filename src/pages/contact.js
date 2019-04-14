@@ -60,8 +60,8 @@ class Contact extends React.Component {
 
                         </form>
 
-                        <div style={{marginTop: 25}}>
-                            <Link to="/">Bring mich zum Blog</Link>
+                        <div style={{marginTop: 25, color: "#3D5B80"}}>
+                            <Link to="/"><h3>Bring mich zum Blog!</h3></Link>
                         </div>
 
                         <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
