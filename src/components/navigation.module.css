@@ -1,5 +1,5 @@
 .navigation {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     list-style: none;
     padding: 0;
@@ -8,6 +8,7 @@
     height: 20vh;
     max-height: 100px;
     font-size: 1.25em;
+    color: #3D5B80;
 }
 
 .navigationItem {
