@@ -6,7 +6,7 @@ import styles from './blog.module.css'
 import Navigation from '../components/navigation'
 import Hero from '../components/hero'
 import ArticlePreview from "../components/category-preview";
-import category from '../components/category-preview.css';
+import category from '../components/category-preview.module.css';
 
 class Kategorien extends React.Component {
 
@@ -24,7 +24,7 @@ class Kategorien extends React.Component {
                 <div style={{textAlign: 'justify'}}>
                     <div className="wrapper">
 
-                        <h3>Kategorien:</h3>
+                        <h2 className="section-headline">Wähle eine Kategorie!</h2>
 
                         <ul className="category-list">
                             {category.map(({node}) => {
@@ -40,7 +40,7 @@ class Kategorien extends React.Component {
                         <div style={{marginTop: 25, color: "#3D5B80"}}>
                             <Link to="/"
                                   style={{textDecoration: 'none'}}>
-                                <h3>Bring mich zu allen Blog Artikeln</h3>
+                                <h3>klick mich, um alle posts zu sehen.</h3>
                             </Link>
                         </div>
 

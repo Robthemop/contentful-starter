@@ -66,10 +66,16 @@ a {
     padding: 0;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 1vmin;
-    justify-items: center;
+    text-align: center;
+    align-self: center;
     align-items: center;
+}
+
+.catbox {
+    border-color: #3D5B80;
+    border-style: solid;
 }
 
 /**

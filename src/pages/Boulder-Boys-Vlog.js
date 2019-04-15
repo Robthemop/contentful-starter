@@ -21,7 +21,7 @@ class BoulderBoysVlog extends React.Component {
         <Navigation />
           <Link to="/kategorien/"
                 style={{textDecoration: 'none'}}>
-              <h2 className="section-headline">Alle Kategorien</h2>
+              <h2 className="section-headline">Alle Kategorien anzeigen</h2>
           </Link>
         <div className="wrapper">
 

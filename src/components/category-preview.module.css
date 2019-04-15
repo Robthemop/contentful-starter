@@ -1,5 +1,6 @@
-.previewTitle {
+.categoryTitle {
     font-size: 1.5em;
+    color: #7AB6FF;
 }
 
 .tag {
@@ -9,6 +10,12 @@
     padding: .33333rem .5rem;
     line-height: 1;
     border-radius: 2px;
-    border: 1px solid #3D5B80;
     margin-right: .5em;
 }
+
+.border {
+    border: 5px;
+    border-style: solid;
+    border-color: #7AB6FF;
+}
+
