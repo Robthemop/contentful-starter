@@ -6,7 +6,6 @@ import styles from './blog.module.css'
 import Navigation from '../components/navigation'
 import Hero from '../components/hero'
 import ArticlePreview from "../components/category-preview";
-import category from '../components/category-preview.module.css';
 
 class Kategorien extends React.Component {
 

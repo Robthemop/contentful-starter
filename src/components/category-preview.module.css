@@ -14,8 +14,6 @@
 }
 
 .border {
-    border: 5px;
-    border-style: solid;
-    border-color: #7AB6FF;
+    border-bottom: 1px solid #ddd;
 }
 
