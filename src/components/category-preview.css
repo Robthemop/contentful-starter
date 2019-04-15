@@ -1,0 +1,14 @@
+.previewTitle {
+    font-size: 1.5em;
+}
+
+.tag {
+    color: #3D5B80;
+    text-decoration: none;
+    display: inline-block;
+    padding: .33333rem .5rem;
+    line-height: 1px;
+    border-radius: 1px;
+    border: 2px solid #3D5B80;
+    margin-right: .5em;
+}
