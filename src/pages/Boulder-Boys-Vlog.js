@@ -7,7 +7,7 @@ import Navigation from '../components/navigation'
 import Link from "gatsby-link";
 import article from '../components/article-preview'
 
-class Vlog extends React.Component {
+class BoulderBoysVlog extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allContentfulBlogPost.edges')
@@ -19,6 +19,10 @@ class Vlog extends React.Component {
         <Helmet title={siteTitle} />
         <Hero data={author.node} />
         <Navigation />
+          <Link to="/kategorien/"
+                style={{textDecoration: 'none'}}>
+              <h2 className="section-headline">Alle Kategorien</h2>
+          </Link>
         <div className="wrapper">
 
             {/*
@@ -55,7 +59,7 @@ class Vlog extends React.Component {
   }
 }
 
-export default Vlog
+export default BoulderBoysVlog
 
 export const pageQuery = graphql`
   query VlogQuery {

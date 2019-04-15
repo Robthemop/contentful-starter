@@ -6,6 +6,7 @@ import Navigation from '../components/navigation'
 
 
 import heroStyles from '../components/hero.module.css'
+import Link from "gatsby-link";
 
 class BlogPostTemplate extends React.Component {
     render() {
@@ -15,10 +16,22 @@ class BlogPostTemplate extends React.Component {
         return (
             <div style={{background: '#FFF'}}>
                 <Navigation/>
-                <h2 className="section-headline">{post.title}</h2>
-                <h2>
-                    {post.category.title}
-                </h2>
+
+                <Link to="/kategorien/"
+                      style={{textDecoration: 'none'}}>
+                    <h2 className="section-headline">Alle Kategorien</h2>
+                </Link>
+
+                <Link to={`/${post.category.title}/`}
+                      style={{textDecoration: 'none'}}>
+                    <h3>
+                        {post.category.title}
+                    </h3>
+                </Link>
+
+                <h2>{post.title}</h2>
+
+
                 <Helmet title={`${post.title} | ${post.category.title}`}/>
                 <div className={heroStyles.hero}>
                     <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes}/>
