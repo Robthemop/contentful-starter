@@ -15,18 +15,20 @@ class BlogPostTemplate extends React.Component {
         return (
             <div style={{background: '#FFF'}}>
                 <Navigation/>
+                <h2 className="section-headline">{post.title}</h2>
+                <h2>
+                    {post.category.title}
+                </h2>
                 <Helmet title={`${post.title} | ${post.category.title}`}/>
                 <div className={heroStyles.hero}>
                     <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes}/>
                 </div>
                 <div className="wrapper">
-                    <h1 className="section-headline">{post.title}</h1>
-                    <h1>
-                        {post.category.title}
-                    </h1>
-                    <p>
+
+                    {/*<h2>
                         {post.publishDate}
-                    </p>
+                    </h2>*/}
+
                     <div className={heroStyles.p}
                          dangerouslySetInnerHTML={{
                              __html: post.body.childMarkdownRemark.html,
