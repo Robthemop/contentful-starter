@@ -19,7 +19,7 @@ class BlogPostTemplate extends React.Component {
 
                 <Link to="/kategorien/"
                       style={{textDecoration: 'none'}}>
-                    <h2 className="section-headline">Alle Kategorien</h2>
+                    <h2 className="section-headline">Alle Kategorien anzeigen</h2>
                 </Link>
 
                 <Link to={`/${post.category.title}/`}
