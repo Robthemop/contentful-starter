@@ -65,9 +65,11 @@ a {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: table-row;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-gap: 1vmin;
+    justify-items: center;
+    align-items: center;
 }
 
 /**

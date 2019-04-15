@@ -91,6 +91,11 @@ export const pageQuery = graphql`
     edges{
         node{
             title
+            categoryImage {
+            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: PAD) {
+             ...GatsbyContentfulSizes_tracedSVG
+            }
+          }
          }
      }
     }

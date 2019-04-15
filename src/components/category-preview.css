@@ -3,12 +3,12 @@
 }
 
 .tag {
-    color: #3D5B80;
+    color: #A0A0A0;
     text-decoration: none;
     display: inline-block;
     padding: .33333rem .5rem;
-    line-height: 1px;
-    border-radius: 1px;
-    border: 2px solid #3D5B80;
+    line-height: 1;
+    border-radius: 2px;
+    border: 1px solid #3D5B80;
     margin-right: .5em;
 }
