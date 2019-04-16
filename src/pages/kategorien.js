@@ -1,103 +1,1 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import styles from './blog.module.css'
-import Navigation from '../components/navigation'
-import Hero from '../components/hero'
-import ArticlePreview from "../components/category-preview";
-import category from '../components/category-preview.module.css';
-
-class Kategorien extends React.Component {
-
-
-    render() {
-        const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-        const category = get(this, 'props.data.allContentfulCategory.edges')
-        const [author] = get(this, 'props.data.allContentfulPerson.edges')
-
-        return (
-            <div style={{background: '#FFF'}}>
-                <Hero data={author.node}/>
-                <Navigation/>
-                <Helmet title={siteTitle}/>
-                <div style={{textAlign: 'justify'}}>
-                    <div className="wrapper">
-
-                        <h2 className="section-headline">Wähle eine Kategorie!</h2>
-
-                        <ul className="category-list">
-                            {category.map(({node}) => {
-                                return (
-                                    <li key={node.slug}>
-                                        <ArticlePreview category={node}/>
-                                    </li>
-                                )
-                            })}
-                        </ul>
-
-
-                        <div style={{marginTop: 25, color: "#3D5B80"}}>
-                            <Link to="/"
-                                  style={{textDecoration: 'none'}}>
-                                <h3>klick mich, um alle posts zu sehen!</h3>
-                            </Link>
-                        </div>
-
-                        <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
-                           title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
-                           rel="nofollow" target="_blank"><img
-                            src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_468x60.jpg"
-                            alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
-                            border="0"
-                            id="imgBF"
-                        />
-                        </a>
-                        <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=23&cpid=1&prid=1&subid=&view=1"
-                             height="1"
-                             width="1"
-                             border="0"
-                             id="imgBF"
-                        />
-                    </div>
-                </div>
-            </div>
-        )
-    }
-}
-
-export default Kategorien
-
-export const pageQuery = graphql`
-  query KategorienQuery {
-    allContentfulPerson(filter: { id: { eq: "c6JKKjih2XjAeggsVNbWGrb" } }) {
-      edges {
-        node {
-          name
-          heroImage: image {
-            sizes(
-              maxWidth: 3728
-              maxHeight: 2376
-              resizingBehavior: PAD
-              background: "rgb:FFFFFF"
-            ) {
-              ...GatsbyContentfulSizes_tracedSVG
-            }
-          }
-        }
-      }
-    }
-    allContentfulCategory{
-    edges{
-        node{
-            title
-            categoryImage {
-            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: PAD) {
-             ...GatsbyContentfulSizes_tracedSVG
-            }
-          }
-         }
-     }
-    }
-  }
-`
+import React from 'react'import Link from 'gatsby-link'import get from 'lodash/get'import Helmet from 'react-helmet'import styles from './blog.module.css'import Navigation from '../components/navigation'import Hero from '../components/hero'import ArticlePreview from "../components/category-preview";import category from '../components/category-preview.module.css';class Kategorien extends React.Component {    render() {        const siteTitle = get(this, 'props.data.site.siteMetadata.title')        const category = get(this, 'props.data.allContentfulCategory.edges')        const [author] = get(this, 'props.data.allContentfulPerson.edges')        return (            <div style={{background: '#FFF'}}>                <Hero data={author.node}/>                <Navigation/>                <Helmet title={siteTitle}/>                <div style={{textAlign: 'justify'}}>                    <div className="wrapper">                        <h2 className="section-headline">Wähle eine Kategorie!</h2>                        <ul className="category-list">                            {category.map(({node}) => {                                return (                                    <li key={node.slug}>                                        <ArticlePreview category={node}/>                                    </li>                                )                            })}                        </ul>                        <div style={{marginTop: 25, color: "#3D5B80"}}>                            <Link to="/"                                  style={{textDecoration: 'none'}}>                                <h3>klick mich, um alle posts zu sehen!</h3>                            </Link>                        </div>                        <a href="https://www.instagram.com/boulderboys.de/"                           title="boulder boys auf instagram"                           rel="nofollow" target="_blank"><img                            src="https://cdn0.iconfinder.com/data/icons/sketching-11/128/instagram-512.png"                            alt="boulderboys auf instagram"                            id="instagramImg"                            border="0"                        />                        </a>                        <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"                           title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"                           rel="nofollow" target="_blank"><img                            src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_468x60.jpg"                            alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"                            border="0"                            id="imgBF"                        />                        </a>                        <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=23&cpid=1&prid=1&subid=&view=1"                             height="1"                             width="1"                             border="0"                             id="imgBF"                        />                    </div>                </div>            </div>        )    }}export default Kategorienexport const pageQuery = graphql`  query KategorienQuery {    allContentfulPerson(filter: { id: { eq: "c6JKKjih2XjAeggsVNbWGrb" } }) {      edges {        node {          name          heroImage: image {            sizes(              maxWidth: 3728              maxHeight: 2376              resizingBehavior: PAD              background: "rgb:FFFFFF"            ) {              ...GatsbyContentfulSizes_tracedSVG            }          }        }      }    }    allContentfulCategory{    edges{        node{            title            categoryImage {            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: PAD) {             ...GatsbyContentfulSizes_tracedSVG            }          }         }     }    }  }`

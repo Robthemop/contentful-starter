@@ -22,6 +22,11 @@ class BoulderAusruestung extends React.Component {
 
                     <Link to="/kategorien/"
                           style={{textDecoration: 'none'}}>
+                        <h2 className="section-headline">Instagram Seite Anzeigen</h2>
+                    </Link>
+
+                    <Link to="/kategorien/"
+                          style={{textDecoration: 'none'}}>
                         <h2 className="section-headline">Alle Kategorien anzeigen</h2>
                     </Link>
 

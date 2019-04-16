@@ -6,6 +6,7 @@ import styles from './blog.module.css'
 import Navigation from '../components/navigation'
 import Hero from '../components/hero'
 
+
 class Contact extends React.Component {
 
 
@@ -20,6 +21,7 @@ class Contact extends React.Component {
                 <Navigation/>
                 <Helmet title={siteTitle}/>
                 <div style={{textAlign: 'justify'}}>
+
                     <div className="wrapper">
                         <h3>Sende mir eine E-Mail:</h3>
 
@@ -64,6 +66,17 @@ class Contact extends React.Component {
                               style={{textDecoration: 'none'}}>
                             <h2 className="section-bottomLine">Alle Kategorien anzeigen</h2>
                         </Link>
+
+                        <a href="https://www.instagram.com/boulderboys.de/"
+                           title="boulder boys auf instagram"
+                           rel="nofollow" target="_blank"><img
+                            src="https://cdn0.iconfinder.com/data/icons/sketching-11/128/instagram-512.png"
+                            alt="boulderboys auf instagram"
+                            id="instagramImg"
+                            border="0"
+
+                        />
+                        </a>
 
                         <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
                            title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
