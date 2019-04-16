@@ -20,10 +20,10 @@ class BlogPostTemplate extends React.Component {
                     <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes}/>
                 </div>
                 <div className={styles.category}>
-                <Link to={`/${post.category.title}/`}
-                      style={{textDecoration: 'none'}}>
-                    <h1 className={styles.categoryTitle}>{post.category.title}</h1>
-                </Link>
+                    <Link to={`/${post.category.title}/`}
+                          style={{textDecoration: 'none'}}>
+                        <h1 className={styles.categoryTitle}>{post.category.title}</h1>
+                    </Link>
                 </div>
 
                 <Navigation/>
@@ -48,7 +48,7 @@ class BlogPostTemplate extends React.Component {
 
                     <Link to="/kategorien/"
                           style={{textDecoration: 'none'}}>
-                    <h2 className="section-bottomLine">Alle Kategorien anzeigen</h2>
+                        <h2 className="section-bottomLine">Alle Kategorien anzeigen</h2>
                     </Link>
 
 

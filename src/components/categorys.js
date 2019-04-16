@@ -8,7 +8,7 @@ export default ({categoryData}) => (
     <div className={styles.category}>
         <Link to={`/${categoryData.title}/`}
               style={{textDecoration: 'none'}}>
-        <h3 className={styles.categoryTitle}>{categoryData.title}</h3>
+            <h3 className={styles.categoryTitle}>{categoryData.title}</h3>
         </Link>
-        </div>
+    </div>
 )

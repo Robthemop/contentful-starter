@@ -6,11 +6,11 @@ import styles from './category-preview.module.css'
 
 export default ({category}) => (
 
-<div className={styles.border}>
+    <div className={styles.border}>
 
-    <p className={styles.categoryTitle}>
+        <p className={styles.categoryTitle}>
             <Link to={`/${category.title}/`} style={{textDecoration: 'none'}}>
-                {category.title}
+                {category.title} {category.name}
             </Link>
         </p>
 

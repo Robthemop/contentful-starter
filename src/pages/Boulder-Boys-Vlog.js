@@ -3,8 +3,8 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import ArticlePreview from '../components/article-preview'
 import Navigation from '../components/navigation'
-import Link from "gatsby-link";
-import Categorys from '../components/categorys'
+import Link from "gatsby-link"
+import Hero from "../components/hero"
 
 
 class BoulderBoysVlog extends React.Component {
@@ -12,14 +12,12 @@ class BoulderBoysVlog extends React.Component {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title')
         const posts = get(this, 'props.data.allContentfulBlogPost.edges')
         const [author] = get(this, 'props.data.allContentfulPerson.edges')
-        const [categorys] = get(this, 'props.data.allContentfulCategory.edges')
 
 
         return (
             <div style={{background: '#fff'}}>
                 <Helmet title={siteTitle}/>
-                <Categorys categoryData={categorys.node}/>
-
+                <Hero data={author.node}/>
                 <Navigation/>
                 <div className="wrapper">
 
@@ -92,7 +90,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulPerson(filter: { id: { eq: "c15jwOBqpxqSAOy2eOO4S0m" } }) {
+    allContentfulPerson(filter: { id: { eq: "c67mw0DGC5fIf8tnsoZ5v3q" } }) {
       edges {
         node {
           name

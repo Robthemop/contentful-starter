@@ -5,21 +5,18 @@ import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
 import Navigation from '../components/navigation'
 import Link from "gatsby-link";
-import Categorys from '../components/categorys'
 
 class BoulderBasics extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title')
         const posts = get(this, 'props.data.allContentfulBlogPost.edges')
         const [author] = get(this, 'props.data.allContentfulPerson.edges')
-        const [categorys] = get(this, 'props.data.allContentfulCategory.edges')
 
 
         return (
             <div style={{background: '#FFF'}}>
                 <Helmet title={siteTitle}/>
                 <Hero data={author.node}/>
-                <Categorys categoryData={categorys.node}/>
                 <Navigation/>
                 <div className="wrapper">
 
@@ -37,6 +34,7 @@ class BoulderBasics extends React.Component {
                             )
                         })}
                     </ul>
+
 
                     <Link to="/kategorien/"
                           style={{textDecoration: 'none'}}>
@@ -93,7 +91,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulPerson(filter: { id: { eq: "c15jwOBqpxqSAOy2eOO4S0m" } }) {
+    allContentfulPerson(filter: { id: { eq: "c4cNLshPowfDz3fQmQXlDTw" } }) {
       edges {
         node {
           name

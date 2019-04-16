@@ -6,20 +6,17 @@ import ArticlePreview from '../components/article-preview'
 import Navigation from '../components/navigation'
 import Link from "gatsby-link";
 import title from '../components/category-preview'
-import Categorys from '../components/categorys'
 
 class BoulderAusruestung extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title')
         const posts = get(this, 'props.data.allContentfulBlogPost.edges')
         const [author] = get(this, 'props.data.allContentfulPerson.edges')
-        const [categorys] = get(this, 'props.data.allContentfulCategory.edges')
 
         return (
             <div style={{background: '#FFF'}}>
                 <Helmet title={siteTitle}/>
                 <Hero data={author.node}/>
-                <Categorys categoryData={categorys.node}/>
                 <Navigation/>
                 <div className="wrapper">
 
@@ -97,7 +94,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulPerson(filter: { id: { eq: "c15jwOBqpxqSAOy2eOO4S0m" } }) {
+    allContentfulPerson(filter: { id: { eq: "c3vmDTUtFqgPlNic7TBkMRw" } }) {
       edges {
         node {
           name
@@ -114,7 +111,7 @@ export const pageQuery = graphql`
         }
       }
     }
-  allContentfulCategory(filter:{ contentful_id: {eq: "314YasijKUE4o8yIasyK4e"}}){
+  allContentfulCategory(filter:{ contentful_id: {eq: "314YasijKUE4o8yIasyK4e" } } ) {
     edges{
       node{
         title
