@@ -11,9 +11,12 @@
     line-height: 1;
     border-radius: 2px;
     margin-right: .5em;
+    margin-top: 10px;
 }
 
-.border {
-    border-bottom: 1px solid #ddd;
+.preview {
+    border-bottom: 1.5px solid #a0337a;
+    margin-top: 2em;
+
 }
 

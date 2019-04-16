@@ -16,19 +16,21 @@ class BlogPostTemplate extends React.Component {
         return (
             <div style={{background: '#FFF'}}>
 
-                <div className={heroStyles.hero}>
-                    <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes}/>
-                </div>
-                <div className={styles.category}>
-                    <Link to={`/${post.category.title}/`}
-                          style={{textDecoration: 'none'}}>
-                        <h1 className={styles.categoryTitle}>{post.category.title}</h1>
-                    </Link>
-                </div>
 
-                <Navigation/>
 
                 <div className="wrapper">
+
+                    <div className={heroStyles.hero}>
+                        <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes}/>
+                    </div>
+                    <div className={styles.category}>
+                        <Link to={`/${post.category.title}/`}
+                              style={{textDecoration: 'none'}}>
+                            <h1 className={styles.categoryTitle}>{post.category.title}</h1>
+                        </Link>
+                    </div>
+
+                    <Navigation/>
 
                     <Link to="/kategorien/"
                           style={{textDecoration: 'none'}}>
@@ -52,21 +54,41 @@ class BlogPostTemplate extends React.Component {
                     </Link>
 
 
-                    <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
-                       title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
-                       rel="nofollow" target="_blank"><img
-                        src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_468x60.jpg"
-                        alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
-                        border="0"
-                        id="imgBF"
-                    />
-                    </a>
-                    <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=23&cpid=1&prid=1&subid=&view=1"
-                         height="1"
-                         width="1"
-                         border="0"
-                         id="imgBF"
-                    />
+                    <div>
+
+                        <div style={{display: "inline-block"}}>
+                            <a href="https://www.bergfreunde-partner.de/banner/dynamisch/dyn.php"
+                               title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
+                               rel="nofollow"
+                               target="_blank">
+                                <img src="https://www.bergfreunde-partner.de/banner/bergfreunde.jpg"
+                                     alt="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
+                                     border="0"
+                                     id="bfImg"
+                                />
+                            </a>
+                            <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=168&cpid=1&prid=1&subid=&view=1"
+                                 height="1"
+                                 width="1"
+                                 border="0"
+                                 id="bfImg"
+                            />
+                        </div>
+
+                        <div style={{display: "inline-block", marginLeft: "3em"}}>
+                            <a href="https://www.instagram.com/boulderboys.de/"
+                               title="boulder boys auf instagram"
+                               rel="nofollow" target="_blank">
+                                <img
+                                    src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-256.png"
+                                    alt="boulderboys auf instagram"
+                                    id="instagramImg"
+                                    border="0"
+                                />
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         )

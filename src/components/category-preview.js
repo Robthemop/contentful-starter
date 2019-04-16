@@ -6,18 +6,19 @@ import styles from './category-preview.module.css'
 
 export default ({category}) => (
 
-    <div className={styles.border}>
-
-        <p className={styles.categoryTitle}>
-            <Link to={`/${category.title}/`} style={{textDecoration: 'none'}}>
-                {category.title} {category.name}
-            </Link>
-        </p>
+    <div className={styles.preview}>
 
         <Link to={`/${category.title}/`} style={{textDecoration: 'none'}}>
             <Img alt="" sizes={category.categoryImage.sizes}>
             </Img>
         </Link>
+
+        <p className={styles.categoryTitle}>
+            <Link to={`/${category.title}/`} style={{textDecoration: 'none'}}>
+                {category.title} {category.name}
+            </Link>
+    </p>
+
 
     </div>
 )

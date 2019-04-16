@@ -26,21 +26,14 @@ img {
     border-radius: 8px;
 }
 
-#instagramImg {
-    display: inline-block;
-    width: 30%;
-    margin: 0;
-    border-radius: 8px;
-    margin-top: 1%;
+#instagramImg  {
+    width: 125px;
+    height: 125px;
 }
 
-#bfImg{
-    display: inline-block;
-    width: 30%;
-    margin: 0;
-    border-radius: 8px;
-    margin-top: 1%;
-    margin-left: 40%;
+#bfImg {
+    width: 125px;
+    height: 125px;
 }
 
 h1 {

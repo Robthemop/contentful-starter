@@ -17,11 +17,13 @@ class Impressum extends React.Component {
 
         return (
             <div style={{background: '#FFF'}}>
-                <Hero data={author.node}/>
-                <Navigation/>
                 <Helmet title={siteTitle}/>
                 <div style={{textAlign: 'justify'}}>
                     <div className="wrapper">
+
+                        <Hero data={author.node}/>
+                        <Navigation/>
+
                         <h3>Impressum</h3>
 
                         <h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
@@ -121,32 +123,41 @@ class Impressum extends React.Component {
 
                         <p>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
 
-                        <a href="https://www.instagram.com/boulderboys.de/"
-                           title="boulder boys auf instagram"
-                           rel="nofollow" target="_blank"><img
-                            src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-256.png"
-                            alt="boulderboys auf instagram"
-                            id="instagramImg"
-                            border="0"
+                        <div>
 
-                        />
-                        </a>
+                            <div style={{display: "inline-block"}}>
+                                <a href="https://www.bergfreunde-partner.de/banner/dynamisch/dyn.php"
+                                   title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
+                                   rel="nofollow"
+                                   target="_blank">
+                                    <img src="https://www.bergfreunde-partner.de/banner/bergfreunde.jpg"
+                                         alt="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
+                                         border="0"
+                                         id="bfImg"
+                                    />
+                                </a>
+                                <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=168&cpid=1&prid=1&subid=&view=1"
+                                     height="1"
+                                     width="1"
+                                     border="0"
+                                     id="bfImg"
+                                />
+                            </div>
 
-                        <a href="https://www.bergfreunde-partner.de/banner/dynamisch/dyn.php"
-                           title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
-                           rel="nofollow"
-                           target="_blank">
-                            <img src="https://www.bergfreunde-partner.de/banner/bergfreunde.jpg"
-                                 alt="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
-                                 border="0"
-                                 id="bfImg"
-                            />
-                        </a><img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=168&cpid=1&prid=1&subid=&view=1"
-                                 height="1"
-                                 width="1"
-                                 border="0"
-                                 id="bfImg"
-                    />
+                            <div style={{display: "inline-block", marginLeft: "3em"}}>
+                                <a href="https://www.instagram.com/boulderboys.de/"
+                                   title="boulder boys auf instagram"
+                                   rel="nofollow" target="_blank">
+                                    <img
+                                        src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-256.png"
+                                        alt="boulderboys auf instagram"
+                                        id="instagramImg"
+                                        border="0"
+                                    />
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>

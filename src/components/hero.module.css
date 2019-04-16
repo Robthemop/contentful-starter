@@ -3,6 +3,7 @@
     position: relative;
     background: #fff;
     text-align: center;
+    align-items: center;
 }
 
 .heroImage {
@@ -16,12 +17,13 @@
 
 .heroDetails {
     position: absolute;
-    background: rgb(255, 255, 255, 0.9);
+    background: rgb(255, 255, 255, 0.7);
     left: 50%;
     bottom: 30%;
     transform: translate(-50%, 0);
     font-size: 30px;
     padding: 0 0.5em;
+    align-self: center;
 }
 
 @media (min-width: 600px) {
@@ -32,7 +34,7 @@
 
 @media (min-width: 1000px) {
     .heroDetails {
-        font-size: 80px;
+        font-size: 60px;
     }
 }
 
