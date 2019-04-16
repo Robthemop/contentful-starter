@@ -60,9 +60,10 @@ class Contact extends React.Component {
 
                         </form>
 
-                        <div style={{marginTop: 25, color: "#3D5B80"}}>
-                            <Link to="/"><h3>Bring mich zum Blog</h3></Link>
-                        </div>
+                        <Link to="/kategorien/"
+                              style={{textDecoration: 'none'}}>
+                            <h2 className="section-bottomLine">Alle Kategorien anzeigen</h2>
+                        </Link>
 
                         <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
                            title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"

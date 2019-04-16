@@ -3,10 +3,10 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import Img from 'gatsby-image'
 import Navigation from '../components/navigation'
-
-
 import heroStyles from '../components/hero.module.css'
 import Link from "gatsby-link";
+import styles from '../components/category.module.css'
+
 
 class BlogPostTemplate extends React.Component {
     render() {
@@ -15,38 +15,41 @@ class BlogPostTemplate extends React.Component {
 
         return (
             <div style={{background: '#FFF'}}>
-                <Navigation/>
 
-                <Link to="/kategorien/"
-                      style={{textDecoration: 'none'}}>
-                    <h2 className="section-headline">Alle Kategorien anzeigen</h2>
-                </Link>
-
-                <Link to={`/${post.category.title}/`}
-                      style={{textDecoration: 'none'}}>
-                    <h3>
-                        {post.category.title}
-                    </h3>
-                </Link>
-
-                <h2>{post.title}</h2>
-
-
-                <Helmet title={`${post.title} | ${post.category.title}`}/>
                 <div className={heroStyles.hero}>
                     <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes}/>
                 </div>
+                <div className={styles.category}>
+                <Link to={`/${post.category.title}/`}
+                      style={{textDecoration: 'none'}}>
+                    <h1 className={styles.categoryTitle}>{post.category.title}</h1>
+                </Link>
+                </div>
+
+                <Navigation/>
+
                 <div className="wrapper">
 
-                    {/*<h2>
-                        {post.publishDate}
-                    </h2>*/}
+                    <Link to="/kategorien/"
+                          style={{textDecoration: 'none'}}>
+                        <h2 className="section-headline">Alle Kategorien anzeigen</h2>
+                    </Link>
+
+                    <Helmet title={`${post.title} | ${post.category.title}`}/>
+
+                    <h2>{post.title}</h2>
+
 
                     <div className={heroStyles.p}
                          dangerouslySetInnerHTML={{
                              __html: post.body.childMarkdownRemark.html,
                          }}
                     />
+
+                    <Link to="/kategorien/"
+                          style={{textDecoration: 'none'}}>
+                    <h2 className="section-bottomLine">Alle Kategorien anzeigen</h2>
+                    </Link>
 
 
                     <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"

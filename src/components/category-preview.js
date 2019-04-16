@@ -5,9 +5,10 @@ import Img from 'gatsby-image'
 import styles from './category-preview.module.css'
 
 export default ({category}) => (
-    <div className={styles.border}>
 
-        <p className={styles.categoryTitle}>
+<div className={styles.border}>
+
+    <p className={styles.categoryTitle}>
             <Link to={`/${category.title}/`} style={{textDecoration: 'none'}}>
                 {category.title}
             </Link>
@@ -17,5 +18,6 @@ export default ({category}) => (
             <Img alt="" sizes={category.categoryImage.sizes}>
             </Img>
         </Link>
+
     </div>
 )

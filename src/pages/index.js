@@ -36,6 +36,9 @@ class RootIndex extends React.Component {
                             )
                         })}
                     </ul>
+
+                    <h2 className="section-bottomLine">Alle Kategorien anzeigen</h2>
+
                     <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
                        title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
                        rel="nofollow" target="_blank"><img
