@@ -16,7 +16,7 @@ class BoulderBoysVlog extends React.Component {
 
 
         return (
-            <div style={{background: '#FFF'}}>
+            <div style={{background: '#fff'}}>
                 <Helmet title={siteTitle}/>
                 <Categorys categoryData={categorys.node}/>
 
