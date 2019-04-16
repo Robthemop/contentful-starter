@@ -1,0 +1,12 @@
+.category {
+    padding-top: 20px;
+    position: relative;
+    background: #fff;
+    text-align: center;
+}
+
+.categoryTitle {
+    margin: 0;
+    font-size: 1.125em;
+    font-weight: bold;
+}
