@@ -28,9 +28,19 @@ img {
 
 #instagramImg {
     display: inline-block;
-    width: 5%;
+    width: 30%;
     margin: 0;
     border-radius: 8px;
+    margin-top: 1%;
+}
+
+#bfImg{
+    display: inline-block;
+    width: 30%;
+    margin: 0;
+    border-radius: 8px;
+    margin-top: 1%;
+    margin-left: 40%;
 }
 
 h1 {

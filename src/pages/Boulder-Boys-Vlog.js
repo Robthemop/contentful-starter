@@ -44,7 +44,7 @@ class BoulderBoysVlog extends React.Component {
                     <a href="https://www.instagram.com/boulderboys.de/"
                        title="boulder boys auf instagram"
                        rel="nofollow" target="_blank"><img
-                        src="https://cdn0.iconfinder.com/data/icons/sketching-11/128/instagram-512.png"
+                        src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-256.png"
                         alt="boulderboys auf instagram"
                         id="instagramImg"
                         border="0"
@@ -52,21 +52,21 @@ class BoulderBoysVlog extends React.Component {
                     />
                     </a>
 
-                    <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
-                       title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
-                       rel="nofollow" target="_blank"><img
-                        src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_468x60.jpg"
-                        alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
-                        border="0"
-                        id="imgBF"
-                    />
-                    </a>
-                    <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=23&cpid=1&prid=1&subid=&view=1"
-                         height="1"
-                         width="1"
-                         border="0"
-                         id="imgBF"
-                    />
+                    <a href="https://www.bergfreunde-partner.de/banner/dynamisch/dyn.php"
+                       title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
+                       rel="nofollow"
+                       target="_blank">
+                        <img src="https://www.bergfreunde-partner.de/banner/bergfreunde.jpg"
+                             alt="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
+                             border="0"
+                             id="bfImg"
+                        />
+                    </a><img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=168&cpid=1&prid=1&subid=&view=1"
+                             height="1"
+                             width="1"
+                             border="0"
+                             id="bfImg"
+                />
                 </div>
             </div>
         )
