@@ -13,11 +13,11 @@ export default ({category}) => (
             </Img>
         </Link>
 
-        <p className={styles.categoryTitle}>
+        <h3 className={styles.categoryTitle}>
             <Link to={`/${category.title}/`} style={{textDecoration: 'none'}}>
                 {category.title} {category.name}
             </Link>
-    </p>
+    </h3>
 
 
     </div>

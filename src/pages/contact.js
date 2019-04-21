@@ -24,7 +24,12 @@ class Contact extends React.Component {
 
                         <Hero data={author.node}/>
                         <Navigation/>
-                        <h3>Sende mir eine E-Mail:</h3>
+
+                        <div><a href={"https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow"}
+                                style={{textDecoration: "none"}}><h3>Du kannst mir hier eine Nachricht auf YouTube schicken</h3></a></div>
+                        <a href={"https://www.instagram.com/boulderboys.de/"}
+                           style={{textDecoration: "none"}}><h3>und hier klicken, um mir bei Instagram eine PM zu schreiben.</h3></a>
+                        <h3>oder du füllst das Formular aus und ich bekomme eine E-Mail</h3>
 
                         <form
                             name="contact-form"
@@ -33,7 +38,7 @@ class Contact extends React.Component {
                             data-netlify-honeypot="bot-field"
                         >
 
-                            <div><input name="name" placeholder="Your Name" type="text"/></div>
+                            <div><input name="name" placeholder="name" type="text"/></div>
 
                             <div style={{marginTop: 10}}><input name="email" placeholder="name@name.com" type="email"/>
                             </div>
@@ -58,7 +63,7 @@ class Contact extends React.Component {
                             <div data-netlify-recaptcha="true"></div>
 
                             <p>
-                                <button type="submit">Send</button>
+                                <button type="submit">abschicken</button>
                             </p>
 
                         </form>
@@ -70,37 +75,17 @@ class Contact extends React.Component {
 
                         <div>
 
-                            <div style={{display: "inline-block"}}>
-                                <a href="https://www.bergfreunde-partner.de/banner/dynamisch/dyn.php"
-                                   title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
-                                   rel="nofollow"
-                                   target="_blank">
-                                    <img src="https://www.bergfreunde-partner.de/banner/bergfreunde.jpg"
-                                         alt="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
-                                         border="0"
-                                         id="bfImg"
-                                    />
-                                </a>
-                                <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=168&cpid=1&prid=1&subid=&view=1"
-                                     height="1"
-                                     width="1"
-                                     border="0"
-                                     id="bfImg"
-                                />
-                            </div>
-
-                            <div style={{display: "inline-block", marginLeft: "3em"}}>
-                                <a href="https://www.instagram.com/boulderboys.de/"
-                                   title="boulder boys auf instagram"
-                                   rel="nofollow" target="_blank">
-                                    <img
-                                        src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-256.png"
-                                        alt="boulderboys auf instagram"
-                                        id="instagramImg"
-                                        border="0"
-                                    />
-                                </a>
-                            </div>
+                            <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
+                               title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
+                               rel="nofollow"
+                               target="_blank">
+                                <img src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_728x90.jpg"
+                                     alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
+                                     border="0" /></a>
+                            <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=30&cpid=1&prid=1&subid=&view=1"
+                                 height="1"
+                                 width="1"
+                                 border="0" />
 
                         </div>
                     </div>

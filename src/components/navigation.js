@@ -21,11 +21,11 @@ export default () => (
                 `}
             >
                 <Link exact to="/"
-                      activeStyle={{color: "#7AB6FF", textDecoration: 'underline'}}
+                      activeStyle={{color: "#F1582A"}}
                       partiallyActive={true}
                       style={{textDecoration: 'none'}}
                 >
-                    <b>Blog</b>
+                    <b>/</b>
                 </Link>
             </li>
 
@@ -37,11 +37,11 @@ export default () => (
                 color: ${color};
             }
                 `}>
-                <Link to="/Boulder-Boys-Vlog/"
-                      activeStyle={{color: "#7AB6FF", textDecoration: 'underline'}}
+                <Link to="/kategorien/"
+                      activeStyle={{color: "#F1582A"}}
                       style={{textDecoration: 'none'}}
                 >
-                    <b>Vlog</b>
+                    <b>kategorien</b>
                 </Link>
             </li>
 
@@ -54,10 +54,10 @@ export default () => (
             }
                 `}>
                 <Link to="/contact/"
-                      activeStyle={{color: "#7AB6FF", textDecoration: 'underline'}}
+                      activeStyle={{color: "#F1582A"}}
                       style={{textDecoration: 'none'}}
                 >
-                    <b>Kontakt</b>
+                    <b>kontakt</b>
                 </Link>
             </li>
 
@@ -71,11 +71,11 @@ export default () => (
                 `}>
 
                 <Link to="/impressum/"
-                      activeStyle={{color: "#7AB6FF", textDecoration: 'underline'}}
+                      activeStyle={{color: "#F1582A"}}
                       partiallyActive={true}
                       style={{textDecoration: 'none'}}
                 >
-                    <b>Impressum</b>
+                    <b>impressum</b>
                 </Link>
             </li>
 

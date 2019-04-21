@@ -12,7 +12,7 @@ export default ({article}) => (
         </Link>
         <small>
             <Link to={`/blog/${article.slug}`}
-                  style={{textDecoration: 'none'}}>
+                  style={{textDecoration: 'none', color: "#F1582A"}}>
                 {article.publishDate}
             </Link>
         </small>
