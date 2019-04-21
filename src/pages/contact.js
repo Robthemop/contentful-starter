@@ -29,7 +29,7 @@ class Contact extends React.Component {
                                 style={{textDecoration: "none"}}><h3>Du kannst mir hier eine Nachricht auf YouTube schicken</h3></a></div>
                         <a href={"https://www.instagram.com/boulderboys.de/"}
                            style={{textDecoration: "none"}}><h3>und hier klicken, um mir bei Instagram eine PM zu schreiben.</h3></a>
-                        <h3>oder du füllst das Formular aus und ich bekomme eine E-Mail</h3>
+                        <h3>Oder gib deine Nachricht einfach hier ein und ich erhalten eine Mail</h3>
 
                         <form
                             name="contact-form"
