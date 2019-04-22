@@ -123,6 +123,13 @@ class Impressum extends React.Component {
 
                         <p>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
 
+                        <h3>Affiliate Links</h3>
+
+                        <p>Auf dieser Seite befinden sich Affiliate Links in den einzelnen Blog-Artikeln, sowie
+                            Affiliate Werbebanner. In diesem Rahmen nehme
+                            ich an dem Amazon Partnerprogramm und an dem Bergfreunde Partnerprogramm teil.</p>
+
+
                         <div>
 
                             <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
@@ -131,11 +138,12 @@ class Impressum extends React.Component {
                                target="_blank">
                                 <img src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_728x90.jpg"
                                      alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
-                                     border="0" /></a>
-                            <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=30&cpid=1&prid=1&subid=&view=1"
-                                 height="1"
-                                 width="1"
-                                 border="0" />
+                                     border="0"/></a>
+                            <img
+                                src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=30&cpid=1&prid=1&subid=&view=1"
+                                height="1"
+                                width="1"
+                                border="0"/>
 
                         </div>
                     </div>
