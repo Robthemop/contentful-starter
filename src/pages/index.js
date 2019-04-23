@@ -98,7 +98,7 @@ export const pageQuery = graphql`
             sizes(
               maxWidth: 3728
               maxHeight: 2376
-              resizingBehavior: PAD
+              resizingBehavior: FILL
               background: "rgb:FFFFFF"
             ) {
               ...GatsbyContentfulSizes_tracedSVG

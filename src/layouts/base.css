@@ -15,7 +15,7 @@ body {
     margin: 0;
 }
 
-link{
+Link {
     textDecoration: 'none';
 }
 
@@ -37,7 +37,7 @@ img {
 }
 
 h1 {
-    color: #0E76BE;
+    color: #F1582A;
     font-size: 12px;
 }
 h2 {
@@ -101,14 +101,14 @@ a {
     padding: 0 0 0.4em 0;
     margin: 0 0 5vmin 0;
     border-bottom: 1px solid #373F49;
-    color: #F1582A;
+    color: #0E76BE;
     font-weight: bold;
 }
 
 .section-bottomLine {
     padding: 0 0 0.4em 0;
     margin: 0 0 5vmin 0;
-    color: #F1582A;
+    color: #0E76BE;
     font-weight: bold;
 }
 

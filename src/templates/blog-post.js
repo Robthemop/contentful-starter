@@ -23,19 +23,21 @@ class BlogPostTemplate extends React.Component {
                     <div className={heroStyles.hero}>
                         <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes}/>
                     </div>
-                    <div className={styles.category}>
-                        <Link to={`/${post.category.title}/`}
-                              style={{textDecoration: 'none'}}>
-                            <h1 className={styles.categoryTitle}>{post.category.title}</h1>
-                        </Link>
-                    </div>
+
 
                     <Navigation/>
 
                     <Link to="/kategorien/"
                           style={{textDecoration: 'none'}}>
-                        <h2 className="section-headline">Alle Kategorien anzeigen</h2>
+                        <h3>Alle Kategorien anzeigen</h3>
                     </Link>
+
+                    <div>
+                        <Link to={`/${post.category.title}/`}
+                              style={{textDecoration: 'none'}}>
+                            <h2 className="section-headline">{post.category.title}</h2>
+                        </Link>
+                    </div>
 
                     <Helmet title={`${post.title} | ${post.category.title}`}/>
 
