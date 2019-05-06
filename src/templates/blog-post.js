@@ -20,6 +20,9 @@ class BlogPostTemplate extends React.Component {
 
                 <div className="wrapper">
 
+                    <h3>Klick auf das Banner, um dir meinen YouTube Vlog anzuschauen</h3>
+
+
                     <div className={heroStyles.hero}>
                         <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes}/>
                     </div>

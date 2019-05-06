@@ -21,6 +21,9 @@ class Impressum extends React.Component {
                 <div style={{textAlign: 'justify'}}>
                     <div className="wrapper">
 
+                        <h3>Klick auf das Banner, um dir meinen YouTube Vlog anzuschauen</h3>
+
+
                         <Hero data={author.node}/>
                         <Navigation/>
 
