@@ -19,6 +19,9 @@ class BoulderBoysVlog extends React.Component {
                 <Helmet title={siteTitle}/>
                 <div className="wrapper">
 
+                    <h3>Klick auf das Banner, um dir meinen YouTube Vlog anzuschauen</h3>
+
+
                     <Hero data={author.node}/>
                     <Navigation/>
 

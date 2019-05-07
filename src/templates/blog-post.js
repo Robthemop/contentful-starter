@@ -24,7 +24,9 @@ class BlogPostTemplate extends React.Component {
 
 
                     <div className={heroStyles.hero}>
+                        <a href="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow">
                         <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes}/>
+                        </a>
                     </div>
 
 
