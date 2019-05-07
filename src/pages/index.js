@@ -17,7 +17,8 @@ class RootIndex extends React.Component {
         return (
             <div style={{background: '#fff'}}>
 
-                <Helmet title={siteTitle}/>
+                <Helmet title={"Boulder Boys - Boulder Tipps für Anfänger"}/>
+
                 <div className="wrapper">
 
                     <Hero data={author.node}/>
