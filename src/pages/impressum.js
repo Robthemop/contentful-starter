@@ -17,7 +17,11 @@ class Impressum extends React.Component {
 
         return (
             <div style={{background: '#FFF'}}>
-                <Helmet title={siteTitle}/>
+                <Helmet>
+                    <title>Boulder Boys - Impressum</title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="Mein Impressum" />
+                </Helmet>
                 <div style={{textAlign: 'justify'}}>
                     <div className="wrapper">
 

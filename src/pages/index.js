@@ -17,7 +17,11 @@ class RootIndex extends React.Component {
         return (
             <div style={{background: '#fff'}}>
 
-                <Helmet title={"Boulder Boys - Boulder Tipps für Anfänger"}/>
+                <Helmet>
+                    <title>Boulder Boys - Ein Blog übers Bouldern</title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="Blog und Vlog übers Bouldern für Anfänger und Fortgeschrittene"/>
+                </Helmet>
 
                 <div className="wrapper">
 

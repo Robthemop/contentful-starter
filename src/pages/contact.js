@@ -17,7 +17,11 @@ class Contact extends React.Component {
 
         return (
             <div style={{background: '#FFF'}}>
-                <Helmet title={siteTitle}/>
+                <Helmet>
+                    <title>Boulder Boys - Kontakt</title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="Tritt in Kontakt" />
+                </Helmet>
                 <div style={{textAlign: 'justify'}}>
 
                     <div className="wrapper">
