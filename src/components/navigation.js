@@ -45,6 +45,8 @@ export default () => (
                 </Link>
             </li>
 
+
+
             <li className={css`
                 display: inline-flex;
                 align-items: center;
@@ -77,6 +79,34 @@ export default () => (
                 >
                     <b>impressum</b>
                 </Link>
+            </li>
+
+            <li className={css`
+                display: inline-flex;
+                align-items: center;
+                margin: 0 1em;
+                &:hover {
+                color: ${color};
+            }
+                `}>
+                <a href="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow"
+                   style={{textDecoration: 'none'}}>
+                    <b>YT</b>
+                </a>
+            </li>
+
+            <li className={css`
+                display: inline-flex;
+                align-items: center;
+                margin: 0 1em;
+                &:hover {
+                color: ${color};
+            }
+                `}>
+                <a href="https://www.instagram.com/boulderboys.de/"
+                   style={{textDecoration: 'none'}}>
+                    <b>IG</b>
+                </a>
             </li>
 
         </ul>
