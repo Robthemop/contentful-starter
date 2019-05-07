@@ -1,22 +1,22 @@
 import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
 import Navigation from '../components/navigation'
-import Link from "gatsby-link";
+import Link from "gatsby-link"
+import Hero from "../components/hero"
 
 
-class BoulderSpots extends React.Component {
+class BouldernBoulderBoysVlog extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title')
         const posts = get(this, 'props.data.allContentfulBlogPost.edges')
         const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
+
         return (
             <div style={{background: '#fff'}}>
                 <Helmet title={siteTitle}/>
-
                 <div className="wrapper">
 
                     <Hero data={author.node}/>
@@ -50,11 +50,11 @@ class BoulderSpots extends React.Component {
                            target="_blank">
                             <img src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_728x90.jpg"
                                  alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
-                                 border="0"/></a>
+                                 border="0" /></a>
                         <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=30&cpid=1&prid=1&subid=&view=1"
                              height="1"
                              width="1"
-                             border="0"/>
+                             border="0" />
 
                     </div>
 
@@ -64,12 +64,12 @@ class BoulderSpots extends React.Component {
     }
 }
 
-export default BoulderSpots
+export default BouldernBoulderBoysVlog
 
 export const pageQuery = graphql`
-  query BoulderSpots {
+  query VlogQuery {
   
-  allContentfulBlogPost(filter: {category: {contentful_id: {eq:"5Yqtk99s2c0YgC8QsMceGc"} } },
+  allContentfulBlogPost(filter: {category: {contentful_id: {eq:"14c67jI28WqjAFNfWTgUbP"} } },
   sort: { fields: [publishDate], order: DESC })
   {
   
@@ -92,7 +92,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulPerson(filter: { id: { eq: "c376FGKHuwt3rYECpQOjy94" } }) {
+    allContentfulPerson(filter: { id: { eq: "c67mw0DGC5fIf8tnsoZ5v3q" } }) {
       edges {
         node {
           name
@@ -109,7 +109,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulCategory(filter:{ contentful_id: {eq: "5Yqtk99s2c0YgC8QsMceGc"}}){
+    allContentfulCategory(filter:{ contentful_id: {eq: "14c67jI28WqjAFNfWTgUbP"}}){
     edges{
       node{
         title

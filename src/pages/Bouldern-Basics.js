@@ -6,7 +6,7 @@ import ArticlePreview from '../components/article-preview'
 import Navigation from '../components/navigation'
 import Link from "gatsby-link";
 
-class BoulderBasics extends React.Component {
+class BouldernBasics extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title')
         const posts = get(this, 'props.data.allContentfulBlogPost.edges')
@@ -66,7 +66,7 @@ class BoulderBasics extends React.Component {
     }
 }
 
-export default BoulderBasics
+export default BouldernBasics
 
 export const pageQuery = graphql`
   query BoulderBasics {
