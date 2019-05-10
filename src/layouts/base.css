@@ -68,7 +68,7 @@ a {
     }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1600px) {
     .wrapper {
         width: calc(50% - 10vmin);
     }
