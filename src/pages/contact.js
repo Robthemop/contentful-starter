@@ -24,10 +24,9 @@ class Contact extends React.Component {
                 </Helmet>
                 <div style={{textAlign: 'justify'}}>
 
-                    <div className="wrapper">
+                    <Navigation/>
 
-                        <Hero data={author.node}/>
-                        <Navigation/>
+                    <div className="wrapper">
 
                         <div><a href={"https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow"}
                                 style={{textDecoration: "none"}}><h3>Du kannst mir hier eine Nachricht auf YouTube schicken</h3></a></div>

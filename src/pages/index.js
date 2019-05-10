@@ -23,16 +23,11 @@ class RootIndex extends React.Component {
                     <meta name="description" content="Blog und Vlog übers Bouldern für Anfänger und Fortgeschrittene"/>
                 </Helmet>
 
+            <Hero data={author.node}/>
+
+                <Navigation/>
+
                 <div className="wrapper">
-
-                    <Hero data={author.node}/>
-                    <Navigation/>
-
-                    <Link to="/kategorien/"
-                          style={{textDecoration: 'none'}}>
-                        <h2 className="section-headline">Alle Kategorien anzeigen</h2>
-                    </Link>
-
 
                     <ul className="article-list">
                         {posts.map(({node}) => {
@@ -103,7 +98,7 @@ export const pageQuery = graphql`
             sizes(
               maxWidth: 3728
               maxHeight: 2376
-              resizingBehavior: FILL
+              resizingBehavior: PAD
               background: "rgb:FFFFFF"
             ) {
               ...GatsbyContentfulSizes_tracedSVG

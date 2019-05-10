@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import styles from './navigation.module.css'
 import {css, cx} from 'emotion'
 
-const color = '#C7E0FF'
+const color = '#F1582A'
 
 
 export default () => (
@@ -90,6 +90,7 @@ export default () => (
             }
                 `}>
                 <a href="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow"
+                   target="_blank"
                    style={{textDecoration: 'none'}}>
                     <b>YT</b>
                 </a>
@@ -104,6 +105,7 @@ export default () => (
             }
                 `}>
                 <a href="https://www.instagram.com/boulderboys.de/"
+                   target="_blank"
                    style={{textDecoration: 'none'}}>
                     <b>IG</b>
                 </a>

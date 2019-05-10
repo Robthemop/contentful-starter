@@ -23,10 +23,11 @@ class Impressum extends React.Component {
                     <meta name="description" content="Mein Impressum" />
                 </Helmet>
                 <div style={{textAlign: 'justify'}}>
+
+                    <Navigation/>
+
                     <div className="wrapper">
 
-                        <Hero data={author.node}/>
-                        <Navigation/>
 
                         <h3>Impressum</h3>
 
