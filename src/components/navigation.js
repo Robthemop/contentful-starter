@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styles from './navigation.module.css'
 import {css, cx} from 'emotion'
+import { SocialIcon } from 'react-social-icons';
 
 const color = '#F1582A'
 
@@ -9,6 +10,41 @@ const color = '#F1582A'
 export default () => (
 
     <nav role="navigation">
+
+        <ul className={styles.navigation}>
+
+            <li className={css`
+                display: inline-flex;
+                align-items: center;
+                margin: 0 1em;
+                &:hover {
+                color: ${color};
+            }
+                `}>
+                <a href="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow"
+                   target="_blank"
+                   style={{textDecoration: 'none'}}>
+                    <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" />
+                </a>
+            </li>
+
+            <li className={css`
+                display: inline-flex;
+                align-items: center;
+                margin: 0 1em;
+                &:hover {
+                color: ${color};
+            }
+                `}>
+                <a href="https://www.instagram.com/boulderboys.de/"
+                   target="_blank"
+                   style={{textDecoration: 'none'}}>
+                    <SocialIcon url="http://instagram.com/boulderboys.de" />
+                </a>
+            </li>
+
+        </ul>
+
         <ul className={styles.navigation}>
 
             <li className={css`
@@ -25,7 +61,7 @@ export default () => (
                       partiallyActive={true}
                       style={{textDecoration: 'none'}}
                 >
-                    <b>/</b>
+                    <b>blog</b>
                 </Link>
             </li>
 
@@ -79,36 +115,6 @@ export default () => (
                 >
                     <b>impressum</b>
                 </Link>
-            </li>
-
-            <li className={css`
-                display: inline-flex;
-                align-items: center;
-                margin: 0 1em;
-                &:hover {
-                color: ${color};
-            }
-                `}>
-                <a href="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow"
-                   target="_blank"
-                   style={{textDecoration: 'none'}}>
-                    <b>YT</b>
-                </a>
-            </li>
-
-            <li className={css`
-                display: inline-flex;
-                align-items: center;
-                margin: 0 1em;
-                &:hover {
-                color: ${color};
-            }
-                `}>
-                <a href="https://www.instagram.com/boulderboys.de/"
-                   target="_blank"
-                   style={{textDecoration: 'none'}}>
-                    <b>IG</b>
-                </a>
             </li>
 
         </ul>

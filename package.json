@@ -29,6 +29,7 @@
     "gh-pages": "^1.2.0",
     "inquirer": "^6.0.0",
     "prettier": "^1.10.2",
+    "react-social-icons": "^4.1.0",
     "rimraf": "^2.6.2",
     "yargs-parser": "^10.1.0"
   },
