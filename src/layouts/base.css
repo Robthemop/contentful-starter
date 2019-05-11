@@ -70,7 +70,7 @@ a {
 
 @media (min-width: 1600px) {
     .wrapper {
-        width: calc(50% - 10vmin);
+        width: calc(80% - 10vmin);
     }
 }
 
@@ -97,7 +97,7 @@ a {
 
 @media (min-width: 1600px) {
     .article-list {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     }
 }
 
