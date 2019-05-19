@@ -1,5 +1,4 @@
 import React from 'react'
-import Img from 'gatsby-image'
 
 import styles from './category.module.css'
 import Link from "gatsby-link";
