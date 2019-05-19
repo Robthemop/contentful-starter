@@ -17,15 +17,10 @@ class BouldernBoulderBoysVlog extends React.Component {
         return (
             <div style={{background: '#fff'}}>
                 <Helmet title={siteTitle}/>
+
+                <Navigation/>
+
                 <div className="wrapper">
-
-                    <Hero data={author.node}/>
-                    <Navigation/>
-
-                    <Link to="/kategorien/"
-                          style={{textDecoration: 'none'}}>
-                        <h2 className="section-headline">Alle Kategorien anzeigen</h2>
-                    </Link>
 
                     <ul className="article-list">
                         {posts.map(({node}) => {
@@ -78,7 +73,6 @@ export const pageQuery = graphql`
           title
           slug
           publishDate(formatString: "MMMM Do, YYYY")
-          tags
           heroImage {
             sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
              ...GatsbyContentfulSizes_tracedSVG

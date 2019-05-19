@@ -9,7 +9,7 @@ import Link from "gatsby-link";
 class BouldernBasics extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-        const posts = get(this, 'props.data.allContentfulBlogPost.edges')
+        const posts = get(this, 'props.data.allContentfulArticle.edges')
         const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
 
@@ -19,7 +19,6 @@ class BouldernBasics extends React.Component {
 
                 <div className="wrapper">
 
-                    <Hero data={author.node}/>
                     <Navigation/>
 
                     <Link to="/kategorien/"
@@ -70,8 +69,8 @@ export default BouldernBasics
 
 export const pageQuery = graphql`
   query BoulderBasics {
-  
-  allContentfulBlogPost(filter: {category: {contentful_id: {eq:"tYDKdQwpe2Y3gQlOxODv8"} } },
+ 
+  allContentfulArticle(filter: {category: {contentful_id: {eq:"tYDKdQwpe2Y3gQlOxODv8"} } },
   sort: { fields: [publishDate], order: DESC })
   {
   
@@ -80,7 +79,6 @@ export const pageQuery = graphql`
           title
           slug
           publishDate(formatString: "MMMM Do, YYYY")
-          tags
           heroImage {
             sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
              ...GatsbyContentfulSizes_tracedSVG

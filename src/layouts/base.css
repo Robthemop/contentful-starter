@@ -15,6 +15,10 @@ body {
     margin: 0;
 }
 
+p {
+    font-size: 1.5em;
+}
+
 Link {
     textDecoration: 'none';
 }
@@ -38,17 +42,18 @@ img {
 
 h1 {
     color: #F1582A;
-    font-size: 12px;
+    font-size: 2em;
 }
+
 h2 {
-    font-size: 1.5em;
+    font-size: 3em;
     font-weight: bold;
     color: #F1582A;
 }
 
 h3 {
     color: #000;;
-    font-size: 1em;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -64,13 +69,13 @@ a {
 
 @media (min-width: 300px) {
     .wrapper {
-        width: calc(100% - 10vmin);
+        width: calc(80% - 10vmin);
     }
 }
 
 @media (min-width: 1600px) {
     .wrapper {
-        width: calc(80% - 10vmin);
+        width: calc(60% - 10vmin);
     }
 }
 
@@ -83,7 +88,7 @@ a {
     padding: 0;
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 5vmin;
     text-align: center;
 
@@ -97,7 +102,7 @@ a {
 
 @media (min-width: 1000px) {
     .article-list {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 }
 

@@ -38,5 +38,39 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         })
       })
     )
+
+    const articlePost = path.resolve('./src/templates/article.js')
+    resolve(
+        graphql(
+            `
+          {
+            allContentfulArticle {
+              edges {
+                node {
+                  title
+                  slug
+                }
+              }
+            }
+          }
+          `
+        ).then(result => {
+          if (result.errors) {
+            console.log(result.errors)
+            reject(result.errors)
+          }
+
+          const articles = result.data.allContentfulArticle.edges
+          articles.forEach((article, index) => {
+            createPage({
+              path: `/blog/${article.node.slug}/`,
+              component: articlePost,
+              context: {
+                slug: article.node.slug
+              },
+            })
+          })
+        })
+    )
   })
 }

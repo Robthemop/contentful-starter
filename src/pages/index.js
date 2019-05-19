@@ -11,26 +11,21 @@ import styles from '../layouts/base.css'
 class RootIndex extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-        const posts = get(this, 'props.data.allContentfulBlogPost.edges')
+        const articles = get(this, 'props.data.allContentfulArticle.edges')
         const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
         return (
             <div style={{background: '#fff'}}>
+                <Helmet title={siteTitle}/>
 
-                <Helmet>
-                    <title>Boulder Boys - Ein Blog übers Bouldern</title>
-                    <meta charSet="utf-8" />
-                    <meta name="description" content="Blog und Vlog übers Bouldern für Anfänger und Fortgeschrittene"/>
-                </Helmet>
-
-            <Hero data={author.node}/>
+                <Hero data={author.node}/>
 
                 <Navigation/>
 
                 <div className="wrapper">
 
                     <ul className="article-list">
-                        {posts.map(({node}) => {
+                        {articles.map(({node}) => {
                             return (
                                 <li key={node.slug}>
                                     <ArticlePreview article={node}/>
@@ -39,27 +34,11 @@ class RootIndex extends React.Component {
                         })}
                     </ul>
 
-
                     <Link to="/kategorien/"
                           style={{textDecoration: 'none'}}>
-                        <h2>Alle Kategorien anzeigen</h2>
+                        <h2 className="section-bottomLine">Alle Kategorien anzeigen</h2>
                     </Link>
 
-                    <div>
-
-                        <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
-                           title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
-                           rel="nofollow"
-                           target="_blank">
-                            <img src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_728x90.jpg"
-                                 alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen"
-                                border="0" /></a>
-                            <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=30&cpid=1&prid=1&subid=&view=1"
-                                 height="1"
-                                 width="1"
-                                 border="0" />
-
-                    </div>
                 </div>
             </div>
         )
@@ -70,23 +49,25 @@ export default RootIndex
 
 export const pageQuery = graphql`
   query HomeQuery {
-    allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
+    allContentfulArticle(sort: { fields: [publishDate], order: DESC }) {
       edges {
         node {
           title
           slug
           publishDate(formatString: "MMMM Do, YYYY")
-          tags
+          
           heroImage {
-            sizes(maxWidth: 600, maxHeight: 400, resizingBehavior: FILL) {
+            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
              ...GatsbyContentfulSizes_tracedSVG
             }
           }
+          
           description {
             childMarkdownRemark {
               html
             }
           }
+          
         }
       }
     }
@@ -107,5 +88,12 @@ export const pageQuery = graphql`
         }
       }
     }
+    allContentfulCategory(filter:{ contentful_id: {eq: "5Yqtk99s2c0YgC8QsMceGc"}}){
+    edges{
+      node{
+        title
+        }
+    }
+  }
   }
 `

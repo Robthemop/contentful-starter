@@ -32,22 +32,26 @@
     position: absolute;
     background: rgba(241, 88, 42, 0.9);
     left: 50%;
-    bottom: 35%;
+    bottom: 10%;
     transform: translate(-50%, 0);
-    font-size: 20px;
+    font-size: 1em;
     padding: 0 0.5em;
     align-self: center;
 }
 
 @media (min-width: 600px) {
     .heroDetails {
-        font-size: 40px;
+        font-size: 1em;
+        bottom: 30%;
+
     }
+
+
 }
 
 @media (min-width: 1000px) {
     .heroDetails {
-        font-size: 60px;
+        font-size: 3em;
     }
 }
 
@@ -63,5 +67,5 @@
 }
 
 .p {
-    width: 100%
+    width: 100%;
 }

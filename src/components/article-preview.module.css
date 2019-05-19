@@ -15,3 +15,13 @@
 .preview {
     border-bottom: 1.5px solid #3D5B80;
 }
+
+.description {
+    font-size: 1em;
+}
+
+h3 {
+    color: #000;;
+    font-size: 2em;
+    font-weight: bold;
+}

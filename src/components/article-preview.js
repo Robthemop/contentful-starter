@@ -26,7 +26,7 @@ export default ({article}) => (
 
         <Link to={`/blog/${article.slug}`}
               style={{textDecoration: 'none'}}>
-            <p
+            <p className={styles.description}
                 dangerouslySetInnerHTML={{
                     __html: article.description.childMarkdownRemark.html,
                 }}
