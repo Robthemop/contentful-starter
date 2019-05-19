@@ -70,10 +70,6 @@ export const pageQuery = graphql`
     contentfulArticle(slug: { eq: $slug }) {
       title
       publishDate(formatString: "MMMM Do, YYYY")
-      
-      category{
-        title
-      }
 
       body {
         childMarkdownRemark {
