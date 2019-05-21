@@ -119,9 +119,10 @@ class Impressum extends React.Component {
                             wenn Ihr Browser keine Cookies zulässt.
                             Weiterhin können Sie durch ein Browser-Plugin verhindern,
                             dass die durch Cookies gesammelten Informationen (inklusive Ihrer IP-Adresse)
-                            an die Google Inc. gesendet und von der Google Inc. genutzt werden. Folgender
-                            Link führt Sie zu dem entsprechenden Plugin: https://tools.google.com/dlpage/gaoptout?hl=de
-                            Hier finden Sie weitere Informationen zur Datennutzung durch
+                            an die Google Inc. gesendet und von der Google Inc. genutzt werden.<a href="https://tools.google.com/dlpage/gaoptout?hl=de">
+                                Folgender
+                                Link führt Sie zu dem entsprechenden Plugin.</a>
+                                 Hier finden Sie weitere Informationen zur Datennutzung durch
                             die Google Inc.: <a href="https://support.google.com/analytics/answer/6004245?hl=de">Google-Support
                             </a></p>
 
