@@ -5,7 +5,6 @@ import Img from 'gatsby-image'
 import Navigation from '../components/navigation'
 import pictureStyles from '../components/picture.module.css'
 import Link from "gatsby-link";
-import heroStyles from '../components/hero.module.css'
 
 
 class ArticleTemplate extends React.Component {
@@ -20,8 +19,19 @@ class ArticleTemplate extends React.Component {
 
                     <Navigation/>
 
+                    <Link to="/kategorien/"
+                          style={{textDecoration: 'none'}}>
+                        <h3>Alle Kategorien anzeigen</h3>
+                    </Link>
 
-                    <Helmet title={`${article.title}`}/>
+                    <div>
+                        <Link to={`/${article.category.title}/`}
+                              style={{textDecoration: 'none'}}>
+                            <h2 className="section-headline">{article.category.title}</h2>
+                        </Link>
+                    </div>
+
+                    <Helmet title={`${article.title} | ${article.category.title}`}/>
 
                     <h2>{article.title}</h2>
 
@@ -68,9 +78,21 @@ export default ArticleTemplate
 export const pageQuery = graphql`
   query ArticleBySlug($slug: String!) {
     contentfulArticle(slug: { eq: $slug }) {
+    
       title
       publishDate(formatString: "MMMM Do, YYYY")
+      
+      category{
+        title
+      }
+      
+      heroImage {
+        sizes(maxWidth: 1180, background: "rgb:255255") {
+          ...GatsbyContentfulSizes_tracedSVG
+        }
+      }
 
+      
       body {
         childMarkdownRemark {
           html

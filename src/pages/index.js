@@ -5,8 +5,6 @@ import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
 import Navigation from '../components/navigation'
 import Link from "gatsby-link";
-import article from '../components/article-preview';
-import styles from '../layouts/base.css'
 
 class RootIndex extends React.Component {
     render() {
@@ -16,7 +14,11 @@ class RootIndex extends React.Component {
 
         return (
             <div style={{background: '#fff'}}>
-                <Helmet title={siteTitle}/>
+                <Helmet>
+                    <title>Boulder Boys</title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="Boulder Boys ist ein Blog für Boulder Anfänger und Fortgeschrittene." />
+                </Helmet>
 
                 <Hero data={author.node}/>
 

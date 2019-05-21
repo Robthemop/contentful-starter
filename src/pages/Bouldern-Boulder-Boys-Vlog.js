@@ -1,17 +1,15 @@
 import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import ArticlePreview from '../components/article-preview'
+import ArticlePreview from '../components/blogPost-preview'
 import Navigation from '../components/navigation'
 import Link from "gatsby-link"
-import Hero from "../components/hero"
 
 
 class BouldernBoulderBoysVlog extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title')
         const posts = get(this, 'props.data.allContentfulBlogPost.edges')
-        const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
 
         return (
