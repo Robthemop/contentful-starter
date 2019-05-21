@@ -71,21 +71,18 @@ export const pageQuery = graphql`
   allContentfulArticle(filter: {category: {contentful_id: {eq:"tYDKdQwpe2Y3gQlOxODv8"} } },
   sort: { fields: [publishDate], order: DESC })
   {
-  
       edges {
         node {
           title
           slug
           publishDate(formatString: "MMMM Do, YYYY")
-          heroImage {
-            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
-             ...GatsbyContentfulSizes_tracedSVG
-            }
-          }
           description {
             childMarkdownRemark {
               html
             }
+          }
+          category {
+            title
           }
         }
       }

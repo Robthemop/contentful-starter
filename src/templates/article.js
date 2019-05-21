@@ -78,51 +78,36 @@ export default ArticleTemplate
 export const pageQuery = graphql`
   query ArticleBySlug($slug: String!) {
     contentfulArticle(slug: { eq: $slug }) {
-    
       title
       publishDate(formatString: "MMMM Do, YYYY")
-      
       category{
         title
       }
-      
-      heroImage {
-        sizes(maxWidth: 1180, background: "rgb:255255") {
-          ...GatsbyContentfulSizes_tracedSVG
-        }
-      }
-
-      
       body {
         childMarkdownRemark {
           html
         }
       }
-      
       pictureOne {
         sizes(maxWidth: 4000, background: "rgb:255255") {
           ...GatsbyContentfulSizes_tracedSVG
         }
       }
-      
       bodyTwo {
         childMarkdownRemark {
           html
         }
       }
-      
       pictureTwo {
         sizes(maxWidth: 4000, background: "rgb:255255") {
           ...GatsbyContentfulSizes_tracedSVG
         }
       }
-      
       bodyThree {
         childMarkdownRemark {
           html
         }
       }
-      
     }
   }
 `
