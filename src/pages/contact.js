@@ -29,10 +29,10 @@ class Contact extends React.Component {
                     <div className="wrapper">
 
                         <div><a href={"https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow"}
-                                style={{textDecoration: "none"}}><h3>Du kannst mir hier eine Nachricht auf YouTube schicken</h3></a></div>
+                                style={{textDecoration: "none"}}><p>Du kannst mir hier eine Nachricht auf YouTube schicken</p></a></div>
                         <a href={"https://www.instagram.com/boulderboys.de/"}
-                           style={{textDecoration: "none"}}><h3>und hier klicken, um mir bei Instagram eine PM zu schreiben.</h3></a>
-                        <h3>Oder gib deine Nachricht einfach hier ein und ich erhalten eine Mail</h3>
+                           style={{textDecoration: "none"}}><p>und hier klicken, um mir bei Instagram eine PM zu schreiben.</p></a>
+                        <p>Oder gib deine Nachricht einfach hier ein und ich erhalten eine Mail</p>
 
                         <form
                             name="contact-form"
@@ -70,11 +70,6 @@ class Contact extends React.Component {
                             </p>
 
                         </form>
-
-                        <Link to="/kategorien/"
-                              style={{textDecoration: 'none'}}>
-                            <h2 className="section-bottomLine">Alle Kategorien anzeigen</h2>
-                        </Link>
 
                     </div>
                 </div>

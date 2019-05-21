@@ -36,12 +36,10 @@ class RootIndex extends React.Component {
                         })}
                     </ul>
 
-                    <Link to="/kategorien/"
-                          style={{textDecoration: 'none'}}>
-                        <h2 className="section-bottomLine">Alle Kategorien anzeigen</h2>
-                    </Link>
+
 
                 </div>
+                <Navigation/>
             </div>
         )
     }

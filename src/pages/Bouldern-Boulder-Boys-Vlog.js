@@ -30,11 +30,6 @@ class BouldernBoulderBoysVlog extends React.Component {
                         })}
                     </ul>
 
-                    <Link to="/kategorien/"
-                          style={{textDecoration: 'none'}}>
-                        <h2 className="section-bottomLine">Alle Kategorien anzeigen</h2>
-                    </Link>
-
                     <div>
 
                         <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154"
