@@ -25,7 +25,7 @@ class ArticleTemplate extends React.Component {
                     </Link>
 
                     <div>
-                        <Link to={`/${article.category.title}/`}
+                        <Link to={`/${article.category.title}`}
                               style={{textDecoration: 'none'}}>
                             <h2 className="section-headline">{article.category.title}</h2>
                         </Link>
@@ -80,9 +80,6 @@ export const pageQuery = graphql`
     contentfulArticle(slug: { eq: $slug }) {
       title
       publishDate(formatString: "MMMM Do, YYYY")
-      category{
-        title
-      }
       body {
         childMarkdownRemark {
           html
@@ -107,6 +104,14 @@ export const pageQuery = graphql`
         childMarkdownRemark {
           html
         }
+      }
+      heroImage {
+            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
+             ...GatsbyContentfulSizes_tracedSVG
+            }
+      }
+      category{
+        title
       }
     }
   }

@@ -9,7 +9,7 @@ import Link from "gatsby-link";
 class RootIndex extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-        const articles = get(this, 'props.data.allContentfulArticle.edges')
+        const articleData = get(this, 'props.data.allContentfulArticle.edges')
         const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
         return (
@@ -27,7 +27,7 @@ class RootIndex extends React.Component {
                 <div className="wrapper">
 
                     <ul className="article-list">
-                        {articles.map(({node}) => {
+                        {articleData.map(({node}) => {
                             return (
                                 <li key={node.slug}>
                                     <ArticlePreview article={node}/>
