@@ -1,14 +1,13 @@
 const Promise = require('bluebird')
 const path = require('path')
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators
+exports.createPages = ({graphql, boundActionCreators}) => {
+    const {createPage} = boundActionCreators
 
-  return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js')
-    resolve(
-      graphql(
-        `
+    const blogPostTemplate = path.resolve('./src/templates/blog-post.js')
+    const vlogs =
+        graphql(
+            `
           {
             allContentfulBlogPost {
               edges {
@@ -20,27 +19,26 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             }
           }
           `
-      ).then(result => {
-        if (result.errors) {
-          console.log(result.errors)
-          reject(result.errors)
-        }
+        ).then(result => {
+            if (result.errors) {
+                console.log(result.errors);
+                Promise.reject(result.errors);
+            }
 
-        const posts = result.data.allContentfulBlogPost.edges
-        posts.forEach((post, index) => {
-          createPage({
-            path: `/blog/${post.node.slug}`,
-            component: blogPost,
-            context: {
-              slug: post.node.slug
-            },
-          })
+            const posts = result.data.allContentfulBlogPost.edges
+            posts.forEach((post, index) => {
+                createPage({
+                    path: `/blog/${post.node.slug}`,
+                    component: blogPostTemplate,
+                    context: {
+                        slug: post.node.slug
+                    },
+                })
+            })
         })
-      })
-    )
 
-    const articlePost = path.resolve('./src/templates/article.js')
-    resolve(
+    const articlePostTemplate = path.resolve('./src/templates/article.js')
+    const blogs =
         graphql(
             `
           {
@@ -55,22 +53,22 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
           }
           `
         ).then(result => {
-          if (result.errors) {
-            console.log(result.errors)
-            reject(result.errors)
-          }
+            if (result.errors) {
+                console.log(result.errors);
+                Promise.reject(result.errors);
 
-          const articles = result.data.allContentfulArticle.edges
-          articles.forEach((article, index) => {
-            createPage({
-              path: `/blog/${article.node.slug}`,
-              component: articlePost,
-              context: {
-                slug: article.node.slug
-              },
+            }
+
+            const articles = result.data.allContentfulArticle.edges
+            articles.forEach((article, index) => {
+                createPage({
+                    path: `/blog/${article.node.slug}`,
+                    component: articlePostTemplate,
+                    context: {
+                        slug: article.node.slug
+                    },
+                })
             })
-          })
         })
-    )
-  })
+return Promise.all([blogs, vlogs]);
 }

@@ -1,0 +1,16 @@
+.picture {
+    position: relative;
+    background: #fff;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+.pictureImg {
+    max-height: 37em;
+    max-width: 100%;
+}
+
+.p {
+    width: 100%
+}

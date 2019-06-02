@@ -3,8 +3,10 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import Img from 'gatsby-image'
 import Navigation from '../components/navigation'
+import heroPictureStyles from '../components/heropicture.module.css'
 import pictureStyles from '../components/picture.module.css'
 import Link from "gatsby-link";
+import Hero from "../components/hero";
 
 
 class ArticleTemplate extends React.Component {
@@ -17,18 +19,17 @@ class ArticleTemplate extends React.Component {
 
                 <div className="wrapper">
 
-                    <Navigation/>
-
-                    <Link to="/kategorien/"
-                          style={{textDecoration: 'none'}}>
-                        <h3>Alle Kategorien anzeigen</h3>
-                    </Link>
-
                     <div>
                         <Link to={`/${article.category.title}`}
                               style={{textDecoration: 'none'}}>
                             <h2 className="section-headline">{article.category.title}</h2>
                         </Link>
+                    </div>
+
+                    <Navigation/>
+
+                    <div className={heroPictureStyles.picture}>
+                        <Img className={heroPictureStyles.pictureImg} alt={article.title} sizes={article.heroImage.sizes}/>
                     </div>
 
                     <Helmet title={`${article.title} | ${article.category.title}`}/>
@@ -106,7 +107,7 @@ export const pageQuery = graphql`
         }
       }
       heroImage {
-            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
+            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: PAD) {
              ...GatsbyContentfulSizes_tracedSVG
             }
       }

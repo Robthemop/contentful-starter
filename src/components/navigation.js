@@ -101,10 +101,6 @@ export default () => (
                 </Link>
             </li>
 
-        </ul>
-
-        <ul className={styles.navigation}>
-
             <li className={css`
                 display: inline-flex;
                 align-items: center;

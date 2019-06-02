@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-contentful-starter",
-  "description": "Starter Contentful Gatsby Blog",
+  "name": "boulderboysmaster",
+  "description": "Contentful Gatsby Blog",
   "version": "1.0.0",
-  "author": "Stefan Judis <stefanjudis@gmail.com>",
+  "author": "Robin Hess",
   "bugs": {
-    "url": "https://github.com/contentful-userland/gatsby-contentful-starter/issues"
+    "url": "https://github.com/Robthemop/contentful-starter"
   },
   "dependencies": {
     "emotion": "^10.0.9",
@@ -16,6 +16,7 @@
     "gatsby-source-instagram-all": "^2.0.5",
     "gatsby-transformer-remark": "^1.7.44",
     "gatsby-transformer-sharp": "^1.6.27",
+    "google-maps-react": "^2.0.2",
     "lodash": "^4.17.4",
     "yarn": "^1.15.2"
   },
@@ -33,7 +34,7 @@
     "rimraf": "^2.6.2",
     "yargs-parser": "^10.1.0"
   },
-  "homepage": "https://github.com/contentful-userland/gatsby-contentful-starter#readme",
+  "homepage": "https://boulderboys.de",
   "keywords": [
     "boulderboys",
     "bouldern"
