@@ -12,6 +12,38 @@ export default () => (
     <nav role="navigation">
 
         <ul className={styles.navigation}>
+            <li className={css`
+                display: inline-flex;
+                align-items: center;
+                margin: 0 1em;
+                &:hover {
+                color: ${color};
+            }
+                `}>
+                <a href="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow"
+                   target="_blank"
+                   style={{textDecoration: 'none'}}>
+                    <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" />
+                </a>
+            </li>
+
+            <li className={css`
+                display: inline-flex;
+                align-items: center;
+                margin: 0 1em;
+                &:hover {
+                color: ${color};
+            }
+                `}>
+                <a href="https://www.instagram.com/boulderboys.de/"
+                   target="_blank"
+                   style={{textDecoration: 'none'}}>
+                    <SocialIcon url="http://instagram.com/boulderboys.de" />
+                </a>
+            </li>
+        </ul>
+
+        <ul className={styles.navigation}>
 
             <li className={css`
                 display: inline-flex;
@@ -99,38 +131,6 @@ export default () => (
                 >
                     <b>impressum</b>
                 </Link>
-            </li>
-        </ul>
-
-        <ul className={styles.navigation}>
-            <li className={css`
-                display: inline-flex;
-                align-items: center;
-                margin: 0 1em;
-                &:hover {
-                color: ${color};
-            }
-                `}>
-                <a href="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow"
-                   target="_blank"
-                   style={{textDecoration: 'none'}}>
-                    <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" />
-                </a>
-            </li>
-
-            <li className={css`
-                display: inline-flex;
-                align-items: center;
-                margin: 0 1em;
-                &:hover {
-                color: ${color};
-            }
-                `}>
-                <a href="https://www.instagram.com/boulderboys.de/"
-                   target="_blank"
-                   style={{textDecoration: 'none'}}>
-                    <SocialIcon url="http://instagram.com/boulderboys.de" />
-                </a>
             </li>
         </ul>
 
