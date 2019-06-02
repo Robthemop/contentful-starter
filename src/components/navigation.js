@@ -100,7 +100,9 @@ export default () => (
                     <b>impressum</b>
                 </Link>
             </li>
+        </ul>
 
+        <ul className={styles.navigation}>
             <li className={css`
                 display: inline-flex;
                 align-items: center;
@@ -130,7 +132,7 @@ export default () => (
                     <SocialIcon url="http://instagram.com/boulderboys.de" />
                 </a>
             </li>
-
         </ul>
+
     </nav>
 )
