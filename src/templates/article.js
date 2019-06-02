@@ -28,10 +28,6 @@ class ArticleTemplate extends React.Component {
 
                     <Navigation/>
 
-                    <div className={heroPictureStyles.picture}>
-                        <Img className={heroPictureStyles.pictureImg} alt={article.title} sizes={article.heroImage.sizes}/>
-                    </div>
-
                     <Helmet title={`${article.title} | ${article.category.title}`}/>
 
                     <h2>{article.title}</h2>
