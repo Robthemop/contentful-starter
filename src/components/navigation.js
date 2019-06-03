@@ -15,7 +15,7 @@ export default () => (
             <li className={css`
                 display: inline-flex;
                 align-items: center;
-                margin: 0 1em;
+                margin: 0 0.5em;
                 &:hover {
                 color: ${color};
             }
@@ -23,14 +23,15 @@ export default () => (
                 <a href="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow"
                    target="_blank"
                    style={{textDecoration: 'none'}}>
-                    <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" />
+                    <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow"
+                                style={{ height: 35, width: 35 }} />
                 </a>
             </li>
 
             <li className={css`
                 display: inline-flex;
                 align-items: center;
-                margin: 0 1em;
+                margin: 0 0.5em;
                 &:hover {
                 color: ${color};
             }
@@ -38,14 +39,15 @@ export default () => (
                 <a href="https://www.instagram.com/boulderboys.de/"
                    target="_blank"
                    style={{textDecoration: 'none'}}>
-                    <SocialIcon url="http://instagram.com/boulderboys.de" />
+                    <SocialIcon url="http://instagram.com/boulderboys.de"
+                                style={{ height: 35, width: 35 }} />
                 </a>
             </li>
 
             <li className={css`
                 display: inline-flex;
                 align-items: center;
-                margin: 0 1em;
+                margin: 0 0.5em;
                 &:hover {
                 color: ${color};
             }
@@ -53,14 +55,15 @@ export default () => (
                 <a href="https://www.instagram.com/boulderboys.de/"
                    target="_blank"
                    style={{textDecoration: 'none'}}>
-                    <SocialIcon url="https://twitter.com/Boulderboys1"/>
+                    <SocialIcon url="https://www.facebook.com/Boulder-Boys-1049045915293980/"
+                                style={{ height: 35, width: 35 }} />
                 </a>
             </li>
 
             <li className={css`
                 display: inline-flex;
                 align-items: center;
-                margin: 0 1em;
+                margin: 0 0.5em;
                 &:hover {
                 color: ${color};
             }
@@ -68,7 +71,8 @@ export default () => (
                 <a href="https://www.instagram.com/boulderboys.de/"
                    target="_blank"
                    style={{textDecoration: 'none'}}>
-                    <SocialIcon url="https://www.facebook.com/Boulder-Boys-1049045915293980/"/>
+                    <SocialIcon url="https://twitter.com/Boulderboys1"
+                                style={{ height: 35, width: 35 }} />
                 </a>
             </li>
         </ul>
