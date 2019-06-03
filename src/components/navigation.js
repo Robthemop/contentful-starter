@@ -41,6 +41,36 @@ export default () => (
                     <SocialIcon url="http://instagram.com/boulderboys.de" />
                 </a>
             </li>
+
+            <li className={css`
+                display: inline-flex;
+                align-items: center;
+                margin: 0 1em;
+                &:hover {
+                color: ${color};
+            }
+                `}>
+                <a href="https://www.instagram.com/boulderboys.de/"
+                   target="_blank"
+                   style={{textDecoration: 'none'}}>
+                    <SocialIcon url="https://twitter.com/Boulderboys1"/>
+                </a>
+            </li>
+
+            <li className={css`
+                display: inline-flex;
+                align-items: center;
+                margin: 0 1em;
+                &:hover {
+                color: ${color};
+            }
+                `}>
+                <a href="https://www.instagram.com/boulderboys.de/"
+                   target="_blank"
+                   style={{textDecoration: 'none'}}>
+                    <SocialIcon url="https://www.facebook.com/Boulder-Boys-1049045915293980/"/>
+                </a>
+            </li>
         </ul>
 
         <ul className={styles.navigation}>
