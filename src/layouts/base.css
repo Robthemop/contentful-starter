@@ -41,19 +41,19 @@ img {
 }
 
 h1 {
-    color: #F1582A;
+    color: #000000;
     font-size: 2em;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
-    color: #F1582A;
+    color: #f1582a;
 }
 
 h3 {
     color: #000;;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
 }
 
@@ -71,11 +71,31 @@ a {
     .wrapper {
         width: calc(80% - 10vmin);
     }
+    p{
+        font-size: 1.0em
+    }
+    h1{
+        font-size: 1.0em;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 1.5em
+    }
 }
 
 @media (min-width: 1600px) {
     .wrapper {
         width: calc(60% - 10vmin);
+    }
+    p{
+        font-size: 1.5em
+    }
+    h1{
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    h2{
+        font-size: 3em
     }
 }
 
