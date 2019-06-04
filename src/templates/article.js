@@ -3,7 +3,6 @@ import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import Img from 'gatsby-image'
 import Navigation from '../components/navigation'
-import heroPictureStyles from '../components/heropicture.module.css'
 import pictureStyles from '../components/picture.module.css'
 import Link from "gatsby-link";
 import Hero from "../components/hero";
