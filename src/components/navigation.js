@@ -1,172 +1,46 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import styles from './navigation.module.css'
-import {css, cx} from 'emotion'
-import { SocialIcon } from 'react-social-icons';
+import React from 'react';
+import Link from 'gatsby-link';
+import styles from './navigation.module.css';
+import {css, cx} from 'emotion';
+import {SocialIcon} from 'react-social-icons';
 
-const color = '#F1582A'
+const color = '#F1582A';
 
 
 export default () => (
 
     <nav role="navigation">
-
         <ul className={styles.navigation}>
-            <li className={css`
-                display: inline-flex;
-                align-items: center;
-                margin: 0 0.5em;
-                &:hover {
-                color: ${color};
-            }
-                `}>
-                <a href="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow"
-                   target="_blank"
-                   style={{textDecoration: 'none'}}>
-                    <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow"
-                                style={{ height: 35, width: 35 }} />
-                </a>
+            <li className="navigationItem">
+                    <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" className="socialIcon"/>
+
             </li>
 
-            <li className={css`
-                display: inline-flex;
-                align-items: center;
-                margin: 0 0.5em;
-                &:hover {
-                color: ${color};
-            }
-                `}>
-                <a href="https://www.instagram.com/boulderboys.de/"
-                   target="_blank"
-                   style={{textDecoration: 'none'}}>
-                    <SocialIcon url="http://instagram.com/boulderboys.de"
-                                style={{ height: 35, width: 35 }} />
-                </a>
+            <li className="navigationItem">
+                    <SocialIcon url="http://instagram.com/boulderboysyt" className="socialIcon"/>
+
             </li>
 
-            <li className={css`
-                display: inline-flex;
-                align-items: center;
-                margin: 0 0.5em;
-                &:hover {
-                color: ${color};
-            }
-                `}>
-                <a href="https://www.instagram.com/boulderboys.de/"
-                   target="_blank"
-                   style={{textDecoration: 'none'}}>
-                    <SocialIcon url="https://www.facebook.com/Boulder-Boys-1049045915293980/"
-                                style={{ height: 35, width: 35 }} />
-                </a>
+            <li className="navigationItem">
+                    <SocialIcon url="https://www.facebook.com/Boulder-Boys-1049045915293980/" className="socialIcon"/>
             </li>
 
-            <li className={css`
-                display: inline-flex;
-                align-items: center;
-                margin: 0 0.5em;
-                &:hover {
-                color: ${color};
-            }
-                `}>
-                <a href="https://www.instagram.com/boulderboys.de/"
-                   target="_blank"
-                   style={{textDecoration: 'none'}}>
-                    <SocialIcon url="https://twitter.com/Boulderboys1"
-                                style={{ height: 35, width: 35 }} />
-                </a>
+            <li className="navigationItem">
+
+                    <SocialIcon url="https://twitter.com/Boulderboys1" className="socialIcon"/>
+            </li>
+
+        </ul>
+        <ul className={styles.navigation}>
+            <li className={styles.navigationItem}>
+                <Link to="/">Home</Link>
+            </li>
+            <li className={styles.navigationItem}>
+                <Link to="/videos/">Videos</Link>
+            </li>
+            <li className={styles.navigationItem}>
+                <Link to="/kategorien/">Ratgeber</Link>
             </li>
         </ul>
-
-        <ul className={styles.navigation}>
-
-            <li className={css`
-                display: inline-flex;
-                align-items: center;
-                margin: 0 1em;
-                &:hover {
-                color: ${color};
-            }
-                `}
-            >
-                <Link exact to="/"
-                      activeStyle={{color: "#F1582A"}}
-                      partiallyActive={true}
-                      style={{textDecoration: 'none'}}
-                >
-                    <b>blog</b>
-                </Link>
-            </li>
-
-            <li className={css`
-                display: inline-flex;
-                align-items: center;
-                margin: 0 1em;
-                &:hover {
-                color: ${color};
-            }
-                `}
-            >
-                <Link exact to="/Bouldern-Boulder-Boys-Vlog"
-                      activeStyle={{color: "#F1582A"}}
-                      partiallyActive={true}
-                      style={{textDecoration: 'none'}}
-                >
-                    <b>vlog</b>
-                </Link>
-            </li>
-
-            <li className={css`
-                display: inline-flex;
-                align-items: center;
-                margin: 0 1em;
-                &:hover {
-                color: ${color};
-            }
-                `}>
-                <Link to="/kategorien/"
-                      activeStyle={{color: "#F1582A"}}
-                      style={{textDecoration: 'none'}}
-                >
-                    <b>kategorien</b>
-                </Link>
-            </li>
-
-
-
-            <li className={css`
-                display: inline-flex;
-                align-items: center;
-                margin: 0 1em;
-                &:hover {
-                color: ${color};
-            }
-                `}>
-                <Link to="/contact/"
-                      activeStyle={{color: "#F1582A"}}
-                      style={{textDecoration: 'none'}}
-                >
-                    <b>kontakt</b>
-                </Link>
-            </li>
-
-            <li className={css`
-                display: inline-flex;
-                align-items: center;
-                margin: 0 1em;
-                &:hover {
-                color: ${color};
-            }
-                `}>
-
-                <Link to="/impressum/"
-                      activeStyle={{color: "#F1582A"}}
-                      partiallyActive={true}
-                      style={{textDecoration: 'none'}}
-                >
-                    <b>impressum</b>
-                </Link>
-            </li>
-        </ul>
-
     </nav>
 )

@@ -4,43 +4,43 @@ import Helmet from 'react-helmet'
 import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
 import Navigation from '../components/navigation'
-import Link from "gatsby-link";
+import Footer from '../components/footer';
 
 class RootIndex extends React.Component {
     render() {
-        const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-        const articleData = get(this, 'props.data.allContentfulArticle.edges')
-        const [author] = get(this, 'props.data.allContentfulPerson.edges')
+
+        const [author] = get(this, 'props.data.allContentfulPerson.edges');
+        const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+        const articleData = get(this, 'props.data.allContentfulArticle.edges');
 
         return (
             <div style={{background: '#fff'}}>
                 <Helmet>
                     <title>Boulder Boys</title>
-                    <meta charSet="utf-8" />
-                    <meta name="description" content="Boulder Boys ist ein Blog für Boulder Anfänger und Fortgeschrittene." />
+                    <meta charSet="utf-8"/>
+                    <meta name="description"
+                          content="Boulder Boys ist ein Blog für Boulder Anfänger und Fortgeschrittene."/>
                 </Helmet>
-
                 <Hero data={author.node}/>
-
                 <Navigation/>
 
                 <div className="wrapper">
 
-                    <ul className="article-list">
-                        {articleData.map(({node}) => {
-                            return (
-                                <li key={node.slug}>
-                                    <ArticlePreview article={node}/>
-                                </li>
-                            )
-                        })}
-                    </ul>
-
-
-
+                    <div className="articleBox">
+                        <ul className="article-list">
+                            {articleData.map(({node}) => {
+                                return (
+                                    <li key={node.slug}>
+                                        <ArticlePreview article={node}/>
+                                    </li>
+                                )
+                            })}
+                        </ul>
+                    </div>
                 </div>
-                <Navigation/>
+                <Footer/>
             </div>
+
         )
     }
 }

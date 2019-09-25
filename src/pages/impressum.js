@@ -1,48 +1,38 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import styles from './blog.module.css'
 import Navigation from '../components/navigation'
-import Hero from '../components/hero'
+import Hero from "../components/hero";
+import Footer from "../components/footer";
 
 
 class Impressum extends React.Component {
     render() {
-        const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-        const posts = get(this, 'props.data.allContentfulBlogPost.edges')
-        const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
+        const [author] = get(this, 'props.data.allContentfulPerson.edges');
 
         return (
             <div style={{background: '#FFF'}}>
                 <Helmet>
                     <title>Boulder Boys - Impressum</title>
-                    <meta charSet="utf-8" />
-                    <meta name="description" content="Mein Impressum" />
+                    <meta charSet="utf-8"/>
+                    <meta name="description" content="Mein Impressum"/>
                 </Helmet>
+                <Hero data={author.node}/>
+                <Navigation/>
                 <div style={{textAlign: 'justify'}}>
-
-                    <Navigation/>
-
                     <div className="wrapper">
-
-
                         <h3>Impressum</h3>
-
                         <h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
                         <p>Robin He&szlig;<br/>
                             Villemomblerstra&szlig;e 40<br/>
                             53123 Bonn</p>
-
                         <h3>Kontakt</h3>
                         <p>E-Mail: 1robinhess@gmail.com</p>
-
                         <h3>Verantwortlich f&uuml;r den Inhalt nach &sect; 55 Abs. 2 RStV</h3>
                         <p>Robin He&szlig;<br/>
                             Villemomblerstra&szlig;e 40<br/>
                             53123 Bonn</p>
-
                         <h3>Haftung f&uuml;r Inhalte</h3>
                         <p>Als Diensteanbieter sind wir gem&auml;&szlig; &sect; 7 Abs.1 TMG f&uuml;r eigene
                             Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach &sect;&sect; 8
@@ -51,7 +41,6 @@ class Impressum extends React.Component {
                             Informationen zu &uuml;berwachen
                             oder nach Umst&auml;nden zu forschen, die auf eine rechtswidrige T&auml;tigkeit
                             hinweisen.</p>
-
                         <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den
                             allgemeinen
                             Gesetzen bleiben hiervon unber&uuml;hrt.
@@ -60,9 +49,7 @@ class Impressum extends React.Component {
                             Rechtsverletzung m&ouml;glich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen
                             werden wir diese Inhalte
                             umgehend entfernen.</p>
-
                         <h3>Haftung f&uuml;r Links</h3>
-
                         <p>Unser Angebot enth&auml;lt Links zu externen Websites
                             Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb k&ouml;nnen wir f&uuml;r diese
                             fremden Inhalte auch
@@ -73,15 +60,12 @@ class Impressum extends React.Component {
                             Rechtsverst&ouml;&szlig;e &uuml;berpr&uuml;ft. Rechtswidrige Inhalte waren zum Zeitpunkt der
                             Verlinkung
                             nicht erkennbar.</p>
-
                         <p>Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete
                             Anhaltspunkte einer
                             Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir
                             derartige Links
                             umgehend entfernen.</p>
-
                         <h3>Urheberrecht</h3>
-
                         <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen
                             dem deutschen Urheberrecht. Die Vervielf&auml;ltigung, Bearbeitung, Verbreitung und jede Art
                             der
@@ -90,7 +74,6 @@ class Impressum extends React.Component {
                             jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur f&uuml;r den
                             privaten, nicht
                             kommerziellen Gebrauch gestattet.</p>
-
                         <p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden,
                             werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche
                             gekennzeichnet. Sollten
@@ -98,7 +81,6 @@ class Impressum extends React.Component {
                             entsprechenden Hinweis.
                             Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend
                             entfernen.</p>
-
                         <p>Diese Website nutzt den Dienst „Google Analytics“, welcher von der Google Inc. (1600
                             Amphitheatre
                             Parkway Mountain View, CA 94043, USA) angeboten wird, zur Analyse der Websitebenutzung durch
@@ -119,34 +101,30 @@ class Impressum extends React.Component {
                             wenn Ihr Browser keine Cookies zulässt.
                             Weiterhin können Sie durch ein Browser-Plugin verhindern,
                             dass die durch Cookies gesammelten Informationen (inklusive Ihrer IP-Adresse)
-                            an die Google Inc. gesendet und von der Google Inc. genutzt werden.<a href="https://tools.google.com/dlpage/gaoptout?hl=de">
+                            an die Google Inc. gesendet und von der Google Inc. genutzt werden.<a
+                                href="https://tools.google.com/dlpage/gaoptout?hl=de">
                                 Folgender
                                 Link führt Sie zu dem entsprechenden Plugin.</a>
-                                 Hier finden Sie weitere Informationen zur Datennutzung durch
+                            Hier finden Sie weitere Informationen zur Datennutzung durch
                             die Google Inc.: <a href="https://support.google.com/analytics/answer/6004245?hl=de">Google-Support
                             </a></p>
-
                         <p>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
-
                         <h3>Affiliate Links</h3>
-
                         <p>Auf dieser Seite befinden sich Affiliate Links in den einzelnen Blog-Artikeln, sowie
                             Affiliate Werbebanner. In diesem Rahmen nehme
                             ich an dem Amazon Partnerprogramm und an dem Bergfreunde Partnerprogramm teil.</p>
-
-
                     </div>
                 </div>
+                <Footer/>
             </div>
         )
     }
 }
 
 export default Impressum
-
 export const pageQuery = graphql`
-  query IndexQuery {
-    allContentfulPerson(filter: { id: { eq: "c1Ikutnfblr0k1lCG0xglFm" } }) {
+  query Impressumquery {
+    allContentfulPerson(filter: { id: { eq: "c15jwOBqpxqSAOy2eOO4S0m" } }) {
       edges {
         node {
           name

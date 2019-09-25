@@ -1,14 +1,16 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Img from 'gatsby-image'
-import styles from './article-preview.module.css'
+import React from 'react';
+import Link from 'gatsby-link';
+import Img from 'gatsby-image';
+import styles from './article-preview.module.css';
 
 export default ({article}) => (
+
     <div className={styles.preview}>
 
-        <Link to={`/blog/${article.slug}`} style={{textDecoration: 'none'}}>
+        <Link to={`/blog/${article.slug}`} style={{textDecoration: 'none', zIndex: 5}}>
             <Img alt="" sizes={article.heroImage.sizes}></Img>
         </Link>
+
         <small>
             <Link to={`/blog/${article.slug}`}
                   style={{textDecoration: 'none', color: "#F1582A"}}>
@@ -26,10 +28,11 @@ export default ({article}) => (
         <Link to={`/blog/${article.slug}`}
               style={{textDecoration: 'none'}}>
             <p className={styles.description}
-                dangerouslySetInnerHTML={{
-                    __html: article.description.childMarkdownRemark.html,
-                }}
+               dangerouslySetInnerHTML={{
+                   __html: article.description.childMarkdownRemark.html,
+               }}
             />
         </Link>
+
     </div>
 )
