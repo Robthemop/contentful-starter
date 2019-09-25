@@ -16,7 +16,7 @@ class BlogPostTemplate extends React.Component {
             <div className="container">
                 <Hero data={author.node}/>
                 <Navigation/>
-                <div className="wrapper">g
+                <div className="wrapper">
                     <Helmet title={'boulder boys youtube videos'}/>
                     <h2>{post.title}</h2>
                     <div className={heroStyles.p}
