@@ -18,15 +18,6 @@ class Videos extends React.Component {
                 <Hero data={author.node}/>
                 <Navigation/>
                 <div className="wrapper">
-                    <ul className="article-list">
-                        {posts.map(({node}) => {
-                            return (
-                                <li key={node.slug}>
-                                    <ArticlePreview article={node}/>
-                                </li>
-                            )
-                        })}
-                    </ul>
                 </div>
                 <Footer/>
             </div>

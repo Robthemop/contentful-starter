@@ -16,14 +16,8 @@ class BlogPostTemplate extends React.Component {
             <div className="container">
                 <Hero data={author.node}/>
                 <Navigation/>
-                <div className="wrapper">
-                    <div>
-                        <Link to={`/${post.category.title}/`}
-                              style={{textDecoration: 'none'}}>
-                            <h2 className="section-headline">{post.category.title}</h2>
-                        </Link>
-                    </div>
-                    <Helmet title={`${post.title} | ${post.category.title}`}/>
+                <div className="wrapper">g
+                    <Helmet title={'boulder boys youtube videos'}/>
                     <h2>{post.title}</h2>
                     <div className={heroStyles.p}
                          dangerouslySetInnerHTML={{
