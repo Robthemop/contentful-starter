@@ -5,14 +5,17 @@ import heroStyles from '../components/hero.module.css'
 import Link from "gatsby-link";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
+import Navigation from "../components/navigation";
 
 class BlogPostTemplate extends React.Component {
     render() {
-        const post = get(this.props, 'data.contentfulBlogPost')
+        const post = get(this.props, 'data.contentfulBlogPost');
         const [author] = get(this, 'props.data.allContentfulPerson.edges');
 
         return (
             <div style={{background: '#FFF'}}>
+                <Hero data={author.node}/>
+                <Navigation/>
                 <div className="wrapper">
                     <div>
                         <Link to={`/${post.category.title}/`}
@@ -21,7 +24,6 @@ class BlogPostTemplate extends React.Component {
                         </Link>
                     </div>
                     <Helmet title={`${post.title} | ${post.category.title}`}/>
-                    <Hero data={author.node}/>
                     <h2>{post.title}</h2>
                     <div className={heroStyles.p}
                          dangerouslySetInnerHTML={{
@@ -58,6 +60,24 @@ export const pageQuery = graphql`
         }
       }
       
+    }
+    
+    allContentfulPerson(filter: { id: { eq: "c15jwOBqpxqSAOy2eOO4S0m" } }) {
+      edges {
+        node {
+          name
+          heroImage: image {
+            sizes(
+              maxWidth: 3728
+              maxHeight: 2376
+              resizingBehavior: PAD
+              background: "rgb:FFFFFF"
+            ) {
+              ...GatsbyContentfulSizes_tracedSVG
+            }
+          }
+        }
+      }
     }
   }
 `

@@ -10,7 +10,7 @@ import Footer from "../components/footer";
 
 class ArticleTemplate extends React.Component {
     render() {
-        const article = get(this.props, 'data.contentfulArticle')
+        const article = get(this.props, 'data.contentfulArticle');
         const [author] = get(this, 'props.data.allContentfulPerson.edges');
 
         return (
