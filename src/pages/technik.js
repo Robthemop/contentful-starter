@@ -14,7 +14,7 @@ class Technik extends React.Component {
         const [author] = get(this, 'props.data.allContentfulPerson.edges');
 
         return (
-            <div style={{background: '#FFF'}}>
+            <div className="container">
                 <Helmet title={siteTitle}/>
                 <Hero data={author.node}/>
                 <Navigation/>

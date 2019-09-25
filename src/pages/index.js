@@ -14,7 +14,7 @@ class RootIndex extends React.Component {
         const articleData = get(this, 'props.data.allContentfulArticle.edges');
 
         return (
-            <div style={{background: '#fff'}}>
+            <div className="container">
                 <Helmet>
                     <title>Boulder Boys</title>
                     <meta charSet="utf-8"/>

@@ -33,13 +33,13 @@ export default () => (
         </ul>
         <ul className={styles.navigation}>
             <li className={styles.navigationItem}>
-                <Link to="/">Home</Link>
+                <Link to="/">HOME</Link>
             </li>
             <li className={styles.navigationItem}>
-                <Link to="/videos/">Videos</Link>
+                <Link to="/videos/">VIDEOS</Link>
             </li>
             <li className={styles.navigationItem}>
-                <Link to="/kategorien/">Ratgeber</Link>
+                <Link to="/kategorien/">GUIDE</Link>
             </li>
         </ul>
     </nav>

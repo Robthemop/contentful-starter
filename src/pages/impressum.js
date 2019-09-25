@@ -12,7 +12,7 @@ class Impressum extends React.Component {
         const [author] = get(this, 'props.data.allContentfulPerson.edges');
 
         return (
-            <div style={{background: '#FFF'}}>
+            <div className="container">
                 <Helmet>
                     <title>Boulder Boys - Impressum</title>
                     <meta charSet="utf-8"/>

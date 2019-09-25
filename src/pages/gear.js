@@ -4,17 +4,17 @@ import Helmet from 'react-helmet'
 import ArticlePreview from '../components/article-preview'
 import Navigation from '../components/navigation'
 import Link from "gatsby-link";
+import title from '../components/category-preview'
 import Hero from "../components/hero";
 import Footer from "../components/footer";
 
-
-class Spots extends React.Component {
+class Gear extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title')
         const posts = get(this, 'props.data.allContentfulArticle.edges')
         const [author] = get(this, 'props.data.allContentfulPerson.edges');
         return (
-            <div style={{background: '#fff'}}>
+            <div className="container">
                 <Helmet title={siteTitle}/>
                 <Hero data={author.node}/>
                 <Navigation/>
@@ -26,7 +26,9 @@ class Spots extends React.Component {
                     <ul className="article-list">
                         {posts.map(({node}) => {
                             return (
-                                <li key={node.slug}><ArticlePreview article={node}/></li>
+                                <li key={node.slug}>
+                                    <ArticlePreview article={node}/>
+                                </li>
                             )
                         })}
                     </ul>
@@ -37,12 +39,11 @@ class Spots extends React.Component {
     }
 }
 
-export default Spots
-
+export default Gear
 export const pageQuery = graphql`
-  query Spotsquery {
-  
-  allContentfulArticle(filter: {category: {contentful_id: {eq:"5Yqtk99s2c0YgC8QsMceGc"} } },
+  query EquipmentQuery {
+ 
+  allContentfulArticle(filter: {category: {contentful_id: {eq:"314YasijKUE4o8yIasyK4e"} } },
   sort: { fields: [publishDate], order: DESC })
   {
       edges {
@@ -66,7 +67,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulPerson(filter: { id: { eq: "c376FGKHuwt3rYECpQOjy94" } }) {
+    allContentfulPerson(filter: { id: { eq: "c3vmDTUtFqgPlNic7TBkMRw" } }) {
       edges {
         node {
           name
@@ -83,12 +84,12 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulCategory(filter:{ contentful_id: {eq: "5Yqtk99s2c0YgC8QsMceGc"}}){
+  allContentfulCategory(filter:{ contentful_id: {eq: "314YasijKUE4o8yIasyK4e" } } ) {
     edges{
       node{
         title
         }
     }
   }
-  }
+}
 `

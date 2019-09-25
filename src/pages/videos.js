@@ -13,7 +13,7 @@ class Videos extends React.Component {
         const [author] = get(this, 'props.data.allContentfulPerson.edges');
 
         return (
-            <div style={{background: '#fff'}}>
+            <div className="container">
                 <Helmet title={siteTitle}/>
                 <Hero data={author.node}/>
                 <Navigation/>

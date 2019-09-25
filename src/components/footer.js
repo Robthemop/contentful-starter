@@ -1,19 +1,18 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import styles from './navigation.module.css';
-import {css, cx} from 'emotion';
-import {SocialIcon} from 'react-social-icons';
-
-const color = '#F1582A';
-
+import styles from './footer.module.css';
 
 export default () => (
-
-    <nav role="footer">
-        <ul className={styles.navigation}>
-            <li className={styles.footerItem}>
-                <Link to="/impressum/">Impressum</Link>
-            </li>
-        </ul>
-    </nav>
+    <div className={styles.footerBox}>
+        <div>
+            <Link to="/impressum/">
+                <p>Impressum</p>
+            </Link>
+        </div>
+        <div>
+            <p>
+                boulderboy26@gmail.com
+            </p>
+        </div>
+    </div>
 )

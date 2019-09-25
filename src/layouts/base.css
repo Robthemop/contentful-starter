@@ -67,6 +67,11 @@ a {
     padding: 5vmin 0;
 }
 
+.container {
+    background: #fff;
+    position: relative;
+}
+
 @media (min-width: 300px) {
     .wrapper {
         width: calc(80% - 10vmin);

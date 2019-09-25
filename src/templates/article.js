@@ -14,7 +14,7 @@ class ArticleTemplate extends React.Component {
         const [author] = get(this, 'props.data.allContentfulPerson.edges');
 
         return (
-            <div style={{background: '#FFF'}}>
+            <div className="container">
                 <Hero data={author.node}/>
                 <Navigation/>
                 <div className="wrapper">
