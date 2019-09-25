@@ -36,7 +36,7 @@ export default () => (
                 <Link to="/">HOME</Link>
             </li>
             <li className={styles.navigationItem}>
-                <Link to="/videos/">VIDEOS</Link>
+                <Link to="/blog/boulder-boys/">VIDEOS</Link>
             </li>
             <li className={styles.navigationItem}>
                 <Link to="/kategorien/">GUIDE</Link>
