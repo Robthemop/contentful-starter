@@ -4,26 +4,17 @@ import get from 'lodash/get'
 import Img from 'gatsby-image'
 import pictureStyles from '../components/picture.module.css'
 import Link from "gatsby-link";
-import Hero from "../components/hero";
 import Navigation from "../components/navigation";
 import Footer from "../components/footer";
 
 class ArticleTemplate extends React.Component {
     render() {
         const article = get(this.props, 'data.contentfulArticle');
-        const [author] = get(this, 'props.data.allContentfulPerson.edges');
 
         return (
             <div className="container">
-                <Hero data={author.node}/>
                 <Navigation/>
-                <div className="wrapper">
-                    <div>
-                        <Link to={`/${article.category.title}`}
-                              style={{textDecoration: 'none'}}>
-                            <h2 className="section-headline">{article.category.title}</h2>
-                        </Link>
-                    </div>
+                <div className="article-wrapper">
                     <Helmet title={`${article.title} | ${article.category.title}`}/>
                     <h2>{article.title}</h2>
                     <div className={pictureStyles.p}

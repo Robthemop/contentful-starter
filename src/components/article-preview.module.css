@@ -1,5 +1,12 @@
 .previewTitle {
     font-size: 1.5em;
+    color: black;
+    display: block; /* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-align: left;
+
 }
 
 .tag {
@@ -12,16 +19,22 @@
     margin-right: .5em;
 }
 
-.preview {
-    border-bottom: 1.5px solid #3D5B80;
+@media (max-width: 992px) {
+    .preview {
+        border-bottom: 2px solid #D7DBE0;
+    }
 }
 
 .description {
-    font-size: 1em;
+    display: block; /* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 10em;
+    line-height: 1.8em;
+    text-align: left;
 }
 
-h3 {
-    color: #000;;
-    font-size: 2em;
-    font-weight: bold;
+h3:hover{
+    color: mediumturquoise;
 }

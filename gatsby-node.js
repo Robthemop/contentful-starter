@@ -70,39 +70,5 @@ exports.createPages = ({graphql, boundActionCreators}) => {
                 })
             })
         })
-
-    const InterviewTemplate = path.resolve('./src/templates/interview.js')
-    const interviews =
-        graphql(
-            `
-          {
-            allContentfulInterviews {
-              edges {
-                node {
-                  title
-                  slug
-                }
-              }
-            }
-          }
-          `
-        ).then(result => {
-            if (result.errors) {
-                console.log(result.errors);
-                Promise.reject(result.errors);
-
-            }
-
-            const interviewblogs = result.data.allContentfulInterviews.edges
-            interviewblogs.forEach((interviewblog, index) => {
-                createPage({
-                    path: `/blog/${interviewblog.node.slug}`,
-                    component: InterviewTemplate,
-                    context: {
-                        slug: interviewblog.node.slug
-                    },
-                })
-            })
-        })
-return Promise.all([blogs, vlogs, interviews]);
+return Promise.all([blogs, vlogs]);
 }

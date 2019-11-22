@@ -1,17 +1,16 @@
 import React from 'react'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import Hero from '../components/hero'
-import ArticlePreview from '../components/article-preview'
-import Navigation from '../components/navigation'
 import Footer from '../components/footer';
+import CategoryPreview from "../components/category-preview";
+import ArticlePreview from "../components/article-preview";
 
 class RootIndex extends React.Component {
     render() {
-
-        const [author] = get(this, 'props.data.allContentfulPerson.edges');
         const siteTitle = get(this, 'props.data.site.siteMetadata.title');
-        const articleData = get(this, 'props.data.allContentfulArticle.edges');
+        const category = get(this, 'props.data.allContentfulCategory.edges');
+        const posts = get(this, 'props.data.allContentfulArticle.edges');
+
 
         return (
             <div className="container">
@@ -21,25 +20,35 @@ class RootIndex extends React.Component {
                     <meta name="description"
                           content="Boulder Boys ist ein Blog für Boulder Anfänger und Fortgeschrittene."/>
                 </Helmet>
-                <Hero data={author.node}/>
-                <Navigation/>
-
-                <div className="wrapper">
-
-                    <div className="articleBox">
-                        <ul className="article-list">
-                            {articleData.map(({node}) => {
-                                return (
-                                    <li key={node.slug}>
-                                        <ArticlePreview article={node}/>
-                                    </li>
-                                )
-                            })}
-                        </ul>
+                <div className="wrapper--index">
+                    <div className="iframe-box">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y7kX4YxDzDE"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen></iframe>
                     </div>
+                    <ul className="category-list">
+                        {category.map(({node}) => {
+                            return (
+                                <li key={node.slug}>
+                                    <CategoryPreview category={node}/>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                    <ul className="article-list">
+                        {posts.map(({node}) => {
+                            return (
+                                <li key={node.slug}>
+                                    <ArticlePreview article={node}/>
+                                </li>
+                            )
+                        })}
+                    </ul>
                 </div>
                 <Footer/>
             </div>
+
 
         )
     }
@@ -49,7 +58,9 @@ export default RootIndex
 
 export const pageQuery = graphql`
   query HomeQuery {
-    allContentfulArticle(sort: { fields: [publishDate], order: DESC }) {
+  allContentfulArticle(
+  sort: { fields: [publishDate], order: DESC })
+  {
       edges {
         node {
           title
@@ -59,6 +70,9 @@ export const pageQuery = graphql`
             childMarkdownRemark {
               html
             }
+          }
+          category {
+            title
           }
           heroImage {
             sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
@@ -85,12 +99,17 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulCategory(filter:{ contentful_id: {eq: "5Yqtk99s2c0YgC8QsMceGc"}}){
+    allContentfulCategory{
     edges{
-      node{
-        title
-        }
+        node{
+            title
+            categoryImage {
+            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
+             ...GatsbyContentfulSizes_tracedSVG
+            }
+          }
+         }
+     }
     }
-  }
   }
 `

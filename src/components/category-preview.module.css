@@ -1,20 +1,18 @@
+
 .categoryTitle {
-    font-size: 3em;
-    color: #000;
+    font-size: 2em;
+    color: #2F3336;
+    display: inline;
 }
 
-.tag {
-    color: #A0A0A0;
-    text-decoration: none;
-    display: inline-block;
-    padding: .33333rem .5rem;
-    line-height: 1;
-    border-radius: 2px;
-    margin-right: .5em;
-    margin-top: 10px;
+@media (max-width: 992px) {
+    .categoryTitle {
+        font-size: 1em;
+        color: #2F3336;
+        display: inline;
+    }
 }
 
-.preview {
-    margin-top: 2;
+.categoryTitle:hover {
+    color: mediumturquoise;
 }
-

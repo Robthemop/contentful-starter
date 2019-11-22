@@ -1,16 +1,10 @@
 import React from 'react'
-import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Navigation from '../components/navigation'
-import Hero from "../components/hero";
 import Footer from "../components/footer";
-
 
 class Impressum extends React.Component {
     render() {
-
-        const [author] = get(this, 'props.data.allContentfulPerson.edges');
-
         return (
             <div className="container">
                 <Helmet>
@@ -18,7 +12,6 @@ class Impressum extends React.Component {
                     <meta charSet="utf-8"/>
                     <meta name="description" content="Mein Impressum"/>
                 </Helmet>
-                <Hero data={author.node}/>
                 <Navigation/>
                 <div style={{textAlign: 'justify'}}>
                     <div className="wrapper">
@@ -120,26 +113,4 @@ class Impressum extends React.Component {
         )
     }
 }
-
 export default Impressum
-export const pageQuery = graphql`
-  query Impressumquery {
-    allContentfulPerson(filter: { id: { eq: "c15jwOBqpxqSAOy2eOO4S0m" } }) {
-      edges {
-        node {
-          name
-          heroImage: image {
-            sizes(
-              maxWidth: 3728
-              maxHeight: 2376
-              resizingBehavior: PAD
-              background: "rgb:FFFFFF"
-            ) {
-              ...GatsbyContentfulSizes_tracedSVG
-            }
-          }
-        }
-      }
-    }
-  }
-`

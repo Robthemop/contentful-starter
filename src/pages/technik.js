@@ -3,27 +3,18 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import ArticlePreview from '../components/article-preview'
 import Navigation from '../components/navigation'
-import Link from "gatsby-link";
-import Hero from "../components/hero";
 import Footer from "../components/footer";
 
 class Technik extends React.Component {
     render() {
         const siteTitle = get(this, 'props.data.site.siteMetadata.title')
         const posts = get(this, 'props.data.allContentfulArticle.edges')
-        const [author] = get(this, 'props.data.allContentfulPerson.edges');
 
         return (
             <div className="container">
                 <Helmet title={siteTitle}/>
-                <Hero data={author.node}/>
                 <Navigation/>
                 <div className="wrapper">
-
-                    <Link to="/kategorien/"
-                          style={{textDecoration: 'none'}}>
-                        <h2 className="section-headline">Alle Kategorien anzeigen</h2>
-                    </Link>
                     <ul className="article-list">
                         {posts.map(({node}) => {
                             return (

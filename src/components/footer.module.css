@@ -1,13 +1,46 @@
 
-.footerBox{
-    justify-content: space-evenly;
-    height: 4em;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    bottom: 0;
-    color: white;
-    flex-direction: row;
+.footerBox {
     display: flex;
-    font-size: 0.5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #373F49;
+    position: relative;
+    border-top: 4px solid #1F5A73;
+    bottom: 0;
+    left: 0;
+    flex-wrap: wrap;
+    width: 100%;
 }
+
+.footerBox:hover {
+    background-color: mediumturquoise;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .footerBox {
+        font-size: 2em;
+    }
+}
+
+.link {
+    font-size: 2em;
+}
+
+@media (max-width: 992px) {
+    .link {
+        font-size: 1em;
+    }
+}
+
+.social {
+    padding-bottom: 32px;
+}
+
+
+
