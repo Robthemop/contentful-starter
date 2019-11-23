@@ -27,15 +27,6 @@ class RootIndex extends React.Component {
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen></iframe>
                     </div>
-                    <ul className="category-list">
-                        {category.map(({node}) => {
-                            return (
-                                <li key={node.slug}>
-                                    <CategoryPreview category={node}/>
-                                </li>
-                            )
-                        })}
-                    </ul>
                     <ul className="article-list">
                         {posts.map(({node}) => {
                             return (

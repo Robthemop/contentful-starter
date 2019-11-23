@@ -16,7 +16,7 @@ class ArticleTemplate extends React.Component {
                 <Navigation/>
                 <div className="article-wrapper">
                     <Helmet title={`${article.title} | ${article.category.title}`}/>
-                    <h2>{article.title}</h2>
+                    <h1>{article.title}</h1>
                     <div className={pictureStyles.p}
                          dangerouslySetInnerHTML={{
                              __html: article.body.childMarkdownRemark.html,
