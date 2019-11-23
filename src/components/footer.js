@@ -12,7 +12,7 @@ export default () => (
         </div>
         <div className={styles.social}>
             <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" className="socialIcon"/>
-            <SocialIcon url="http://instagram.com/robinhookyt" className="socialIcon"/>
+            <SocialIcon url="http://instagram.com/boulderboysyt" className="socialIcon"/>
             <SocialIcon url="https://www.facebook.com/boulderobin/" className="socialIcon"/>
             <SocialIcon url="https://twitter.com/Boulderboys1" className="socialIcon"/>
         </div>
