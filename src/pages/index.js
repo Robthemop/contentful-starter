@@ -22,8 +22,7 @@ class RootIndex extends React.Component {
                 </Helmet>
                 <div className="wrapper--index">
                     <div className="iframe-box">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y7kX4YxDzDE"
-                                frameBorder="0"
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/F_V72xPl8kU" frameBorder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen></iframe>
                     </div>

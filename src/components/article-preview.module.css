@@ -5,7 +5,7 @@
     text-overflow: ellipsis;
     word-wrap: break-word;
     overflow: hidden;
-    text-align: left;
+    text-align: center;
 
 }
 
@@ -32,7 +32,7 @@
     overflow: hidden;
     max-height: 10em;
     line-height: 1.8em;
-    text-align: left;
+    text-align: center;
 }
 
 h3:hover{
