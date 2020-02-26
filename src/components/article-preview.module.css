@@ -6,7 +6,6 @@
     word-wrap: break-word;
     overflow: hidden;
     text-align: center;
-
 }
 
 .tag {
@@ -21,7 +20,8 @@
 
 @media (max-width: 992px) {
     .preview {
-        border-bottom: 2px solid #D7DBE0;
+        border-bottom: 2px solid black;
+        margin-bottom: 3em;
     }
 }
 

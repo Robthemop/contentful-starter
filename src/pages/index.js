@@ -7,6 +7,7 @@ import ArticlePreview from "../components/article-preview";
 
 class RootIndex extends React.Component {
     render() {
+
         const siteTitle = get(this, 'props.data.site.siteMetadata.title');
         const category = get(this, 'props.data.allContentfulCategory.edges');
         const posts = get(this, 'props.data.allContentfulArticle.edges');
@@ -20,12 +21,24 @@ class RootIndex extends React.Component {
                     <meta name="description"
                           content="Boulder Boys ist ein Blog für Boulder Anfänger und Fortgeschrittene."/>
                 </Helmet>
+                <div className="header_title">
+                    <h1>boulder boys</h1>
+                </div>
                 <div className="wrapper--index">
                     <div className="iframe-box">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/F_V72xPl8kU" frameBorder="0"
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/euX-g-SR6FQ" frameBorder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen></iframe>
                     </div>
+                    <ul className="category-list">
+                        {category.map(({node}) => {
+                            return (
+                                <li key={node.title}>
+                                    <CategoryPreview category={node}/>
+                                </li>
+                            )
+                        })}
+                    </ul>
                     <ul className="article-list">
                         {posts.map(({node}) => {
                             return (
@@ -97,9 +110,9 @@ export const pageQuery = graphql`
             sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
              ...GatsbyContentfulSizes_tracedSVG
             }
-          }
-         }
-     }
+            }
+        }
     }
   }
+ }
 `

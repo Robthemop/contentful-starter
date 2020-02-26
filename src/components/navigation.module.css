@@ -1,16 +1,18 @@
 .navigation {
     display: flex;
+    position: fixed;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: #fff;
     background-color: #373F49;
     width: 100%;
-    position: absolute;
     border-bottom: 4px solid #1F5A73;
     height: 100px;
     top: 0;
     left: 0;
+    margin-bottom: 10px;
+    z-index: 100;
 }
 
 .socialMedia {

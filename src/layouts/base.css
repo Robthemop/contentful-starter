@@ -63,7 +63,7 @@ a {
 
 .wrapper {
     width: calc(90% - 10vmin);
-    margin: 5em auto;
+    margin: 10em auto 5em;
 }
 
 .wrapper--index{
@@ -283,6 +283,14 @@ iframe {
     }
 }
 
+.header_title{
+    margin-top: 2em;
+}
+
+.Laura-title{
+    color: pink;
+    font-size: 40px;
+}
 
 
 

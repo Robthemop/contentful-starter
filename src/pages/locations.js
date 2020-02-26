@@ -4,18 +4,31 @@ import Helmet from 'react-helmet'
 import ArticlePreview from '../components/article-preview'
 import Navigation from '../components/navigation'
 import Footer from "../components/footer";
+import CategoryPreview from "../components/category-preview";
 
 
 class Locations extends React.Component {
     render() {
-        const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-        const posts = get(this, 'props.data.allContentfulArticle.edges')
+
+        const siteTitle = get(this, 'props.data.site.siteMetadata.title');
+        const posts = get(this, 'props.data.allContentfulArticle.edges');
         const [author] = get(this, 'props.data.allContentfulPerson.edges');
+        const category = get(this, 'props.data.allContentfulCategory.edges');
+
         return (
             <div className="container">
                 <Helmet title={siteTitle}/>
                 <Navigation/>
                 <div className="wrapper">
+                    <ul className="category-list">
+                        {category.map(({node}) => {
+                            return (
+                                <li key={node.title}>
+                                    <CategoryPreview category={node}/>
+                                </li>
+                            )
+                        })}
+                    </ul>
                     <ul className="article-list">
                         {posts.map(({node}) => {
                             return (
@@ -76,12 +89,17 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulCategory(filter:{ contentful_id: {eq: "5Yqtk99s2c0YgC8QsMceGc"}}){
+    allContentfulCategory{
     edges{
-      node{
-        title
-        }
+        node{
+            title
+            categoryImage {
+            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
+             ...GatsbyContentfulSizes_tracedSVG
+            }
+          }
+         }
+     }
     }
-  }
   }
 `

@@ -18,7 +18,7 @@ class Impressum extends React.Component {
                         <h3>Impressum</h3>
                         <h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
                         <p>Robin He&szlig;<br/>
-                            Villemomblerstra&szlig;e 40<br/>
+                            Rochusstraße 94<br/>
                             53123 Bonn</p>
                         <h3>Kontakt</h3>
                         <p>E-Mail: 1robinhess@gmail.com</p>
