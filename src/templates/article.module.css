@@ -7,3 +7,34 @@
     margin: -1em -2.5em 1em;
     font-size: 2em;
 }
+
+.body p img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.body p {
+    text-align: center;
+}
+
+.body ol{
+    padding-left: 0;
+    text-align: center;
+}
+
+.body h2{
+    text-align: center;
+}
+
+.body h3{
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.body a {
+    text-decoration: underline #1F5A73;
+}

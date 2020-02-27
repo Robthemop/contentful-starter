@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import Img from 'gatsby-image'
-import pictureStyles from '../components/picture.module.css'
+import Styles from '../templates/article.module.css'
 import Link from "gatsby-link";
 import Navigation from "../components/navigation";
 import Footer from "../components/footer";
@@ -16,26 +16,10 @@ class ArticleTemplate extends React.Component {
                 <Navigation/>
                 <div className="article-wrapper">
                     <Helmet title={`${article.title} | ${article.category.title}`}/>
-                    <h1>{article.title}</h1>
-                    <div className={pictureStyles.p}
+                    <h1 className={Styles.title}>{article.title}</h1>
+                    <div className={Styles.body}
                          dangerouslySetInnerHTML={{
                              __html: article.body.childMarkdownRemark.html,
-                         }}
-                    />
-                    <div className={pictureStyles.picture}>
-                        <Img className={pictureStyles.pictureImg} alt={article.title} sizes={article.pictureOne.sizes}/>
-                    </div>
-                    <div className={pictureStyles.p}
-                         dangerouslySetInnerHTML={{
-                             __html: article.bodyTwo.childMarkdownRemark.html,
-                         }}
-                    />
-                    <div className={pictureStyles.picture}>
-                        <Img className={pictureStyles.pictureImg} alt={article.title} sizes={article.pictureTwo.sizes}/>
-                    </div>
-                    <div className={pictureStyles.p}
-                         dangerouslySetInnerHTML={{
-                             __html: article.bodyThree.childMarkdownRemark.html,
                          }}
                     />
                 </div>
@@ -56,36 +40,15 @@ export const pageQuery = graphql`
           html
         }
       }
-      pictureOne {
+      picture {
         sizes(maxWidth: 4000, background: "rgb:255255") {
           ...GatsbyContentfulSizes_tracedSVG
         }
       }
-      bodyTwo {
-        childMarkdownRemark {
-          html
-        }
-      }
-      pictureTwo {
-        sizes(maxWidth: 4000, background: "rgb:255255") {
-          ...GatsbyContentfulSizes_tracedSVG
-        }
-      }
-      bodyThree {
-        childMarkdownRemark {
-          html
-        }
-      }
-      heroImage {
-            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: PAD) {
-             ...GatsbyContentfulSizes_tracedSVG
-            }
-      }
-      category{
+      category {
         title
       }
     }
-  
   allContentfulPerson(filter: { id: { eq: "c15jwOBqpxqSAOy2eOO4S0m" } }) {
       edges {
         node {
@@ -104,5 +67,4 @@ export const pageQuery = graphql`
       }
     }
     }
-   
 `

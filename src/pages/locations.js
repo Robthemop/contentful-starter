@@ -64,7 +64,7 @@ export const pageQuery = graphql`
           category {
             title
           }
-          heroImage {
+          picture {
             sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
              ...GatsbyContentfulSizes_tracedSVG
             }
