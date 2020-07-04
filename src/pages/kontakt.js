@@ -17,7 +17,7 @@ class Kontakt extends React.Component {
 
             <div className="wrapper">
                 <h1>schreib mir eine Nachricht.</h1>
-                <form data-netlify="true">
+                <form name="kontakt" method="POST" data-netlify="true">
                         <label>
                             Name
                             <br/>
