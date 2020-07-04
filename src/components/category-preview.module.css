@@ -1,8 +1,11 @@
-
 .categoryTitle {
     font-size: 2em;
     color: #2F3336;
     display: inline;
+}
+
+.categoryTitle:hover{
+    text-decoration: underline mediumturquoise;
 }
 
 @media (max-width: 992px) {
@@ -11,8 +14,4 @@
         color: #2F3336;
         display: inline;
     }
-}
-
-.categoryTitle:hover {
-    color: mediumturquoise;
 }

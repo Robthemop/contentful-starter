@@ -7,15 +7,19 @@
     color: #fff;
     background-color: #373F49;
     position: relative;
-    border-top: 4px solid #1F5A73;
+    border-top: 4px solid orange;
     bottom: 0;
     left: 0;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.footerBox:hover {
-    background-color: mediumturquoise;
+.impressum {
+    color: white;
+}
+
+.impressum:hover {
+    text-decoration: underline mediumturquoise;
 }
 
 a {
@@ -41,6 +45,3 @@ a {
 .social {
     padding-bottom: 32px;
 }
-
-
-

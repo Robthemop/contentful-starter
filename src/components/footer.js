@@ -7,7 +7,7 @@ export default () => (
     <div className={styles.footerBox}>
         <div className={styles.link}>
             <Link to="/impressum/">
-                <p>Impressum</p>
+                <h2 className={styles.impressum}>impressum</h2>
             </Link>
         </div>
         <div className={styles.social}>

@@ -4,32 +4,28 @@ import Helmet from 'react-helmet'
 import Footer from '../components/footer';
 import CategoryPreview from "../components/category-preview";
 import ArticlePreview from "../components/article-preview";
+import styles from "../components/category-preview.module.css";
+import {SocialIcon} from "react-social-icons";
+import Link from "gatsby-link";
 
 class RootIndex extends React.Component {
     render() {
 
-        const siteTitle = get(this, 'props.data.site.siteMetadata.title');
         const category = get(this, 'props.data.allContentfulCategory.edges');
         const posts = get(this, 'props.data.allContentfulArticle.edges');
 
 
         return (
             <div className="container">
+
                 <Helmet>
                     <title>Boulder Boys</title>
                     <meta charSet="utf-8"/>
                     <meta name="description"
                           content="Boulder Boys ist ein Blog für Boulder Anfänger und Fortgeschrittene."/>
                 </Helmet>
-                <div className="header_title">
-                    <h1>boulder boys</h1>
-                </div>
+
                 <div className="wrapper--index">
-                    <div className="iframe-box">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/euX-g-SR6FQ" frameBorder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen></iframe>
-                    </div>
                     <ul className="category-list">
                         {category.map(({node}) => {
                             return (
@@ -38,7 +34,21 @@ class RootIndex extends React.Component {
                                 </li>
                             )
                         })}
+
+                        {/*<Link to="/"><li><h2 className={styles.categoryTitle}>Aktivismus</h2></li></Link>
+                        <Link to="/"><li><h2 className={styles.categoryTitle}>Rechner</h2></li></Link>*/}
+
+                        <Link to="/kontakt"><li><h2 className={styles.categoryTitle}>Kontakt</h2></li></Link>
+
                     </ul>
+
+                    <div className="social-icons-top">
+                        <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" className="socialIcon"/>
+                        <SocialIcon url="http://instagram.com/boulderboysyt" className="socialIcon"/>
+                        <SocialIcon url="https://www.facebook.com/boulderobin/" className="socialIcon"/>
+                        <SocialIcon url="https://twitter.com/Boulderboys1" className="socialIcon"/>
+                    </div>
+
                     <ul className="article-list">
                         {posts.map(({node}) => {
                             return (
@@ -103,16 +113,16 @@ export const pageQuery = graphql`
       }
     }
     allContentfulCategory{
-    edges{
-        node{
+        edges{
+         node{
             title
-            categoryImage {
-            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
-             ...GatsbyContentfulSizes_tracedSVG
-            }
+                categoryImage {
+                    sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
+                    ...GatsbyContentfulSizes_tracedSVG
+                }
             }
         }
+       }
     }
-  }
  }
-`
+`;
