@@ -36,7 +36,7 @@ class Kontakt extends React.Component {
                         <label>
                             Deine Nachricht
                             <br/>
-                            <textarea name="nachricht"/>
+                            <textarea name="message"/>
                         </label>
                     </p>
                     <p>
