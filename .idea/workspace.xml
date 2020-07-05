@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fdeb1cb4-b450-4b47-a46d-441608056d92" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/kontakt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kontakt.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/pages/kontakt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+            <state relative-caret-position="275">
+              <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -230,7 +229,7 @@
       <workItem from="1582740829993" duration="831000" />
       <workItem from="1582794837254" duration="730000" />
       <workItem from="1582795908629" duration="3737000" />
-      <workItem from="1593634526066" duration="13144000" />
+      <workItem from="1593634526066" duration="13448000" />
     </task>
     <task id="LOCAL-00001" summary="ja moin">
       <created>1574465821403</created>
@@ -288,11 +287,25 @@
       <option name="project" value="LOCAL" />
       <updated>1593936656665</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="form v3">
+      <created>1593937554674</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1593937554674</updated>
+    </task>
+    <task id="LOCAL-00010" summary="form v4">
+      <created>1593937605318</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1593937605318</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51273000" />
+    <option name="totallyTimeSpent" value="51577000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -351,7 +364,9 @@
     <MESSAGE value="style and form" />
     <MESSAGE value="form" />
     <MESSAGE value="form v2" />
-    <option name="LAST_COMMIT_MESSAGE" value="form v2" />
+    <MESSAGE value="form v3" />
+    <MESSAGE value="form v4" />
+    <option name="LAST_COMMIT_MESSAGE" value="form v4" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/hero.module.css">
@@ -610,8 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/kontakt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        <state relative-caret-position="275">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
