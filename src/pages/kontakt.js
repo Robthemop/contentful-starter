@@ -21,19 +21,19 @@ class Kontakt extends React.Component {
                         <label>
                             Name
                             <br/>
-                            <input type="text"/>
+                            <input type="text" name="name"/>
                         </label>
                     <br/>
                         <label>
                             E-mail
                             <br/>
-                            <input type="email"/>
+                            <input type="email" name="email"/>
                         </label>
                     <br/>
                         <label>
                             Deine Nachricht
                             <br/>
-                            <textarea/>
+                            <textarea name="nachricht"/>
                         </label>
                     <br/>
                     <input type="submit"/>
