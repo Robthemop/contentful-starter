@@ -18,25 +18,30 @@ class Kontakt extends React.Component {
             <div className="wrapper">
                 <h1>schreib mir eine Nachricht.</h1>
                 <form name="kontakt" method="POST" data-netlify="true">
+                    <p>
                         <label>
                             Name
                             <br/>
                             <input type="text" name="name"/>
                         </label>
-                    <br/>
+                    </p>
+                    <p>
                         <label>
                             E-mail
                             <br/>
                             <input type="email" name="email"/>
                         </label>
-                    <br/>
+                    </p>
+                    <p>
                         <label>
                             Deine Nachricht
                             <br/>
                             <textarea name="nachricht"/>
                         </label>
-                    <br/>
-                    <input type="submit"/>
+                    </p>
+                    <p>
+                        <input type="submit"/>
+                    </p>
                 </form>
             </div>
 
