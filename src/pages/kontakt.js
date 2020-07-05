@@ -17,7 +17,17 @@ class Kontakt extends React.Component {
 
             <div className="wrapper">
                 <h1>schreib mir eine Nachricht.</h1>
-                <form action="/success" name="kontakt" method="POST" data-netlify="true">
+                <form action="/success"
+                      name="kontakt"
+                      method="POST"
+                      data-netlify="true"
+                      data-netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p hidden>
+                        <label>
+                           <input name="bot-field"/>
+                        </label>
+                    </p>
                     <p>
                         <label>
                             Name
