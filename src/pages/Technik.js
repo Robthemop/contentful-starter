@@ -3,33 +3,37 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import ArticlePreview from '../components/article-preview'
 import Navigation from '../components/navigation'
-import title from '../components/category-preview'
 import Footer from "../components/footer";
 import CategoryPreview from "../components/category-preview";
 
 
-class Gear extends React.Component {
+class Technik extends React.Component {
     render() {
 
         const siteTitle = get(this, 'props.data.site.siteMetadata.title');
         const posts = get(this, 'props.data.allContentfulArticle.edges');
-        const [author] = get(this, 'props.data.allContentfulPerson.edges');
         const category = get(this, 'props.data.allContentfulCategory.edges');
+
 
         return (
             <div className="container">
                 <Helmet title={siteTitle}/>
                 <Navigation/>
                 <div className="wrapper">
-                    <ul className="category-list">
-                        {category.map(({node}) => {
-                            return (
-                                <li key={node.title}>
-                                    <CategoryPreview category={node}/>
-                                </li>
-                            )
-                        })}
-                    </ul>
+
+                    {category.map(({node}) => {
+                        return (
+                            <h1>{node.title}</h1>
+                        )
+                    })}
+
+                    {category.map(({node}) => {
+                        return (
+                            <div dangerouslySetInnerHTML={{
+                                __html: node.description.childMarkdownRemark.html,}}/>
+                        )
+                    })}
+
                     <ul className="article-list">
                         {posts.map(({node}) => {
                             return (
@@ -46,11 +50,11 @@ class Gear extends React.Component {
     }
 }
 
-export default Gear
+export default Technik
 export const pageQuery = graphql`
-  query EquipmentQuery {
+  query Technikquery {
  
-  allContentfulArticle(filter: {category: {contentful_id: {eq:"314YasijKUE4o8yIasyK4e"} } },
+  allContentfulArticle(filter: {category: {contentful_id: {eq:"tYDKdQwpe2Y3gQlOxODv8"} } },
   sort: { fields: [publishDate], order: DESC })
   {
       edges {
@@ -74,7 +78,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulPerson(filter: { id: { eq: "c3vmDTUtFqgPlNic7TBkMRw" } }) {
+    allContentfulPerson(filter: { id: { eq: "c4cNLshPowfDz3fQmQXlDTw" } }) {
       edges {
         node {
           name
@@ -91,17 +95,17 @@ export const pageQuery = graphql`
         }
       }
     }
-  allContentfulCategory{
-    edges{
-        node{
-            title
-            categoryImage {
-            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
-             ...GatsbyContentfulSizes_tracedSVG
-            }
-          }
+  allContentfulCategory(filter: {contentful_id: { eq: "tYDKdQwpe2Y3gQlOxODv8" } } ){
+        edges{
+            node{
+                title
+                description {
+                    childMarkdownRemark {
+                        html
+                    }
+                }
+             }
         }
-    }
-  }
-}
+  } 
+ }
 `

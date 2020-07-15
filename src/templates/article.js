@@ -16,12 +16,16 @@ class ArticleTemplate extends React.Component {
                 <Navigation/>
                 <div className="article-wrapper">
                     <Helmet title={`${article.title} | ${article.category.title}`}/>
-                    <h1 className={Styles.title}>{article.category.title}: {article.title}</h1>
+                    <Link to={`/${article.category.title}/`}>
+                        <li className={Styles.breadcrumb}>{article.category.title}</li>
+                    </Link>
+                    <h1 className={Styles.title}>{article.title}</h1>
                     <div className={Styles.body}
                          dangerouslySetInnerHTML={{
                              __html: article.body.childMarkdownRemark.html,
                          }}
                     />
+                    <p className={Styles.author}>{article.author}</p>
                 </div>
                 <Footer/>
             </div>
@@ -41,13 +45,14 @@ export const pageQuery = graphql`
         }
       }
       picture {
-        sizes(maxWidth: 4000, background: "rgb:255255") {
+        sizes(maxWidth: 400 maxHeight: 400 resizingBehavior: PAD background: "rgb:255255") {
           ...GatsbyContentfulSizes_tracedSVG
         }
       }
       category {
         title
       }
+      author
     }
   allContentfulPerson(filter: { id: { eq: "c15jwOBqpxqSAOy2eOO4S0m" } }) {
       edges {

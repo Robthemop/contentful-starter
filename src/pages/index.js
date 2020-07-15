@@ -25,29 +25,47 @@ class RootIndex extends React.Component {
                           content="Boulder Boys ist ein Blog für Boulder Anfänger und Fortgeschrittene."/>
                 </Helmet>
 
+                <div className="home-title-container">
+                    <h1 className="home-title">Boulder Boys</h1>
+                </div>
+
+                <div className="intro-text-container">
+                    <p className="intro-text">
+                        Du bekommst schon vom bloßen Gedanken an bouldern schwitzige Hände? Dann bist du hier genau richtig!
+                        Lies dir meine ausführlichen Reviews zu den coolsten Kletterhallen durch. Oder erfahre, wie du eine saubere Klettertechnik entwickelst. So wird es dir ein leichtes sein, die Klettergriffe zu bezwingen.
+                        Außerdem bewerte ich für dich meine Kletterausrüstung und Kletterschuhe. Und erkläre dir, worauf du beim Kauf achten solltest.
+                        Auch in meinen Videos kannst du neues über das Klettern lernen oder aber einfach mal chillen und nur zuschauen.
+                    </p>
+                    <p style={{fontWeight: "bold"}}>Robin Hess</p>
+                </div>
+
+                <div className="social-icons-desktop">
+                    <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" bgColor="#000"/>
+                    <SocialIcon url="http://instagram.com/boulderboysyt" bgColor="#000"/>
+                    <SocialIcon url="https://www.facebook.com/boulderobin/" bgColor="#000"/>
+                </div>
+
+                <div className="social-icons-mobile">
+                    <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" bgColor="#000" style={{ height: 35, width: 35 }}/>
+                    <SocialIcon url="http://instagram.com/boulderboysyt" bgColor="#000" style={{ height: 35, width: 35 }}/>
+                    <SocialIcon url="https://www.facebook.com/boulderobin/" bgColor="#000" style={{ height: 35, width: 35 }}/>
+                </div>
+
                 <div className="wrapper--index">
+
+                    <h2>Kategorien</h2>
+
                     <ul className="category-list">
                         {category.map(({node}) => {
                             return (
-                                <li key={node.title}>
+                                <li key={node.slug}>
                                     <CategoryPreview category={node}/>
                                 </li>
                             )
                         })}
-
-                        {/*<Link to="/"><li><h2 className={styles.categoryTitle}>Aktivismus</h2></li></Link>
-                        <Link to="/"><li><h2 className={styles.categoryTitle}>Rechner</h2></li></Link>*/}
-
-                        <Link to="/kontakt"><li><h2 className={styles.categoryTitle}>Kontakt</h2></li></Link>
-
                     </ul>
 
-                    <div className="social-icons-top">
-                        <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" className="socialIcon"/>
-                        <SocialIcon url="http://instagram.com/boulderboysyt" className="socialIcon"/>
-                        <SocialIcon url="https://www.facebook.com/boulderobin/" className="socialIcon"/>
-                        <SocialIcon url="https://twitter.com/Boulderboys1" className="socialIcon"/>
-                    </div>
+                    <h2>Alle Posts</h2>
 
                     <ul className="article-list">
                         {posts.map(({node}) => {
@@ -58,6 +76,7 @@ class RootIndex extends React.Component {
                             )
                         })}
                     </ul>
+
                 </div>
                 <Footer/>
             </div>
@@ -119,9 +138,14 @@ export const pageQuery = graphql`
                 categoryImage {
                     sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
                     ...GatsbyContentfulSizes_tracedSVG
+                    }
                 }
-            }
-        }
+                description {
+                    childMarkdownRemark {
+                        html
+                    }
+                    }
+         }
        }
     }
  }

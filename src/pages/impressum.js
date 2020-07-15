@@ -17,14 +17,14 @@ class Impressum extends React.Component {
                     <div className="wrapper">
                         <h3>Impressum</h3>
                         <h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
-                        <p>Robin He&szlig;<br/>
+                        <p>Robin Hess<br/>
                             Rochusstraße 94<br/>
                             53123 Bonn</p>
                         <h3>Kontakt</h3>
                         <p>E-Mail: 1robinhess@gmail.com</p>
                         <h3>Verantwortlich f&uuml;r den Inhalt nach &sect; 55 Abs. 2 RStV</h3>
-                        <p>Robin He&szlig;<br/>
-                            Villemomblerstra&szlig;e 40<br/>
+                        <p>Robin Hess<br/>
+                            Rochusstraße 94<br/>
                             53123 Bonn</p>
                         <h3>Haftung f&uuml;r Inhalte</h3>
                         <p>Als Diensteanbieter sind wir gem&auml;&szlig; &sect; 7 Abs.1 TMG f&uuml;r eigene

@@ -1,7 +1,10 @@
-.categoryTitle {
-    font-size: 2em;
-    color: #2F3336;
-    display: inline;
+.categoryImage {
+    /*
+      Ensure golden ratio for the hero size while limiting it to some extend to
+      the viewport width
+    */
+    max-width: 400px;
+    max-height: 400px;
 }
 
 .categoryTitle:hover{

@@ -7,7 +7,7 @@ import Footer from "../components/footer";
 import CategoryPreview from "../components/category-preview";
 
 
-class Locations extends React.Component {
+class Kletterhallen extends React.Component {
     render() {
 
         const siteTitle = get(this, 'props.data.site.siteMetadata.title');
@@ -20,15 +20,17 @@ class Locations extends React.Component {
                 <Helmet title={siteTitle}/>
                 <Navigation/>
                 <div className="wrapper">
-                    <ul className="category-list">
-                        {category.map(({node}) => {
-                            return (
-                                <li key={node.title}>
-                                    <CategoryPreview category={node}/>
-                                </li>
-                            )
-                        })}
-                    </ul>
+                    {category.map(({node}) => {
+                        return (
+                            <h3>{node.title}</h3>
+                        )
+                    })}
+                    {category.map(({node}) => {
+                        return (
+                            <div dangerouslySetInnerHTML={{
+                                __html: node.description.childMarkdownRemark.html,}}/>
+                        )
+                    })}
                     <ul className="article-list">
                         {posts.map(({node}) => {
                             return (
@@ -43,7 +45,7 @@ class Locations extends React.Component {
     }
 }
 
-export default Locations
+export default Kletterhallen
 
 export const pageQuery = graphql`
   query Spotsquery {
@@ -89,17 +91,17 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulCategory{
-    edges{
-        node{
-            title
-            categoryImage {
-            sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
-             ...GatsbyContentfulSizes_tracedSVG
-            }
-          }
-         }
-     }
+    allContentfulCategory(filter: {contentful_id: { eq: "5Yqtk99s2c0YgC8QsMceGc" } }) {
+        edges{
+            node{
+                title
+                description {
+                    childMarkdownRemark {
+                        html
+                    }
+                }
+             }
+        }   
     }
   }
 `
