@@ -93,6 +93,7 @@ a {
     align-items: center;
     justify-content: space-between;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .social-icons-desktop {
