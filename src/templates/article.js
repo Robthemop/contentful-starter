@@ -13,9 +13,15 @@ class ArticleTemplate extends React.Component {
 
         return (
             <div className="container">
+                <Helmet>
+                    <html lang="de"></html>
+                    <title>{`${article.title} | ${article.category.title}`}</title>
+                    <meta charSet="utf-8"/>
+                    <meta name="description"
+                          content="Boulder Boys ist ein Blog für Boulder Anfänger und Fortgeschrittene."/>
+                </Helmet>
                 <Navigation/>
                 <div className="article-wrapper">
-                    <Helmet title={`${article.title} | ${article.category.title}`}/>
                     <Link to={`/${article.category.title}/`}>
                         <li className={Styles.breadcrumb}>{article.category.title}</li>
                     </Link>

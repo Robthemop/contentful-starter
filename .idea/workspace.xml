@@ -1,26 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdeb1cb4-b450-4b47-a46d-441608056d92" name="Default Changelist" comment="">
+    <list default="true" id="fdeb1cb4-b450-4b47-a46d-441608056d92" name="Default Changelist" comment="text justify&#10;overflow hidden">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article-preview.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/article-preview.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-preview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-preview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/category-preview.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/category-preview.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/gear.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Kletterausrüstung.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/impressum.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/impressum.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/kategorien.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/kategorien.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/locations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Kletterhallen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/technik.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Technik.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/article.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/article.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="2292">
+              <caret line="138" column="55" selection-start-line="138" selection-start-column="55" selection-end-line="138" selection-end-column="55" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -58,13 +42,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/Technik.js">
+        <entry file="file://$PROJECT_DIR$/src/components/category.module.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1768">
-              <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -76,6 +57,18 @@
               <caret line="9" column="57" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/impressum.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,20 +89,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/category-preview.module.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="374">
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/Kletterausrüstung.js">
+        <entry file="file://$PROJECT_DIR$/src/components/article-preview.module.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="89" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="382">
+              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -117,20 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/layouts/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="270" column="29" selection-start-line="270" selection-start-column="29" selection-end-line="270" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/Kletterhallen.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="163">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -138,8 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/article.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="-375">
+              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -152,7 +130,6 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>h3+</find>
-      <find>container</find>
       <find>text</find>
       <find>category-list</find>
       <find>category</find>
@@ -176,6 +153,9 @@
       <find>social-icons</find>
       <find>intro</find>
       <find>home-title</find>
+      <find>container</find>
+      <find>center</find>
+      <find>text-align</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -203,12 +183,9 @@
         <option value="$PROJECT_DIR$/package-lock.json" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/pages/locations.js" />
-        <option value="$PROJECT_DIR$/src/components/category-preview.module.css" />
-        <option value="$PROJECT_DIR$/src/components/article-preview.module.css" />
         <option value="$PROJECT_DIR$/src/components/navigation.module.css" />
         <option value="$PROJECT_DIR$/src/components/footer.module.css" />
         <option value="$PROJECT_DIR$/src/components/footer.js" />
-        <option value="$PROJECT_DIR$/src/templates/article.js" />
         <option value="$PROJECT_DIR$/src/templates/article.module.css" />
         <option value="$PROJECT_DIR$/src/templates/blog-post.js" />
         <option value="$PROJECT_DIR$/src/pages/gear.js" />
@@ -218,6 +195,9 @@
         <option value="$PROJECT_DIR$/src/pages/Technik.js" />
         <option value="$PROJECT_DIR$/src/pages/kategorien.js" />
         <option value="$PROJECT_DIR$/src/components/navigation.js" />
+        <option value="$PROJECT_DIR$/src/templates/article.js" />
+        <option value="$PROJECT_DIR$/src/components/article-preview.module.css" />
+        <option value="$PROJECT_DIR$/src/components/category-preview.module.css" />
         <option value="$PROJECT_DIR$/src/pages/index.js" />
         <option value="$PROJECT_DIR$/src/layouts/base.css" />
       </list>
@@ -329,7 +309,7 @@
       <workItem from="1582794837254" duration="730000" />
       <workItem from="1582795908629" duration="3737000" />
       <workItem from="1593634526066" duration="22886000" />
-      <workItem from="1594189785985" duration="22376000" />
+      <workItem from="1594189785985" duration="24859000" />
     </task>
     <task id="LOCAL-00001" summary="ja moin">
       <created>1574465821403</created>
@@ -436,11 +416,25 @@
       <option name="project" value="LOCAL" />
       <updated>1593943469743</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="boulderboys 3.0">
+      <created>1594848022649</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1594848022650</updated>
+    </task>
+    <task id="LOCAL-00017" summary="text justify&#10;overflow hidden">
+      <created>1595103999890</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1595103999890</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83391000" />
+    <option name="totallyTimeSpent" value="85874000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -453,9 +447,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.86278194" visible="true" weight="0.2374798" />
-      <window_info id="Structure" order="1" sideWeight="0.13721804" side_tool="true" visible="true" weight="0.2374798" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.87147886" visible="true" weight="0.2374798" />
+      <window_info id="Structure" order="1" sideWeight="0.12852113" side_tool="true" visible="true" weight="0.2374798" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -470,10 +465,10 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946752" weight="0.32970297" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.7124394" visible="true" weight="0.27123287" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.28756058" side_tool="true" visible="true" weight="0.27123287" />
-      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49757674" weight="0.32876712" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4983845" weight="0.32739726" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.7124394" weight="0.27123287" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5024233" side_tool="true" visible="true" weight="0.22191781" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49676898" weight="0.32876712" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49757674" visible="true" weight="0.22191781" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -504,7 +499,9 @@
     <MESSAGE value="form v6" />
     <MESSAGE value="form v7" />
     <MESSAGE value="form v8" />
-    <option name="LAST_COMMIT_MESSAGE" value="form v8" />
+    <MESSAGE value="boulderboys 3.0" />
+    <MESSAGE value="text justify&#10;overflow hidden" />
+    <option name="LAST_COMMIT_MESSAGE" value="text justify&#10;overflow hidden" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/hero.module.css">
@@ -599,13 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/category.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/hero.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -647,16 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/impressum.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/blog-post.module.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -689,27 +669,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/article-preview.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/article.module.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -743,23 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/category-preview.module.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/category-preview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/navigation.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -780,20 +726,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index.js">
+    <entry file="file://$PROJECT_DIR$/src/pages/impressum.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="357">
+          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-375">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/category.module.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/category-preview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/category-preview.module.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2292">
+          <caret line="138" column="55" selection-start-line="138" selection-start-column="55" selection-end-line="138" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/article-preview.module.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/layouts/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="270" column="29" selection-start-line="270" selection-start-column="29" selection-end-line="270" selection-end-column="29" />
+        <state relative-caret-position="163">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
         </state>
       </provider>
     </entry>
