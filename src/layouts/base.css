@@ -279,7 +279,7 @@ a {
 }
 
 .home-title {
-    color: black;
+    color: white;
     margin: 0;
     transition: transform 0.5s;
 }
@@ -291,6 +291,23 @@ a {
     }
 
     .home-title-container:hover {
+        transform: scale(1.3);
+    }
+}
+
+.navigation-home-title {
+    color: black;
+    margin: 0;
+    transition: transform 0.5s;
+}
+
+@media (min-width: 992px) {
+    .navigation-home-title:hover {
+        transform: scale(1.3);
+        margin: 0;
+    }
+
+    .navigation-home-title-container:hover {
         transform: scale(1.3);
     }
 }
