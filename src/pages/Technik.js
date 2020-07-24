@@ -6,7 +6,6 @@ import Navigation from '../components/navigation'
 import Footer from "../components/footer";
 import CategoryPreview from "../components/category-preview";
 
-
 class Technik extends React.Component {
     render() {
 
