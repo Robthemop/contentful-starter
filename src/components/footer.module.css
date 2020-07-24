@@ -5,9 +5,9 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    background-color: #373F49;
+    background-color: #fff;
     position: relative;
-    border-top: 4px solid orange;
+    border-top: 4px solid black;
     bottom: 0;
     left: 0;
     flex-wrap: wrap;
@@ -15,7 +15,7 @@
 }
 
 .footerItem {
-    color: white;
+    color: black;
     padding: 0 2em;
 }
 
