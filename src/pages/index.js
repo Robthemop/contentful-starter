@@ -65,7 +65,7 @@ class RootIndex extends React.Component {
                         })}
                     </ul>
 
-                    <h2>Alle Posts</h2>
+                    <h2>Neue Artikel</h2>
 
                     <ul className="article-list">
                         {posts.map(({node}) => {
@@ -91,6 +91,7 @@ export default RootIndex
 export const pageQuery = graphql`
   query HomeQuery {
   allContentfulArticle(
+  limit: 4
   sort: { fields: [publishDate], order: DESC })
   {
       edges {
