@@ -16,6 +16,7 @@ class RootIndex extends React.Component {
             <div className="container">
 
                 <Helmet>
+                    <html lang="de"></html>
                     <title>Boulder Boys</title>
                     <meta charSet="utf-8"/>
                     <meta name="description"
