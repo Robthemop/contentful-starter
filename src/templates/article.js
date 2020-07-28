@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
-import Img from 'gatsby-image'
 import Styles from '../templates/article.module.css'
 import Link from "gatsby-link";
 import Navigation from "../components/navigation";
@@ -18,7 +17,7 @@ class ArticleTemplate extends React.Component {
                     <title>{`${article.title} | ${article.category.title}`}</title>
                     <meta charSet="utf-8"/>
                     <meta name="description"
-                          content="Boulder Boys ist ein Blog für Boulder Anfänger und Fortgeschrittene."/>
+                          content={`${article.metaDescription}`}/>
                 </Helmet>
                 <Navigation/>
                 <div className="article-wrapper">
@@ -67,6 +66,12 @@ export const pageQuery = graphql`
     contentfulArticle(slug: { eq: $slug }) {
       title
       publishDate(formatString: "MMMM Do, YYYY")
+      metaDescription
+      description {
+            childMarkdownRemark {
+              html
+            }
+          }
       body {
         childMarkdownRemark {
           html

@@ -4,16 +4,13 @@ import Helmet from 'react-helmet'
 import Footer from '../components/footer';
 import CategoryPreview from "../components/category-preview";
 import ArticlePreview from "../components/article-preview";
-import styles from "../components/category-preview.module.css";
 import {SocialIcon} from "react-social-icons";
-import Link from "gatsby-link";
 
 class RootIndex extends React.Component {
     render() {
 
         const category = get(this, 'props.data.allContentfulCategory.edges');
         const posts = get(this, 'props.data.allContentfulArticle.edges');
-
 
         return (
             <div className="container">
@@ -137,23 +134,6 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulPerson(filter: { id: { eq: "c15jwOBqpxqSAOy2eOO4S0m" } }) {
-      edges {
-        node {
-          name
-          heroImage: image {
-            sizes(
-              maxWidth: 3728
-              maxHeight: 2376
-              resizingBehavior: PAD
-              background: "rgb:FFFFFF"
-            ) {
-              ...GatsbyContentfulSizes_tracedSVG
-            }
-          }
-        }
-      }
-    }
     allContentfulCategory{
         edges{
          node{
@@ -172,4 +152,4 @@ export const pageQuery = graphql`
        }
     }
  }
-`;
+`

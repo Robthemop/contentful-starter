@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
-    "@trendmicro/react-sidenav": "^0.4.5",
     "emotion": "^10.0.9",
     "gatsby-image": "^1.0.55",
     "gatsby-link": "^1.6.46",
@@ -19,12 +18,8 @@
     "gatsby-source-instagram-all": "^2.0.5",
     "gatsby-transformer-remark": "^1.7.44",
     "gatsby-transformer-sharp": "^1.6.27",
-    "google-maps-react": "^2.0.2",
     "lodash": "^4.17.15",
     "react": "^16.8.6",
-    "react-iframe": "^1.8.0",
-    "react-sidebar": "^3.0.2",
-    "react-spring": "^8.0.27",
     "yarn": "^1.15.2"
   },
   "devDependencies": {
