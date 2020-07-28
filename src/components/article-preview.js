@@ -10,20 +10,16 @@ export default ({article}) => (
         <Link to={`/blog/${article.slug}`} style={{textDecoration: 'none', zIndex: 5}}>
             <Img alt="" sizes={article.picture.sizes}></Img>
         </Link>
+        <Link to={`/blog/${article.slug}`}>
         <h3 className={styles.previewTitle}>
-            <Link to={`/blog/${article.slug}`}
-                  style={{textDecoration: 'none'}}>
                 {article.title}
-            </Link>
         </h3>
-        <Link to={`/blog/${article.slug}`}
-              style={{textDecoration: 'none'}}>
+    </Link>
             <p className={styles.description}
                dangerouslySetInnerHTML={{
                    __html: article.description.childMarkdownRemark.html,
                }}
             />
-        </Link>
 
     </div>
 )

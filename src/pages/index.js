@@ -32,7 +32,7 @@ class RootIndex extends React.Component {
                         Du bekommst schon vom bloßen Gedanken an bouldern schwitzige Hände? Dann bist du hier genau richtig!
                         Lies dir meine ausführlichen Reviews zu den coolsten Kletterhallen durch. Oder erfahre, wie du eine saubere Klettertechnik entwickelst. So wird es dir ein leichtes sein, die Klettergriffe zu bezwingen.
                         Außerdem bewerte ich für dich meine Kletterausrüstung und Kletterschuhe. Und erkläre dir, worauf du beim Kauf achten solltest.
-                        Auch in meinen Videos kannst du neues über das Klettern lernen oder aber einfach mal chillen und nur zuschauen.
+                        Auch in meinen Boulder Boys Videos kannst du neues über das Klettern lernen oder aber einfach mal chillen und nur zuschauen.
                     </p>
                     <p style={{fontWeight: "bold"}}>Robin Hess</p>
                 </div>
