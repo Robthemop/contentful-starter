@@ -20,6 +20,11 @@ class ArticleTemplate extends React.Component {
                           content={`${article.metaDescription}`}/>
                 </Helmet>
                 <Navigation/>
+
+                <div className="bergfreunde-left">
+                    <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154" title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen" rel="nofollow" target="_blank"><img src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_120x600.jpg" alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen" border="0" /></a><img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=31&cpid=1&prid=1&subid=&view=1" height="1" width="1" border="0" />
+                </div>
+
                 <div className="article-wrapper">
                     <Link to={`/${article.category.title}/`}>
                         <li className={Styles.breadcrumb}>{article.category.title}</li>
@@ -32,28 +37,6 @@ class ArticleTemplate extends React.Component {
                     />
                     <p className={Styles.author}>{article.author}</p>
                 </div>
-
-                <a className="banner-image-desktop"
-                   href="http://www.bergfreunde.de/#Q1322C16093"
-                   rel="nofollow"
-                   title="SummerSale 2020 970x250">
-                    <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=1322&cpid=1&prid=1&subid=&view=1&target=https://www.bergfreunde-partner.de/banner/DE/SummerSale2020/DE_SummerSale_2020_970x250.jpg"
-                         height="250"
-                         width="970"
-                         border="0"
-                         alt="SummerSale 2020 970x250" />
-                </a>
-
-                <a className="banner-image-mobile"
-                   href="http://www.bergfreunde.de/#Q1327C16093"
-                   rel="nofollow"
-                   title="SummerSale 2020 200x200 1">
-                    <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=1327&cpid=1&prid=1&subid=&view=1&target=https://www.bergfreunde-partner.de/banner/DE/SummerSale2020/DE_SummerSale_2020_200x200_1.jpg"
-                         height="200"
-                         width="200"
-                         border="0"
-                         alt="SummerSale 2020 200x200 1" />
-                </a>
                 <Footer/>
             </div>
         )

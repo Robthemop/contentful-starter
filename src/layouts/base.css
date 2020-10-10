@@ -6,6 +6,12 @@
     font-display: swap;
 }
 
+.bergfreunde-left {
+    position: fixed;
+    left: 0;
+    top: 32px;
+}
+
 .intro-text-container {
     width: calc(60% - 10vmin);
     justify-content: center;
@@ -19,9 +25,14 @@
     margin-top: 0;
 }
 
-.social-icons-dekstop {
+.headline-index {
+    text-align: left;
+}
+
+.social-icons-desktop {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 50%;
     padding: 1.5em 0 0 0;
 }
@@ -71,12 +82,12 @@ a {
 }
 
 .wrapper {
-    width: calc(90% - 10vmin);
+    width: calc(80% - 10vmin);
     margin: 10em auto 5em;
 }
 
 .wrapper--index{
-    width: calc(90% - 10vmin);
+    width: calc(80% - 10vmin);
 
 }
 
