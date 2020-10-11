@@ -12,6 +12,12 @@
     top: 32px;
 }
 
+@media (max-width: 992px) {
+    .bergfreunde-left {
+        display: none;
+    }
+}
+
 .intro-text-container {
     width: calc(60% - 10vmin);
     justify-content: center;
