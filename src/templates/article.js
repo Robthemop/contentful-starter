@@ -27,7 +27,7 @@ class ArticleTemplate extends React.Component {
 
                 <div className="article-wrapper">
                     <Link to={`/${article.category.title}/`}>
-                        <li className={Styles.breadcrumb}>{article.category.title}</li>
+                        <p className={Styles.breadcrumb}>- {article.category.title}</p>
                     </Link>
                     <h1 className={Styles.title}>{article.title}</h1>
                     <div className={Styles.body}
