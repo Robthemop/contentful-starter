@@ -12,8 +12,21 @@
     top: 32px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .bergfreunde-left {
+        display: none;
+    }
+}
+
+.bergfreunde-dynamic-mobile { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .bergfreunde-dynamic-mobile {
         display: none;
     }
 }
@@ -228,7 +241,6 @@ a {
 
 .category-list li {
     display: inline;
-    padding: 0 20px;
 }
 
 .catbox {

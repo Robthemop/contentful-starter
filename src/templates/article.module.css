@@ -47,17 +47,19 @@
 }
 
 .body a {
-    text-decoration: underline crimson;
+    color: rgb(214, 18, 58);
 }
 
 .breadcrumb {
+    color: rgb(214, 18, 58);
     font-size: 24px;
     padding: 5px;
     margin-top: 18px;
+    text-decoration: underline rgb(214, 18, 58);
 }
 
 .breadcrumb:hover {
-    text-decoration: underline crimson;
+    text-decoration: underline rgb(214, 18, 58);
 }
 
 .author {

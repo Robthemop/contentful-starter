@@ -43,14 +43,12 @@ class RootIndex extends React.Component {
 
                 <div className="social-icons-desktop">
                     <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" bgColor="#000"/>
-                    <SocialIcon url="http://instagram.com/boulderboysyt" bgColor="#000"/>
-                    <SocialIcon url="https://www.facebook.com/boulderobin/" bgColor="#000"/>
+                    <SocialIcon url="http://instagram.com/boulderboys.de" bgColor="#000"/>
                 </div>
 
                 <div className="social-icons-mobile">
-                    <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" bgColor="#000" style={{ height: 35, width: 35 }}/>
-                    <SocialIcon url="http://instagram.com/boulderboysyt" bgColor="#000" style={{ height: 35, width: 35 }}/>
-                    <SocialIcon url="https://www.facebook.com/boulderobin/" bgColor="#000" style={{ height: 35, width: 35 }}/>
+                    <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" bgColor="#000" style={{ height: 50, width: 50 }}/>
+                    <SocialIcon url="http://instagram.com/boulderboysyt" bgColor="#000" style={{ height: 50, width: 50 }}/>
                 </div>
 
                 <div className="wrapper--index">
@@ -66,6 +64,12 @@ class RootIndex extends React.Component {
                             )
                         })}
                     </ul>
+
+                    <div className="bergfreunde-dynamic-mobile">
+                        <div>
+                            <a href="https://www.bergfreunde-partner.de/banner/dynamisch/dyn.php" title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor" rel="nofollow" target="_blank"><img src="https://www.bergfreunde-partner.de/banner/bergfreunde.jpg" alt="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor" border="0" /></a><img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=168&cpid=1&prid=1&subid=&view=1" height="1" width="1" border="0" />
+                        </div>
+                    </div>
 
                     <h2 className="headline-index">Neue Artikel</h2>
 

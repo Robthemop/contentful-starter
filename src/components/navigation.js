@@ -7,7 +7,7 @@ export default () => (
         <div className={styles.navigation}>
             <div className={styles.links}>
                 <Link to="/">
-                    <h2 className="navigation-home-title">Startseite</h2>
+                    <h2 className="navigation-home-title">zur Startseite</h2>
                 </Link>
             </div>
         </div>

@@ -23,3 +23,7 @@
     align-self: center;
 }
 
+.navigation a {
+    text-decoration: none;
+}
+
