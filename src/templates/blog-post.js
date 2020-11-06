@@ -77,6 +77,7 @@ export const pageQuery = graphql`
     }
     contentfulCategory(slug: { eq: $slug }) {
       title
+      slug
       metaDescription
       categoryImage {
         sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: PAD) {

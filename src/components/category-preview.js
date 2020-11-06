@@ -5,7 +5,7 @@ import Img from "gatsby-image";
 
 export default ({category}) => (
     <div>
-        <Link to={`/${category.title}/`}>
+        <Link to={`/${category.slug}/`}>
             <Img alt="" sizes={category.categoryImage.sizes}></Img>
             <h2 className={styles.categoryTitle}>
                 {category.title}

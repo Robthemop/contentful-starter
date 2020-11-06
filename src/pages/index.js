@@ -124,6 +124,7 @@ export const pageQuery = graphql`
         edges{
          node{
             title
+            slug
                 categoryImage {
                     sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
                     ...GatsbyContentfulSizes_tracedSVG
