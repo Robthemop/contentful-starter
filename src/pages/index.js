@@ -96,7 +96,7 @@ export default RootIndex
 export const pageQuery = graphql`
   query HomeQuery {
   allContentfulArticle(
-  limit: 4
+  limit: 3
   sort: { fields: [publishDate], order: DESC })
   {
       edges {
