@@ -7,6 +7,10 @@
     max-height: 400px;
 }
 
+.categoryTitle {
+    text-align: left;
+}  
+
 .categoryTitle:hover{
     text-decoration: underline mediumturquoise;
 }
@@ -17,8 +21,4 @@
         color: #2F3336;
         display: inline;
     }
-}
-
-.description {
-    text-align: justify;
 }

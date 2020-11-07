@@ -224,7 +224,7 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap: 10vmin;
-    text-align: justify;
+    text-align: left;
 }
 
 @media (min-width: 300px) {
@@ -233,9 +233,9 @@ a {
     }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1540px) {
     .category-list {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }
 
