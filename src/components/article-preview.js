@@ -11,9 +11,9 @@ export default ({article}) => (
             <Img alt="" sizes={article.picture.sizes}></Img>
         </Link>
         <Link to={`/blog/${article.slug}`}>
-        <h3 className={styles.previewTitle}>
+        <h2 className={styles.previewTitle}>
                 {article.title}
-        </h3>
+        </h2>
     </Link>
             <p className={styles.description}
                dangerouslySetInnerHTML={{
