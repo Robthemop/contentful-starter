@@ -18,15 +18,15 @@ class Kategorien extends React.Component {
                 </Helmet>
                 <div className="wrapper">
                         <Navigation/>
-                        <ul className="category-list">
-                            {category.map(({node}) => {
+                            <ul className="category-list">
+                                {category.map(({node}) => {
                                 return (
                                     <li key={node.slug}>
                                         <CategoryPreview category={node}/>
                                     </li>
                                 )
-                            })}
-                        </ul>
+                                })}
+                            </ul>
                 </div>
                 <Footer/>
             </div>
@@ -43,7 +43,7 @@ export const pageQuery = graphql`
                 title
                 slug
                 categoryImage {
-                    sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: PAD) {
+                    sizes(maxWidth: 400, maxHeight: 400, resizingBehavior: FILL) {
                     ...GatsbyContentfulSizes_tracedSVG
                     }
                 }

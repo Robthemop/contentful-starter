@@ -4,12 +4,13 @@ import styles from './navigation.module.css';
 
 export default () => (
     <nav role="navigation">
-        <div className={styles.navigation}>
-            <div className={styles.links}>
-                <Link to="/">
-                    <h2 className="navigation-home-title">zur Startseite</h2>
+    <div className={styles.navigation}>
+                <Link to={`/`}>
+                    <p className={styles.breadcrumb}>Startseite</p>
                 </Link>
-            </div>
-        </div>
+                <Link to={`/kategorien/`}>
+                    <p className={styles.breadcrumb}>Alle Kategorien</p>
+                </Link>
+    </div>
     </nav>
 )

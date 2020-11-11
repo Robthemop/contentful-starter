@@ -20,13 +20,13 @@ class BlogPostTemplate extends React.Component {
                     <meta name="description"
                           content={`${category.metaDescription}`}/>
                 </Helmet>
-                <Navigation/>
-
                 <div className="bergfreunde-left">
                     <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154" title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen" rel="nofollow" target="_blank"><img src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_120x600.jpg" alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen" border="0" /></a><img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=31&cpid=1&prid=1&subid=&view=1" height="1" width="1" border="0" />
                 </div>
-                
+  
                 <div className="wrapper">
+                <Navigation/>
+
                     <h1>{category.title}</h1>
                     <div dangerouslySetInnerHTML={{
                              __html: category.description.childMarkdownRemark.html,

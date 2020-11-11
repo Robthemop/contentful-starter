@@ -1,18 +1,14 @@
 .navigation {
     display: flex;
-    position: absolute;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
     color: #000;
     background-color: #fff;
     width: 100%;
     border-bottom: 2px solid grey;
-    height: 100px;
     top: 0;
     left: 0;
     margin-bottom: 10px;
-    z-index: 100;
 }
 
 .socialMedia {
@@ -20,10 +16,22 @@
 }
 
 .links {
-    align-self: center;
+    align-self: flex-start;
 }
 
 .navigation a {
     text-decoration: none;
+}
+
+.breadcrumb {
+    color: #000000;
+    font-size: 24px;
+    text-decoration: underline #000000;
+    padding: 6px;
+    margin: 0;
+}
+
+.breadcrumb:hover {
+    text-decoration: underline mediumturquoise;
 }
 

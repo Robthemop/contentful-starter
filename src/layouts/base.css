@@ -102,7 +102,8 @@ a {
 
 .wrapper {
     width: calc(80% - 10vmin);
-    margin: 10em auto 5em;
+    margin: 0 auto 5em;
+    padding: 5vmin 0;
 }
 
 .wrapper--index {
@@ -111,7 +112,7 @@ a {
 
 .article-wrapper {
     width: calc(80% - 10vmin);
-    margin: 5em auto;
+    margin: 0 5em auto;
     padding: 5vmin 0;
     justify-content: center;
     align-items: center;

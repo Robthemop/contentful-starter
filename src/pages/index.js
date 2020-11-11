@@ -48,7 +48,7 @@ class RootIndex extends React.Component {
 
                 <div className="social-icons-mobile">
                     <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" bgColor="#000" style={{ height: 50, width: 50 }}/>
-                    <SocialIcon url="http://instagram.com/boulderboysyt" bgColor="#000" style={{ height: 50, width: 50 }}/>
+                    <SocialIcon url="http://instagram.com/boulderboys.de" bgColor="#000" style={{ height: 50, width: 50 }}/>
                 </div>
 
                 <div className="wrapper--index">

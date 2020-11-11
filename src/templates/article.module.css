@@ -47,19 +47,23 @@
 }
 
 .body a {
-    color: rgb(214, 18, 58);
+    color: #000000;
+}
+
+.body a:hover {
+    text-decoration: underline mediumturquoise;
 }
 
 .breadcrumb {
-    color: rgb(214, 18, 58);
+    color: #000000;
     font-size: 24px;
     padding: 5px;
     margin-top: 18px;
-    text-decoration: underline rgb(214, 18, 58);
+    text-decoration: underline #000000;
 }
 
 .breadcrumb:hover {
-    text-decoration: underline rgb(214, 18, 58);
+    text-decoration: underline mediumturquoise;
 }
 
 .author {
