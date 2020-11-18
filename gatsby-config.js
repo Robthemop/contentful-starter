@@ -21,8 +21,12 @@ if (!spaceId || !accessToken) {
 }
 
 module.exports = {
+    siteMetadata: {
+        siteUrl: `https://www.boulderboys.de/`,
+      },
     pathPrefix: '/gatsby-contentful-starter',
     plugins: [
+        `gatsby-plugin-sitemap`,
         'gatsby-transformer-remark',
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sharp',
