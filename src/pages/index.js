@@ -23,32 +23,19 @@ class RootIndex extends React.Component {
                           content="Boulder Boys ist ein Blog für Boulder Anfänger und Fortgeschrittene."/>
                 </Helmet>
 
-                <div className="bergfreunde-left">
-                    <a href="https://www.bergfreunde.de/?pid=16093&_$ja=tsid:52154" title="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen" rel="nofollow" target="_blank"><img src="https://www.bergfreunde-partner.de/banner/DE/DE_AF_Banner_120x600.jpg" alt="Ausrüstung für Klettern, Bergsport und Outdoor bei Bergfreunde.de kaufen" border="0" /></a><img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=31&cpid=1&prid=1&subid=&view=1" height="1" width="1" border="0" />
-                </div>
-
                 <div className="home-title-container">
                     <h1 className="home-title">Boulder Boys</h1>
                 </div>
 
                 <div className="intro-text-container">
                     <p className="intro-text">
-                        Du bekommst schon vom bloßen Gedanken an bouldern schwitzige Hände? Dann bist du hier genau richtig!
-                        Lies dir meine ausführlichen Reviews zu den coolsten Kletterhallen durch. Oder erfahre, wie du eine saubere Klettertechnik entwickelst. So wird es dir ein leichtes sein, die Klettergriffe zu bezwingen.
-                        Außerdem bewerte ich für dich meine Kletterausrüstung und Kletterschuhe. Und erkläre dir, worauf du beim Kauf achten solltest.
-                        Auch in meinen Boulder Boys Videos kannst du neues über das Klettern lernen oder aber einfach mal chillen und nur zuschauen.
+                        Du bekommst schon vom bloßen Gedanken an Bouldern schwitzige Hände? Dann bist du hier genau richtig!
+                        Erfahre, wie du eine saubere Klettertechnik entwickelst. So wird es dir ein leichtes sein, die Klettergriffe zu bezwingen.
+                        Außerdem bewerte ich für dich meine Kletterausrüstung und Kletterschuhe. Und erkläre dir, worauf du beim Kauf achten solltest. 
+                        Auch in meinen <a href="https://www.youtube.com/c/BoulderBoys" target="_blank">Boulder Boys Videos</a> kannst du neues über das Klettern lernen oder aber einfach mal chillen und nur zuschauen.
+                        Wenn du ein Blick hinter die Kulissen, in mein Leben werfen willst, dann schau auf meinem <a href="https://www.instagram.com/boulderboys.de/" target="_blank">Instagram Profil</a> vorbei. 
                     </p>
                     <p style={{fontWeight: "bold"}}>Robin Hess</p>
-                </div>
-
-                <div className="social-icons-desktop">
-                    <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" bgColor="#000"/>
-                    <SocialIcon url="http://instagram.com/boulderboys.de" bgColor="#000"/>
-                </div>
-
-                <div className="social-icons-mobile">
-                    <SocialIcon url="https://www.youtube.com/channel/UC_wsnYRs8E7Z_ezOKIOfgow" bgColor="#000" style={{ height: 50, width: 50 }}/>
-                    <SocialIcon url="http://instagram.com/boulderboys.de" bgColor="#000" style={{ height: 50, width: 50 }}/>
                 </div>
 
                 <div className="wrapper--index">
@@ -84,6 +71,7 @@ class RootIndex extends React.Component {
                     </ul>
 
                 </div>
+
                 <Footer/>
 
             </div>
@@ -96,7 +84,7 @@ export default RootIndex
 export const pageQuery = graphql`
   query HomeQuery {
   allContentfulArticle(
-  limit: 3
+  limit: 6
   sort: { fields: [publishDate], order: DESC })
   {
       edges {
@@ -134,7 +122,7 @@ export const pageQuery = graphql`
                     childMarkdownRemark {
                         html
                     }
-                    }
+                }
          }
        }
     }

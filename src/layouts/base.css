@@ -6,18 +6,6 @@
     font-display: swap;
 }
 
-.bergfreunde-left {
-    position: fixed;
-    left: 0;
-    top: 32px;
-}
-
-@media (max-width: 991px) {
-    .bergfreunde-left {
-        display: none;
-    }
-}
-
 .bergfreunde-dynamic-mobile { 
     width: 100%;
     display: flex;
