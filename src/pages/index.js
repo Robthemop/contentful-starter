@@ -33,9 +33,8 @@ class RootIndex extends React.Component {
                         Erfahre, wie du eine saubere Klettertechnik entwickelst. So wird es dir ein leichtes sein, die Klettergriffe zu bezwingen.
                         Außerdem bewerte ich für dich meine Kletterausrüstung und Kletterschuhe. Und erkläre dir, worauf du beim Kauf achten solltest. 
                         Auch in meinen <a href="https://www.youtube.com/c/BoulderBoys" target="_blank">Boulder Boys Videos</a> kannst du neues über das Klettern lernen oder aber einfach mal chillen und nur zuschauen.
-                        Wenn du ein Blick hinter die Kulissen, in mein Leben werfen willst, dann schau auf meinem <a href="https://www.instagram.com/boulderboys.de/" target="_blank">Instagram Profil</a> vorbei. 
+                        Wenn du ein Blick hinter die Kulissen, in mein Leben werfen willst, dann schau auf meinem <a href="https://www.instagram.com/boulderboys.de/" target="_blank">Instagram Profil</a> vorbei. - Robin Hess
                     </p>
-                    <p style={{fontWeight: "bold"}}>Robin Hess</p>
                 </div>
 
                 <div className="wrapper--index">
@@ -52,12 +51,6 @@ class RootIndex extends React.Component {
                         })}
                     </ul>
 
-                    <div className="bergfreunde-dynamic-mobile">
-                        <div>
-                            <a href="https://www.bergfreunde-partner.de/banner/dynamisch/dyn.php" title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor" rel="nofollow" target="_blank"><img src="https://www.bergfreunde-partner.de/banner/bergfreunde.jpg" alt="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor" border="0" /></a><img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=168&cpid=1&prid=1&subid=&view=1" height="1" width="1" border="0" />
-                        </div>
-                    </div>
-
                     <h2 className="headline-index">Neue Artikel</h2>
 
                     <ul className="article-list">
@@ -69,7 +62,23 @@ class RootIndex extends React.Component {
                             )
                         })}
                     </ul>
-
+                    <div className="bergfreunde-dynamic-mobile">
+                        <a 
+                            href="https://www.bergfreunde-partner.de/banner/dynamisch/dyn.php" 
+                            title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor" r
+                            el="nofollow" 
+                            target="_blank">
+                            <img 
+                                src="https://www.bergfreunde-partner.de/banner/bergfreunde.jpg" 
+                                alt="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor" 
+                                border="0" />
+                            </a>
+                            <img 
+                                src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=168&cpid=1&prid=1&subid=&view=1" 
+                                height="1"
+                                width="1" 
+                                border="0" />
+                    </div>                
                 </div>
 
                 <Footer/>
