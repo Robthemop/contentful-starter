@@ -40,8 +40,8 @@ class BlogPostTemplate extends React.Component {
                     <div className="bergfreunde-dynamic-mobile">
                         <a 
                             href="https://www.bergfreunde-partner.de/banner/dynamisch/dyn.php" 
-                            title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor" r
-                            el="nofollow" 
+                            title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
+                            rel="nofollow" 
                             target="_blank">
                             <img 
                                 src="https://www.bergfreunde-partner.de/banner/bergfreunde.jpg" 
@@ -53,7 +53,7 @@ class BlogPostTemplate extends React.Component {
                                 height="1"
                                 width="1" 
                                 border="0" />
-                    </div>
+                      </div>
                 </div>
 
                 

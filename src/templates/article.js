@@ -31,8 +31,8 @@ class ArticleTemplate extends React.Component {
                     <div className="bergfreunde-dynamic-mobile">
                         <a 
                             href="https://www.bergfreunde-partner.de/banner/dynamisch/dyn.php" 
-                            title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor" r
-                            el="nofollow" 
+                            title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor"
+                            rel="nofollow" 
                             target="_blank">
                             <img 
                                 src="https://www.bergfreunde-partner.de/banner/bergfreunde.jpg" 

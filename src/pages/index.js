@@ -33,7 +33,7 @@ class RootIndex extends React.Component {
                         Erfahre, wie du eine saubere Klettertechnik entwickelst. So wird es dir ein leichtes sein, die Klettergriffe zu bezwingen.
                         Außerdem bewerte ich für dich meine Kletterausrüstung und Kletterschuhe. Und erkläre dir, worauf du beim Kauf achten solltest. 
                         Auch in meinen <a href="https://www.youtube.com/c/BoulderBoys" target="_blank">Boulder Boys Videos</a> kannst du neues über das Klettern lernen oder aber einfach mal chillen und nur zuschauen.
-                        Wenn du ein Blick hinter die Kulissen, in mein Leben werfen willst, dann schau auf meinem <a href="https://www.instagram.com/boulderboys.de/" target="_blank">Instagram Profil</a> vorbei. - Robin Hess
+                        Wenn du ein Blick hinter die Kulissen, in mein Leben werfen willst, dann schau auf meinem <a href="https://www.instagram.com/boulderobin/" target="_blank">Instagram Profil</a> vorbei. - Robin Hess
                     </p>
                 </div>
 
