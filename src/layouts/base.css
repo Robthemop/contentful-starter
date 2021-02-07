@@ -87,17 +87,17 @@ a {
 }
 
 .wrapper {
-    width: calc(80% - 10vmin);
+    width: calc(70% - 10vmin);
     margin: 0 auto 5em;
     padding: 5vmin 0;
 }
 
 .wrapper--index {
-    width: calc(80% - 10vmin);
+    width: calc(70% - 10vmin);
 }
 
 .article-wrapper {
-    width: calc(80% - 10vmin);
+    width: calc(50% - 10vmin);
     margin: 0 5em auto;
     padding: 5vmin 0;
     justify-content: center;
