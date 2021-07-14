@@ -12,10 +12,11 @@ class Impressum extends React.Component {
                     <meta charSet="utf-8"/>
                     <meta name="description" content="Mein Impressum"/>
                 </Helmet>
-                <Navigation/>
                 <div style={{textAlign: 'justify'}}>
                     <div className="wrapper">
-                        <h3>Impressum</h3>
+                    <Navigation/>
+
+                        <h1>Impressum</h1>
                         <h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
                         <p>Robin Hess<br/>
                             Rochusstraße 94<br/>

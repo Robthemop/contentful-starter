@@ -18,11 +18,7 @@ class Kategorien extends React.Component {
                 </Helmet>
                 <div className="wrapper">
                         <Navigation/>
-                        <div className="bergfreunde-dynamic-mobile">
-                            <div>
-                                <a href="https://www.bergfreunde-partner.de/banner/dynamisch/dyn.php" title="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor" rel="nofollow" target="_blank"><img src="https://www.bergfreunde-partner.de/banner/bergfreunde.jpg" alt="Bergfreunde.de - Ausrüstung für Klettern, Bergsport und Outdoor" border="0" /></a><img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=168&cpid=1&prid=1&subid=&view=1" height="1" width="1" border="0" />
-                            </div>
-                        </div>
+                        
                             <ul className="category-list">
                                 {category.map(({node}) => {
                                 return (
@@ -33,6 +29,30 @@ class Kategorien extends React.Component {
                                 })}
                             </ul>
                 </div>
+                
+                <div className="bergfreunde-dynamic-xs">
+                        <a href="http://www.bergfreunde.de/?pid=16093&amp;wt_mc=de.affiliate.qc.-.system.-&amp;utm_source=sonstige-affiliates&amp;utm_medium=cpo-variabel#Q2035C16093" 
+                        rel="nofollow" 
+                        title="Summer Sale 2021 - 250x250">
+                            <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&amp;wmid=2035&amp;cpid=1&amp;prid=1&amp;subid=&amp;view=1&amp;target=https://www.bergfreunde-partner.de/banner/DE/2021_SommerSale/DE_Sommer%20Sale_2021_250x250.jpg" 
+                            height="250" width="250" 
+                            border="0" 
+                            alt="Summer Sale 2021 - 250x250"/>
+                        </a>
+                    </div>
+                
+                <div className="bergfreunde-dynamic-xl">
+                        <a href="http://www.bergfreunde.de/?pid=16093&wt_mc=de.affiliate.qc.-.system.-&utm_source=sonstige-affiliates&utm_medium=cpo-variabel#Q2033C16093" 
+                        rel="nofollow" 
+                        title="Summer Sale 2021 - 1200x628">
+                            <img src="https://partner.bergfreunde.de/go.cgi?pid=16093&wmid=2033&cpid=1&prid=1&subid=&view=1&target=https://www.bergfreunde-partner.de/banner/DE/2021_SommerSale/DE_Sommer%20Sale_2021_1200x628.jpg" 
+                            height="628" 
+                            width="1200" 
+                            border="0" 
+                            alt="Summer Sale 2021 - 1200x628" />
+                        </a>                
+                </div>
+                
                 <Footer/>
             </div>
         )

@@ -6,13 +6,35 @@
     font-display: swap;
 }
 
-.bergfreunde-dynamic-mobile { 
+.bergfreunde-dynamic-xs { 
+    display: block;
     margin-top: 40px;
+    max-width: 250px;
+    margin: 0 auto;
 }
 
-.bergfreunde-dynamic-mobile a img{ 
+.bergfreunde-dynamic-xs a img { 
     width: 100%;
-    max-width: 350px;
+    height: auto;
+}
+
+@media (min-width: 1200px){
+    .bergfreunde-dynamic-xs { 
+        display: none;
+    }
+}
+
+.bergfreunde-dynamic-xl {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+@media (max-width: 1199px) {
+    .bergfreunde-dynamic-xl {
+        display: none;
+    }
 }
 
 .intro-text-container {
